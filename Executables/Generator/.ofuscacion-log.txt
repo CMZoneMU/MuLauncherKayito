@@ -1,0 +1,721 @@
+Renamed Types:
+
+[Generator]Shared.Utils.CryptoHelper -> [Generator] . 
+{
+	[Generator]Shared.Utils.CryptoHelper::Encrypt[2]( [mscorlib]System.String, [mscorlib]System.String ) ->  
+	[Generator]Shared.Utils.CryptoHelper::Decrypt[2]( [mscorlib]System.Byte[], [mscorlib]System.String ) ->  
+
+	System.Int32 [Generator]System.Int32 Shared.Utils.CryptoHelper::SaltSize ->  
+	System.Int32 [Generator]System.Int32 Shared.Utils.CryptoHelper::IvSize ->  
+	System.Int32 [Generator]System.Int32 Shared.Utils.CryptoHelper::KeySize ->  
+	System.Int32 [Generator]System.Int32 Shared.Utils.CryptoHelper::Iterations ->  
+}
+
+[Generator]Shared.Utils.JsonHelper -> [Generator] . 
+{
+	[Generator]Shared.Utils.JsonHelper::GetSerializer[1]( [mscorlib]System.Type ) ->  
+	[Generator]Shared.Utils.JsonHelper::Serialize[1]( !0 ) ->  
+	[Generator]Shared.Utils.JsonHelper::Deserialize[1]( [mscorlib]System.String ) ->  
+
+	[Generator]Shared.Utils.JsonHelper::.cctor[0]( ) skipped:  special name
+
+	System.Collections.Concurrent.ConcurrentDictionary`2<System.Type,System.Runtime.Serialization.Json.DataContractJsonSerializer> [Generator]System.Collections.Concurrent.ConcurrentDictionary`2<System.Type,System.Runtime.Serialization.Json.DataContractJsonSerializer> Shared.Utils.JsonHelper::Cache ->  
+}
+
+[Generator]Shared.Update.FileDownloader -> [Generator] . 
+{
+	[Generator]Shared.Update.FileDownloader::DownloadFiles[4]( [mscorlib]System.Collections.Generic.List`1<[Generator]Shared.Update.UpdateFileInfo>, [mscorlib]System.String, [mscorlib]System.Int64, [mscorlib]System.IProgress`1<[Generator]Shared.Update.UpdateProgress> ) ->  
+	[Generator]Shared.Update.FileDownloader::DownloadSingleFile[4]( [Generator]Shared.Update.UpdateFileInfo, [mscorlib]System.String, [mscorlib]System.Int64, [mscorlib]System.IProgress`1<[Generator]Shared.Update.UpdateProgress> ) ->  
+
+	[Generator]Shared.Update.FileDownloader::.ctor[0]( ) skipped:  special name
+
+	System.Int32 [Generator]System.Int32 Shared.Update.FileDownloader::MAX_PARALLEL_DOWNLOADS ->  
+	System.Int64 [Generator]System.Int64 Shared.Update.FileDownloader::_totalDownloaded ->  
+}
+
+[Generator]Shared.Update.ManifestManager -> [Generator] . 
+{
+	[Generator]Shared.Update.ManifestManager::Set[1]( [Generator]Shared.Update.UpdateManifest ) ->  
+
+	[Generator]Shared.Update.ManifestManager::get_Current[0]( ) skipped:  skipping properties
+
+	Shared.Update.UpdateManifest [Generator]Shared.Update.UpdateManifest Shared.Update.ManifestManager::_current ->  
+}
+
+[Generator]Shared.Update.UpdateFileInfo -> [Generator] . 
+{
+
+	[Generator]Shared.Update.UpdateFileInfo::get_Path[0]( ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateFileInfo::set_Path[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateFileInfo::get_Size[0]( ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateFileInfo::set_Size[1]( [mscorlib]System.Int64 ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateFileInfo::get_Hash[0]( ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateFileInfo::set_Hash[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateFileInfo::.ctor[0]( ) skipped:  special name
+
+	System.String [Generator]System.String Shared.Update.UpdateFileInfo::<Path>k__BackingField ->  
+	System.Int64 [Generator]System.Int64 Shared.Update.UpdateFileInfo::<Size>k__BackingField ->  
+	System.String [Generator]System.String Shared.Update.UpdateFileInfo::<Hash>k__BackingField ->  
+}
+
+[Generator]Shared.Update.UpdateManifest -> [Generator] . 
+{
+
+	[Generator]Shared.Update.UpdateManifest::get_Launcher[0]( ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateManifest::set_Launcher[1]( [Generator]Shared.Update.UpdateFileInfo ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateManifest::get_FileList[0]( ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateManifest::set_FileList[1]( [mscorlib]System.Collections.Generic.List`1<[Generator]Shared.Update.UpdateFileInfo> ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateManifest::.ctor[0]( ) skipped:  special name
+
+	Shared.Update.UpdateFileInfo [Generator]Shared.Update.UpdateFileInfo Shared.Update.UpdateManifest::<Launcher>k__BackingField ->  
+	System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> [Generator]System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> Shared.Update.UpdateManifest::<FileList>k__BackingField ->  
+}
+
+[Generator]Shared.Update.UpdateProgress -> [Generator] . 
+{
+
+	[Generator]Shared.Update.UpdateProgress::get_StatusKey[0]( ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateProgress::set_StatusKey[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateProgress::get_Args[0]( ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateProgress::set_Args[1]( [mscorlib]System.Object[] ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateProgress::get_CurrentFileDownloaded[0]( ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateProgress::set_CurrentFileDownloaded[1]( [mscorlib]System.Int64 ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateProgress::get_CurrentFileSize[0]( ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateProgress::set_CurrentFileSize[1]( [mscorlib]System.Int64 ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateProgress::get_TotalBytesDownloaded[0]( ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateProgress::set_TotalBytesDownloaded[1]( [mscorlib]System.Int64 ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateProgress::get_TotalBytes[0]( ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateProgress::set_TotalBytes[1]( [mscorlib]System.Int64 ) skipped:  skipping properties
+	[Generator]Shared.Update.UpdateProgress::.ctor[0]( ) skipped:  special name
+
+	System.String [Generator]System.String Shared.Update.UpdateProgress::<StatusKey>k__BackingField ->  
+	System.Object[] [Generator]System.Object[] Shared.Update.UpdateProgress::<Args>k__BackingField ->  
+	System.Int64 [Generator]System.Int64 Shared.Update.UpdateProgress::<CurrentFileDownloaded>k__BackingField ->  
+	System.Int64 [Generator]System.Int64 Shared.Update.UpdateProgress::<CurrentFileSize>k__BackingField ->  
+	System.Int64 [Generator]System.Int64 Shared.Update.UpdateProgress::<TotalBytesDownloaded>k__BackingField ->  
+	System.Int64 [Generator]System.Int64 Shared.Update.UpdateProgress::<TotalBytes>k__BackingField ->  
+}
+
+[Generator]Shared.UI.RoundedPanel -> [Generator] . 
+{
+
+	[Generator]Shared.UI.RoundedPanel::get_Radius[0]( ) skipped:  skipping properties
+	[Generator]Shared.UI.RoundedPanel::set_Radius[1]( [mscorlib]System.Int32 ) skipped:  skipping properties
+	[Generator]Shared.UI.RoundedPanel::get_BorderColor[0]( ) skipped:  skipping properties
+	[Generator]Shared.UI.RoundedPanel::set_BorderColor[1]( [System.Drawing]System.Drawing.Color ) skipped:  skipping properties
+	[Generator]Shared.UI.RoundedPanel::get_BorderThickness[0]( ) skipped:  skipping properties
+	[Generator]Shared.UI.RoundedPanel::set_BorderThickness[1]( [mscorlib]System.Int32 ) skipped:  skipping properties
+	[Generator]Shared.UI.RoundedPanel::OnPaint[1]( [System.Windows.Forms]System.Windows.Forms.PaintEventArgs ) skipped:  external base class or interface
+	[Generator]Shared.UI.RoundedPanel::.ctor[0]( ) skipped:  special name
+
+	System.Int32 [Generator]System.Int32 Shared.UI.RoundedPanel::<Radius>k__BackingField ->  
+	System.Drawing.Color [Generator]System.Drawing.Color Shared.UI.RoundedPanel::<BorderColor>k__BackingField ->  
+	System.Int32 [Generator]System.Int32 Shared.UI.RoundedPanel::<BorderThickness>k__BackingField ->  
+}
+
+[Generator]Shared.UI.SegmentedProgressBar -> [Generator] .‐
+{
+
+	[Generator]Shared.UI.SegmentedProgressBar::OnPaint[1]( [System.Windows.Forms]System.Windows.Forms.PaintEventArgs ) skipped:  external base class or interface
+	[Generator]Shared.UI.SegmentedProgressBar::get_Maximum[0]( ) skipped:  skipping properties
+	[Generator]Shared.UI.SegmentedProgressBar::set_Maximum[1]( [mscorlib]System.Int32 ) skipped:  skipping properties
+	[Generator]Shared.UI.SegmentedProgressBar::get_Value[0]( ) skipped:  skipping properties
+	[Generator]Shared.UI.SegmentedProgressBar::set_Value[1]( [mscorlib]System.Int32 ) skipped:  skipping properties
+	[Generator]Shared.UI.SegmentedProgressBar::get_SegmentCount[0]( ) skipped:  skipping properties
+	[Generator]Shared.UI.SegmentedProgressBar::set_SegmentCount[1]( [mscorlib]System.Int32 ) skipped:  skipping properties
+	[Generator]Shared.UI.SegmentedProgressBar::get_SegmentSpacing[0]( ) skipped:  skipping properties
+	[Generator]Shared.UI.SegmentedProgressBar::set_SegmentSpacing[1]( [mscorlib]System.Int32 ) skipped:  skipping properties
+	[Generator]Shared.UI.SegmentedProgressBar::.ctor[0]( ) skipped:  special name
+
+	System.Int32 [Generator]System.Int32 Shared.UI.SegmentedProgressBar::value ->  
+	System.Int32 [Generator]System.Int32 Shared.UI.SegmentedProgressBar::<Maximum>k__BackingField ->  
+	System.Int32 [Generator]System.Int32 Shared.UI.SegmentedProgressBar::<SegmentCount>k__BackingField ->  
+	System.Int32 [Generator]System.Int32 Shared.UI.SegmentedProgressBar::<SegmentSpacing>k__BackingField ->  
+}
+
+[Generator]Shared.UI.FontManager -> [Generator] .‑
+{
+	[Generator]Shared.UI.FontManager::AddFontMemResourceEx[4]( [mscorlib]System.IntPtr, [mscorlib]System.UInt32, [mscorlib]System.IntPtr, [mscorlib]System.UInt32& ) ->  
+	[Generator]Shared.UI.FontManager::LoadFont[2]( [mscorlib]System.String, [mscorlib]System.Byte[] ) ->  
+	[Generator]Shared.UI.FontManager::GetFont[3]( [mscorlib]System.String, [mscorlib]System.Single, [System.Drawing]System.Drawing.FontStyle ) ->  
+
+	[Generator]Shared.UI.FontManager::.cctor[0]( ) skipped:  special name
+
+	System.Drawing.Text.PrivateFontCollection [Generator]System.Drawing.Text.PrivateFontCollection Shared.UI.FontManager::_fontCollection ->  
+	System.Collections.Generic.List`1<System.IntPtr> [Generator]System.Collections.Generic.List`1<System.IntPtr> Shared.UI.FontManager::_fontBuffers ->  
+	System.Collections.Generic.Dictionary`2<System.String,System.Drawing.FontFamily> [Generator]System.Collections.Generic.Dictionary`2<System.String,System.Drawing.FontFamily> Shared.UI.FontManager::_fonts ->  
+	System.Object [Generator]System.Object Shared.UI.FontManager::_lock ->  
+}
+
+[Generator]Shared.Network.HttpClientManager -> [Generator] .‒
+{
+	[Generator]Shared.Network.HttpClientManager::Create[0]( ) ->  
+
+	[Generator]Shared.Network.HttpClientManager::.cctor[0]( ) skipped:  special name
+
+	System.Net.Http.HttpClient [Generator]System.Net.Http.HttpClient Shared.Network.HttpClientManager::Client ->  
+}
+
+[Generator]Shared.LauncherPayload.LauncherPayload -> [Generator] .—
+{
+
+	[Generator]Shared.LauncherPayload.LauncherPayload::get_Token[0]( ) skipped:  skipping properties
+	[Generator]Shared.LauncherPayload.LauncherPayload::set_Token[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Generator]Shared.LauncherPayload.LauncherPayload::get_Config[0]( ) skipped:  skipping properties
+	[Generator]Shared.LauncherPayload.LauncherPayload::set_Config[1]( [Generator]Shared.LauncherConfig.ConfigModel ) skipped:  skipping properties
+	[Generator]Shared.LauncherPayload.LauncherPayload::get_Manifest[0]( ) skipped:  skipping properties
+	[Generator]Shared.LauncherPayload.LauncherPayload::set_Manifest[1]( [Generator]Shared.Update.UpdateManifest ) skipped:  skipping properties
+	[Generator]Shared.LauncherPayload.LauncherPayload::.ctor[0]( ) skipped:  special name
+
+	System.String [Generator]System.String Shared.LauncherPayload.LauncherPayload::<Token>k__BackingField ->  
+	Shared.LauncherConfig.ConfigModel [Generator]Shared.LauncherConfig.ConfigModel Shared.LauncherPayload.LauncherPayload::<Config>k__BackingField ->  
+	Shared.Update.UpdateManifest [Generator]Shared.Update.UpdateManifest Shared.LauncherPayload.LauncherPayload::<Manifest>k__BackingField ->  
+}
+
+[Generator]Shared.LauncherConfig.ConfigHelper -> [Generator] .―
+{
+	[Generator]Shared.LauncherConfig.ConfigHelper::SaveFile[2]( [Generator]Shared.LauncherConfig.ConfigModel, [mscorlib]System.String ) ->  
+	[Generator]Shared.LauncherConfig.ConfigHelper::LoadFile[1]( [mscorlib]System.String ) ->  
+	[Generator]Shared.LauncherConfig.ConfigHelper::Validate[1]( [Generator]Shared.LauncherConfig.ConfigModel ) ->  
+
+	System.String [Generator]System.String Shared.LauncherConfig.ConfigHelper::SecretKey ->  
+}
+
+[Generator]Shared.LauncherConfig.ConfigManager -> [Generator] .•
+{
+	[Generator]Shared.LauncherConfig.ConfigManager::Set[1]( [Generator]Shared.LauncherConfig.ConfigModel ) ->  
+
+	[Generator]Shared.LauncherConfig.ConfigManager::get_ConfigPath[0]( ) skipped:  skipping properties
+	[Generator]Shared.LauncherConfig.ConfigManager::get_Current[0]( ) skipped:  skipping properties
+
+	System.String [Generator]System.String Shared.LauncherConfig.ConfigManager::ConfigFile ->  
+	Shared.LauncherConfig.ConfigModel [Generator]Shared.LauncherConfig.ConfigModel Shared.LauncherConfig.ConfigManager::_current ->  
+}
+
+[Generator]Shared.LauncherConfig.ConfigModel -> [Generator] .․
+{
+
+	[Generator]Shared.LauncherConfig.ConfigModel::get_WindowTitle[0]( ) skipped:  skipping properties
+	[Generator]Shared.LauncherConfig.ConfigModel::set_WindowTitle[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Generator]Shared.LauncherConfig.ConfigModel::get_GameExecutable[0]( ) skipped:  skipping properties
+	[Generator]Shared.LauncherConfig.ConfigModel::set_GameExecutable[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Generator]Shared.LauncherConfig.ConfigModel::get_UpdatesURL[0]( ) skipped:  skipping properties
+	[Generator]Shared.LauncherConfig.ConfigModel::set_UpdatesURL[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Generator]Shared.LauncherConfig.ConfigModel::get_UpdateFilename[0]( ) skipped:  skipping properties
+	[Generator]Shared.LauncherConfig.ConfigModel::set_UpdateFilename[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Generator]Shared.LauncherConfig.ConfigModel::get_WebsiteURL[0]( ) skipped:  skipping properties
+	[Generator]Shared.LauncherConfig.ConfigModel::set_WebsiteURL[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Generator]Shared.LauncherConfig.ConfigModel::get_MutexName[0]( ) skipped:  skipping properties
+	[Generator]Shared.LauncherConfig.ConfigModel::set_MutexName[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Generator]Shared.LauncherConfig.ConfigModel::.ctor[0]( ) skipped:  special name
+
+	System.String [Generator]System.String Shared.LauncherConfig.ConfigModel::<WindowTitle>k__BackingField ->  
+	System.String [Generator]System.String Shared.LauncherConfig.ConfigModel::<GameExecutable>k__BackingField ->  
+	System.String [Generator]System.String Shared.LauncherConfig.ConfigModel::<UpdatesURL>k__BackingField ->  
+	System.String [Generator]System.String Shared.LauncherConfig.ConfigModel::<UpdateFilename>k__BackingField ->  
+	System.String [Generator]System.String Shared.LauncherConfig.ConfigModel::<WebsiteURL>k__BackingField ->  
+	System.String [Generator]System.String Shared.LauncherConfig.ConfigModel::<MutexName>k__BackingField ->  
+}
+
+[Generator]Shared.Languages.LanguageModel -> [Generator] .‧
+{
+
+	[Generator]Shared.Languages.LanguageModel::.cctor[0]( ) skipped:  special name
+
+	System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<System.String,System.String>> [Generator]System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<System.String,System.String>> Shared.Languages.LanguageModel::translations ->  
+}
+
+[Generator]Shared.GameSettings.SettingsHelper -> [Generator] . 
+{
+	[Generator]Shared.GameSettings.SettingsHelper::Load[0]( ) ->  
+	[Generator]Shared.GameSettings.SettingsHelper::GetStringValue[2]( [mscorlib]System.String, [mscorlib]System.String ) ->  
+	[Generator]Shared.GameSettings.SettingsHelper::GetIntValue[2]( [mscorlib]System.String, [mscorlib]System.Int32 ) ->  
+	[Generator]Shared.GameSettings.SettingsHelper::Save[1]( [Generator]Shared.GameSettings.SettingsModel ) ->  
+	[Generator]Shared.GameSettings.SettingsHelper::SetStringValue[2]( [mscorlib]System.String, [mscorlib]System.String ) ->  
+	[Generator]Shared.GameSettings.SettingsHelper::SetIntValue[2]( [mscorlib]System.String, [mscorlib]System.Int32 ) ->  
+
+	System.String [Generator]System.String Shared.GameSettings.SettingsHelper::RegistryPath ->  
+}
+
+[Generator]Shared.GameSettings.SettingsDictionary -> [Generator] . 
+{
+
+	[Generator]Shared.GameSettings.SettingsDictionary::.ctor[0]( ) skipped:  special name
+	[Generator]Shared.GameSettings.SettingsDictionary::.cctor[0]( ) skipped:  special name
+
+	System.Collections.Generic.IDictionary`2<System.String,System.String> [Generator]System.Collections.Generic.IDictionary`2<System.String,System.String> Shared.GameSettings.SettingsDictionary::Lang ->  
+	System.Collections.Generic.IDictionary`2<System.Int32,System.String> [Generator]System.Collections.Generic.IDictionary`2<System.Int32,System.String> Shared.GameSettings.SettingsDictionary::Resolution ->  
+}
+
+[Generator]Shared.GameSettings.SettingsModel -> [Generator] .‪
+{
+
+	[Generator]Shared.GameSettings.SettingsModel::get_Account[0]( ) skipped:  skipping properties
+	[Generator]Shared.GameSettings.SettingsModel::set_Account[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Generator]Shared.GameSettings.SettingsModel::get_Language[0]( ) skipped:  skipping properties
+	[Generator]Shared.GameSettings.SettingsModel::set_Language[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Generator]Shared.GameSettings.SettingsModel::get_Resolution[0]( ) skipped:  skipping properties
+	[Generator]Shared.GameSettings.SettingsModel::set_Resolution[1]( [mscorlib]System.Nullable`1<[mscorlib]System.Int32> ) skipped:  skipping properties
+	[Generator]Shared.GameSettings.SettingsModel::get_WindowMode[0]( ) skipped:  skipping properties
+	[Generator]Shared.GameSettings.SettingsModel::set_WindowMode[1]( [mscorlib]System.Nullable`1<[mscorlib]System.Boolean> ) skipped:  skipping properties
+	[Generator]Shared.GameSettings.SettingsModel::get_Music[0]( ) skipped:  skipping properties
+	[Generator]Shared.GameSettings.SettingsModel::set_Music[1]( [mscorlib]System.Nullable`1<[mscorlib]System.Boolean> ) skipped:  skipping properties
+	[Generator]Shared.GameSettings.SettingsModel::get_Sound[0]( ) skipped:  skipping properties
+	[Generator]Shared.GameSettings.SettingsModel::set_Sound[1]( [mscorlib]System.Nullable`1<[mscorlib]System.Boolean> ) skipped:  skipping properties
+	[Generator]Shared.GameSettings.SettingsModel::get_Volume[0]( ) skipped:  skipping properties
+	[Generator]Shared.GameSettings.SettingsModel::set_Volume[1]( [mscorlib]System.Nullable`1<[mscorlib]System.Int32> ) skipped:  skipping properties
+	[Generator]Shared.GameSettings.SettingsModel::.ctor[0]( ) skipped:  special name
+
+	System.String [Generator]System.String Shared.GameSettings.SettingsModel::<Account>k__BackingField ->  
+	System.String [Generator]System.String Shared.GameSettings.SettingsModel::<Language>k__BackingField ->  
+	System.Nullable`1<System.Int32> [Generator]System.Nullable`1<System.Int32> Shared.GameSettings.SettingsModel::<Resolution>k__BackingField ->  
+	System.Nullable`1<System.Boolean> [Generator]System.Nullable`1<System.Boolean> Shared.GameSettings.SettingsModel::<WindowMode>k__BackingField ->  
+	System.Nullable`1<System.Boolean> [Generator]System.Nullable`1<System.Boolean> Shared.GameSettings.SettingsModel::<Music>k__BackingField ->  
+	System.Nullable`1<System.Boolean> [Generator]System.Nullable`1<System.Boolean> Shared.GameSettings.SettingsModel::<Sound>k__BackingField ->  
+	System.Nullable`1<System.Int32> [Generator]System.Nullable`1<System.Int32> Shared.GameSettings.SettingsModel::<Volume>k__BackingField ->  
+}
+
+[Generator]Shared.GameSettings.SettingsService -> [Generator] .‫
+{
+	[Generator]Shared.GameSettings.SettingsService::add_OnLanguageChanged[1]( [mscorlib]System.Action`1<[mscorlib]System.String> ) ->  
+	[Generator]Shared.GameSettings.SettingsService::remove_OnLanguageChanged[1]( [mscorlib]System.Action`1<[mscorlib]System.String> ) ->  
+	[Generator]Shared.GameSettings.SettingsService::Load[0]( ) ->  
+	[Generator]Shared.GameSettings.SettingsService::Save[0]( ) ->  
+	[Generator]Shared.GameSettings.SettingsService::SetLanguage[1]( [mscorlib]System.String ) ->  
+
+	[Generator]Shared.GameSettings.SettingsService::get_Instance[0]( ) skipped:  skipping properties
+	[Generator]Shared.GameSettings.SettingsService::get_Current[0]( ) skipped:  skipping properties
+	[Generator]Shared.GameSettings.SettingsService::.ctor[0]( ) skipped:  special name
+	[Generator]Shared.GameSettings.SettingsService::.cctor[0]( ) skipped:  special name
+
+	System.Lazy`1<Shared.GameSettings.SettingsService> [Generator]System.Lazy`1<Shared.GameSettings.SettingsService> Shared.GameSettings.SettingsService::_instance ->  
+	Shared.GameSettings.SettingsModel [Generator]Shared.GameSettings.SettingsModel Shared.GameSettings.SettingsService::_settings ->  
+	System.Action`1<System.String> [Generator]System.Action`1<System.String> Shared.GameSettings.SettingsService::OnLanguageChanged ->  
+
+	System.Action`1<System.String> [Generator]System.Action`1<System.String> Shared.GameSettings.SettingsService::OnLanguageChanged -> dropped
+}
+
+[Generator]Generator.Main -> [Generator] .‬
+{
+	[Generator]Generator.Main::Main_Load[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Generator]Generator.Main::Btn_Launcher_Click[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Generator]Generator.Main::Btn_Clear_Click[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Generator]Generator.Main::Btn_Delete_Click[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Generator]Generator.Main::Btn_Open_Click[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Generator]Generator.Main::Btn_Generate_Click[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Generator]Generator.Main::FileList_Box_CellFormatting[2]( [mscorlib]System.Object, [System.Windows.Forms]System.Windows.Forms.DataGridViewCellFormattingEventArgs ) ->  
+	[Generator]Generator.Main::UpdateGenerateButton[0]( ) ->  
+	[Generator]Generator.Main::UpdateProgress[2]( [mscorlib]System.Int32, [mscorlib]System.String ) ->  
+	[Generator]Generator.Main::ResetProgress[0]( ) ->  
+	[Generator]Generator.Main::InitializeComponent[0]( ) ->  
+
+	[Generator]Generator.Main::.ctor[0]( ) skipped:  special name
+	[Generator]Generator.Main::Dispose[1]( [mscorlib]System.Boolean ) skipped:  external base class or interface
+
+	Generator.FileEntry.FileModel [Generator]Generator.FileEntry.FileModel Generator.Main::m_Launcher ->  
+	System.ComponentModel.BindingList`1<Generator.FileEntry.FileModel> [Generator]System.ComponentModel.BindingList`1<Generator.FileEntry.FileModel> Generator.Main::m_Files ->  
+	System.ComponentModel.IContainer [Generator]System.ComponentModel.IContainer Generator.Main::components ->  
+	System.Windows.Forms.DataGridView [Generator]System.Windows.Forms.DataGridView Generator.Main::FileList_Box ->  
+	System.Windows.Forms.Button [Generator]System.Windows.Forms.Button Generator.Main::Btn_Delete ->  
+	System.Windows.Forms.Button [Generator]System.Windows.Forms.Button Generator.Main::Btn_Open ->  
+	System.Windows.Forms.Button [Generator]System.Windows.Forms.Button Generator.Main::Btn_Generate ->  
+	System.Windows.Forms.Label [Generator]System.Windows.Forms.Label Generator.Main::Filename_txt ->  
+	System.Windows.Forms.TextBox [Generator]System.Windows.Forms.TextBox Generator.Main::Filename_Box ->  
+	System.Windows.Forms.FolderBrowserDialog [Generator]System.Windows.Forms.FolderBrowserDialog Generator.Main::FolderBrowser_handler ->  
+	System.Windows.Forms.Button [Generator]System.Windows.Forms.Button Generator.Main::Btn_Clear ->  
+	System.Windows.Forms.PictureBox [Generator]System.Windows.Forms.PictureBox Generator.Main::pictureBox1 ->  
+	System.Windows.Forms.GroupBox [Generator]System.Windows.Forms.GroupBox Generator.Main::Launcher_Panel ->  
+	System.Windows.Forms.TextBox [Generator]System.Windows.Forms.TextBox Generator.Main::Launcher_Box ->  
+	System.Windows.Forms.Button [Generator]System.Windows.Forms.Button Generator.Main::Btn_Launcher ->  
+	System.Windows.Forms.OpenFileDialog [Generator]System.Windows.Forms.OpenFileDialog Generator.Main::OpenFile_handler ->  
+	System.Windows.Forms.GroupBox [Generator]System.Windows.Forms.GroupBox Generator.Main::Filelist_Panel ->  
+	System.Windows.Forms.SaveFileDialog [Generator]System.Windows.Forms.SaveFileDialog Generator.Main::SaveFile_handler ->  
+	System.Windows.Forms.Panel [Generator]System.Windows.Forms.Panel Generator.Main::ProgressBack ->  
+	System.Windows.Forms.Panel [Generator]System.Windows.Forms.Panel Generator.Main::CurrentProgress ->  
+	System.Windows.Forms.Label [Generator]System.Windows.Forms.Label Generator.Main::ProgressText ->  
+	System.Windows.Forms.DataGridViewTextBoxColumn [Generator]System.Windows.Forms.DataGridViewTextBoxColumn Generator.Main::FileList_RelativePath ->  
+	System.Windows.Forms.Panel [Generator]System.Windows.Forms.Panel Generator.Main::Function_panel ->  
+}
+
+[Generator]Generator.Properties.Resources -> [Generator] .‮
+{
+
+	[Generator]Generator.Properties.Resources::.ctor[0]( ) skipped:  special name
+	[Generator]Generator.Properties.Resources::get_ResourceManager[0]( ) skipped:  skipping properties
+	[Generator]Generator.Properties.Resources::get_Culture[0]( ) skipped:  skipping properties
+	[Generator]Generator.Properties.Resources::set_Culture[1]( [mscorlib]System.Globalization.CultureInfo ) skipped:  skipping properties
+	[Generator]Generator.Properties.Resources::get_CompleteProgress[0]( ) skipped:  skipping properties
+	[Generator]Generator.Properties.Resources::get_MainBackground[0]( ) skipped:  skipping properties
+	[Generator]Generator.Properties.Resources::get_Tama_Chan[0]( ) skipped:  skipping properties
+
+	System.Resources.ResourceManager [Generator]System.Resources.ResourceManager Generator.Properties.Resources::resourceMan ->  
+	System.Globalization.CultureInfo [Generator]System.Globalization.CultureInfo Generator.Properties.Resources::resourceCulture ->  
+}
+
+[Generator]Generator.Properties.Settings -> [Generator] . 
+{
+
+	[Generator]Generator.Properties.Settings::get_Default[0]( ) skipped:  skipping properties
+	[Generator]Generator.Properties.Settings::.ctor[0]( ) skipped:  special name
+	[Generator]Generator.Properties.Settings::.cctor[0]( ) skipped:  special name
+
+	Generator.Properties.Settings [Generator]Generator.Properties.Settings Generator.Properties.Settings::defaultInstance ->  
+}
+
+[Generator]Generator.FileEntry.FileModel -> [Generator] .″
+{
+
+	[Generator]Generator.FileEntry.FileModel::get_RelativePath[0]( ) skipped:  skipping properties
+	[Generator]Generator.FileEntry.FileModel::set_RelativePath[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Generator]Generator.FileEntry.FileModel::get_FullPath[0]( ) skipped:  skipping properties
+	[Generator]Generator.FileEntry.FileModel::set_FullPath[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Generator]Generator.FileEntry.FileModel::.ctor[0]( ) skipped:  special name
+
+	System.String [Generator]System.String Generator.FileEntry.FileModel::<RelativePath>k__BackingField ->  
+	System.String [Generator]System.String Generator.FileEntry.FileModel::<FullPath>k__BackingField ->  
+}
+
+[Generator]Shared.Utils.JsonHelper/<>c -> [Generator] . / 
+{
+	[Generator]Shared.Utils.JsonHelper/<>c::<GetSerializer>b__1_0[1]( [mscorlib]System.Type ) ->  
+
+	[Generator]Shared.Utils.JsonHelper/<>c::.cctor[0]( ) skipped:  special name
+	[Generator]Shared.Utils.JsonHelper/<>c::.ctor[0]( ) skipped:  special name
+
+	Shared.Utils.JsonHelper/<>c [Generator]Shared.Utils.JsonHelper/<>c Shared.Utils.JsonHelper/<>c::<>9 ->  
+	System.Func`2<System.Type,System.Runtime.Serialization.Json.DataContractJsonSerializer> [Generator]System.Func`2<System.Type,System.Runtime.Serialization.Json.DataContractJsonSerializer> Shared.Utils.JsonHelper/<>c::<>9__1_0 ->  
+}
+
+[Generator]Shared.Update.FileDownloader/<>c__DisplayClass2_0 -> [Generator] . / 
+{
+
+	[Generator]Shared.Update.FileDownloader/<>c__DisplayClass2_0::.ctor[0]( ) skipped:  special name
+
+	Shared.Update.FileDownloader [Generator]Shared.Update.FileDownloader Shared.Update.FileDownloader/<>c__DisplayClass2_0::<>4__this ->  
+	System.String [Generator]System.String Shared.Update.FileDownloader/<>c__DisplayClass2_0::baseUrl ->  
+	System.Int64 [Generator]System.Int64 Shared.Update.FileDownloader/<>c__DisplayClass2_0::totalBytes ->  
+	System.IProgress`1<Shared.Update.UpdateProgress> [Generator]System.IProgress`1<Shared.Update.UpdateProgress> Shared.Update.FileDownloader/<>c__DisplayClass2_0::progress ->  
+	System.Threading.SemaphoreSlim [Generator]System.Threading.SemaphoreSlim Shared.Update.FileDownloader/<>c__DisplayClass2_0::semaphore ->  
+}
+
+[Generator]Shared.Update.FileDownloader/<>c__DisplayClass2_1 -> [Generator] . / 
+{
+	[Generator]Shared.Update.FileDownloader/<>c__DisplayClass2_1::<DownloadFiles>b__0[0]( ) ->  
+
+	[Generator]Shared.Update.FileDownloader/<>c__DisplayClass2_1::.ctor[0]( ) skipped:  special name
+
+	Shared.Update.UpdateFileInfo [Generator]Shared.Update.UpdateFileInfo Shared.Update.FileDownloader/<>c__DisplayClass2_1::file ->  
+	Shared.Update.FileDownloader/<>c__DisplayClass2_0 [Generator]Shared.Update.FileDownloader/<>c__DisplayClass2_0 Shared.Update.FileDownloader/<>c__DisplayClass2_1::CS$<>8__locals1 ->  
+}
+
+[Generator]Shared.Update.FileDownloader/<DownloadFiles>d__2 -> [Generator] . / 
+{
+
+	[Generator]Shared.Update.FileDownloader/<DownloadFiles>d__2::MoveNext[0]( ) skipped:  external base class or interface
+	[Generator]Shared.Update.FileDownloader/<DownloadFiles>d__2::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Generator]System.Int32 Shared.Update.FileDownloader/<DownloadFiles>d__2::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder [Generator]System.Runtime.CompilerServices.AsyncTaskMethodBuilder Shared.Update.FileDownloader/<DownloadFiles>d__2::<>t__builder ->  
+	Shared.Update.FileDownloader [Generator]Shared.Update.FileDownloader Shared.Update.FileDownloader/<DownloadFiles>d__2::<>4__this ->  
+	System.String [Generator]System.String Shared.Update.FileDownloader/<DownloadFiles>d__2::baseUrl ->  
+	System.Int64 [Generator]System.Int64 Shared.Update.FileDownloader/<DownloadFiles>d__2::totalBytes ->  
+	System.IProgress`1<Shared.Update.UpdateProgress> [Generator]System.IProgress`1<Shared.Update.UpdateProgress> Shared.Update.FileDownloader/<DownloadFiles>d__2::progress ->  
+	System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> [Generator]System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> Shared.Update.FileDownloader/<DownloadFiles>d__2::files ->  
+	Shared.Update.FileDownloader/<>c__DisplayClass2_0 [Generator]Shared.Update.FileDownloader/<>c__DisplayClass2_0 Shared.Update.FileDownloader/<DownloadFiles>d__2::<>8__1 ->  
+	Shared.Update.FileDownloader/<>c__DisplayClass2_1 [Generator]Shared.Update.FileDownloader/<>c__DisplayClass2_1 Shared.Update.FileDownloader/<DownloadFiles>d__2::<>8__2 ->  
+	System.Collections.Generic.List`1<System.Threading.Tasks.Task> [Generator]System.Collections.Generic.List`1<System.Threading.Tasks.Task> Shared.Update.FileDownloader/<DownloadFiles>d__2::<tasks>5__2 ->  
+	System.Collections.Generic.List`1/Enumerator<Shared.Update.UpdateFileInfo> [Generator]System.Collections.Generic.List`1/Enumerator<Shared.Update.UpdateFileInfo> Shared.Update.FileDownloader/<DownloadFiles>d__2::<>7__wrap2 ->  
+	System.Runtime.CompilerServices.TaskAwaiter [Generator]System.Runtime.CompilerServices.TaskAwaiter Shared.Update.FileDownloader/<DownloadFiles>d__2::<>u__1 ->  
+}
+
+[Generator]Shared.Update.FileDownloader/<DownloadSingleFile>d__3 -> [Generator] . / 
+{
+
+	[Generator]Shared.Update.FileDownloader/<DownloadSingleFile>d__3::MoveNext[0]( ) skipped:  external base class or interface
+	[Generator]Shared.Update.FileDownloader/<DownloadSingleFile>d__3::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Generator]System.Int32 Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder [Generator]System.Runtime.CompilerServices.AsyncTaskMethodBuilder Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>t__builder ->  
+	System.String [Generator]System.String Shared.Update.FileDownloader/<DownloadSingleFile>d__3::baseUrl ->  
+	Shared.Update.UpdateFileInfo [Generator]Shared.Update.UpdateFileInfo Shared.Update.FileDownloader/<DownloadSingleFile>d__3::file ->  
+	Shared.Update.FileDownloader [Generator]Shared.Update.FileDownloader Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>4__this ->  
+	System.IProgress`1<Shared.Update.UpdateProgress> [Generator]System.IProgress`1<Shared.Update.UpdateProgress> Shared.Update.FileDownloader/<DownloadSingleFile>d__3::progress ->  
+	System.Int64 [Generator]System.Int64 Shared.Update.FileDownloader/<DownloadSingleFile>d__3::totalBytes ->  
+	System.String [Generator]System.String Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<url>5__2 ->  
+	System.Int32 [Generator]System.Int32 Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<retry>5__3 ->  
+	System.Net.Http.HttpResponseMessage [Generator]System.Net.Http.HttpResponseMessage Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<response>5__4 ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.Net.Http.HttpResponseMessage> [Generator]System.Runtime.CompilerServices.TaskAwaiter`1<System.Net.Http.HttpResponseMessage> Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>u__1 ->  
+	System.IO.Stream [Generator]System.IO.Stream Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<stream>5__5 ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.IO.Stream> [Generator]System.Runtime.CompilerServices.TaskAwaiter`1<System.IO.Stream> Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>u__2 ->  
+	System.IO.FileStream [Generator]System.IO.FileStream Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<fs>5__6 ->  
+	System.Byte[] [Generator]System.Byte[] Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<buffer>5__7 ->  
+	System.Int32 [Generator]System.Int32 Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<read>5__8 ->  
+	System.Int64 [Generator]System.Int64 Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<current>5__9 ->  
+	System.Runtime.CompilerServices.TaskAwaiter [Generator]System.Runtime.CompilerServices.TaskAwaiter Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>u__3 ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.Int32> [Generator]System.Runtime.CompilerServices.TaskAwaiter`1<System.Int32> Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>u__4 ->  
+}
+
+[Generator]Shared.Update.FileScanner/<>c__DisplayClass0_0 -> [Generator] . / 
+{
+	[Generator]Shared.Update.FileScanner/<>c__DisplayClass0_0::<ScanFiles>b__0[0]( ) ->  
+
+	[Generator]Shared.Update.FileScanner/<>c__DisplayClass0_0::.ctor[0]( ) skipped:  special name
+
+	System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> [Generator]System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> Shared.Update.FileScanner/<>c__DisplayClass0_0::files ->  
+	System.IProgress`1<Shared.Update.UpdateProgress> [Generator]System.IProgress`1<Shared.Update.UpdateProgress> Shared.Update.FileScanner/<>c__DisplayClass0_0::progress ->  
+}
+
+[Generator]Shared.Update.FileScanner/<ScanFiles>d__0 -> [Generator] . / 
+{
+
+	[Generator]Shared.Update.FileScanner/<ScanFiles>d__0::MoveNext[0]( ) skipped:  external base class or interface
+	[Generator]Shared.Update.FileScanner/<ScanFiles>d__0::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Generator]System.Int32 Shared.Update.FileScanner/<ScanFiles>d__0::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo>> [Generator]System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo>> Shared.Update.FileScanner/<ScanFiles>d__0::<>t__builder ->  
+	System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> [Generator]System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> Shared.Update.FileScanner/<ScanFiles>d__0::files ->  
+	System.IProgress`1<Shared.Update.UpdateProgress> [Generator]System.IProgress`1<Shared.Update.UpdateProgress> Shared.Update.FileScanner/<ScanFiles>d__0::progress ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo>> [Generator]System.Runtime.CompilerServices.TaskAwaiter`1<System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo>> Shared.Update.FileScanner/<ScanFiles>d__0::<>u__1 ->  
+}
+
+[Generator]Shared.Update.ManifestDownloader/<DownloadManifest>d__0 -> [Generator] . / 
+{
+
+	[Generator]Shared.Update.ManifestDownloader/<DownloadManifest>d__0::MoveNext[0]( ) skipped:  external base class or interface
+	[Generator]Shared.Update.ManifestDownloader/<DownloadManifest>d__0::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Generator]System.Int32 Shared.Update.ManifestDownloader/<DownloadManifest>d__0::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Shared.Update.UpdateManifest> [Generator]System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Shared.Update.UpdateManifest> Shared.Update.ManifestDownloader/<DownloadManifest>d__0::<>t__builder ->  
+	System.String [Generator]System.String Shared.Update.ManifestDownloader/<DownloadManifest>d__0::url ->  
+	System.Net.Http.HttpClient [Generator]System.Net.Http.HttpClient Shared.Update.ManifestDownloader/<DownloadManifest>d__0::<client>5__2 ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.String> [Generator]System.Runtime.CompilerServices.TaskAwaiter`1<System.String> Shared.Update.ManifestDownloader/<DownloadManifest>d__0::<>u__1 ->  
+}
+
+[Generator]Shared.UI.UITextureHelper/<>c__DisplayClass0_0 -> [Generator] .​/ 
+{
+	[Generator]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>g__ApplyNormal|0[0]( ) ->  
+	[Generator]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>b__1[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Generator]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>b__2[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Generator]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>b__3[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Generator]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>b__4[2]( [mscorlib]System.Object, [System.Windows.Forms]System.Windows.Forms.MouseEventArgs ) ->  
+	[Generator]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>b__5[2]( [mscorlib]System.Object, [System.Windows.Forms]System.Windows.Forms.MouseEventArgs ) ->  
+	[Generator]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>b__6[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+
+	[Generator]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::.ctor[0]( ) skipped:  special name
+
+	System.Windows.Forms.Control [Generator]System.Windows.Forms.Control Shared.UI.UITextureHelper/<>c__DisplayClass0_0::control ->  
+	System.Drawing.Image [Generator]System.Drawing.Image Shared.UI.UITextureHelper/<>c__DisplayClass0_0::normal ->  
+	System.Drawing.Image [Generator]System.Drawing.Image Shared.UI.UITextureHelper/<>c__DisplayClass0_0::disabled ->  
+	System.Drawing.Image [Generator]System.Drawing.Image Shared.UI.UITextureHelper/<>c__DisplayClass0_0::hover ->  
+	System.Drawing.Image [Generator]System.Drawing.Image Shared.UI.UITextureHelper/<>c__DisplayClass0_0::click ->  
+}
+
+[Generator]Shared.UI.UITextureHelper/<>c__DisplayClass1_0 -> [Generator] .​/ 
+{
+	[Generator]Shared.UI.UITextureHelper/<>c__DisplayClass1_0::<CheckBoxApply>b__0[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+
+	[Generator]Shared.UI.UITextureHelper/<>c__DisplayClass1_0::.ctor[0]( ) skipped:  special name
+
+	System.Windows.Forms.CheckBox [Generator]System.Windows.Forms.CheckBox Shared.UI.UITextureHelper/<>c__DisplayClass1_0::btn ->  
+	System.Drawing.Image [Generator]System.Drawing.Image Shared.UI.UITextureHelper/<>c__DisplayClass1_0::checkedImg ->  
+	System.Drawing.Image [Generator]System.Drawing.Image Shared.UI.UITextureHelper/<>c__DisplayClass1_0::uncheckedImg ->  
+}
+
+[Generator]Shared.Network.NetworkService/<CheckNetwork>d__0 -> [Generator] .–/ 
+{
+
+	[Generator]Shared.Network.NetworkService/<CheckNetwork>d__0::MoveNext[0]( ) skipped:  external base class or interface
+	[Generator]Shared.Network.NetworkService/<CheckNetwork>d__0::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Generator]System.Int32 Shared.Network.NetworkService/<CheckNetwork>d__0::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder [Generator]System.Runtime.CompilerServices.AsyncTaskMethodBuilder Shared.Network.NetworkService/<CheckNetwork>d__0::<>t__builder ->  
+	System.String [Generator]System.String Shared.Network.NetworkService/<CheckNetwork>d__0::url ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.Net.Http.HttpResponseMessage> [Generator]System.Runtime.CompilerServices.TaskAwaiter`1<System.Net.Http.HttpResponseMessage> Shared.Network.NetworkService/<CheckNetwork>d__0::<>u__1 ->  
+}
+
+[Generator]Shared.GameSettings.SettingsService/<>c -> [Generator] .‫/ 
+{
+	[Generator]Shared.GameSettings.SettingsService/<>c::<.cctor>b__13_0[0]( ) ->  
+
+	[Generator]Shared.GameSettings.SettingsService/<>c::.cctor[0]( ) skipped:  special name
+	[Generator]Shared.GameSettings.SettingsService/<>c::.ctor[0]( ) skipped:  special name
+
+	Shared.GameSettings.SettingsService/<>c [Generator]Shared.GameSettings.SettingsService/<>c Shared.GameSettings.SettingsService/<>c::<>9 ->  
+}
+
+[Generator]Generator.Main/<>c -> [Generator] .‬/ 
+{
+	[Generator]Generator.Main/<>c::<Btn_Delete_Click>b__6_0[1]( [System.Windows.Forms]System.Windows.Forms.DataGridViewRow ) ->  
+
+	[Generator]Generator.Main/<>c::.cctor[0]( ) skipped:  special name
+	[Generator]Generator.Main/<>c::.ctor[0]( ) skipped:  special name
+
+	Generator.Main/<>c [Generator]Generator.Main/<>c Generator.Main/<>c::<>9 ->  
+	System.Func`2<System.Windows.Forms.DataGridViewRow,System.Int32> [Generator]System.Func`2<System.Windows.Forms.DataGridViewRow,System.Int32> Generator.Main/<>c::<>9__6_0 ->  
+}
+
+[Generator]Generator.Main/<>c__DisplayClass7_0 -> [Generator] .‬/ 
+{
+	[Generator]Generator.Main/<>c__DisplayClass7_0::<Btn_Open_Click>b__0[1]( [mscorlib]System.ValueTuple`2<[mscorlib]System.Int32,[mscorlib]System.String> ) ->  
+	[Generator]Generator.Main/<>c__DisplayClass7_0::<Btn_Open_Click>b__1[0]( ) ->  
+
+	[Generator]Generator.Main/<>c__DisplayClass7_0::.ctor[0]( ) skipped:  special name
+
+	Generator.Main [Generator]Generator.Main Generator.Main/<>c__DisplayClass7_0::<>4__this ->  
+	System.Int32 [Generator]System.Int32 Generator.Main/<>c__DisplayClass7_0::total ->  
+	System.String[] [Generator]System.String[] Generator.Main/<>c__DisplayClass7_0::files ->  
+	System.String [Generator]System.String Generator.Main/<>c__DisplayClass7_0::basePath ->  
+	System.Int32 [Generator]System.Int32 Generator.Main/<>c__DisplayClass7_0::processed ->  
+	System.Int32 [Generator]System.Int32 Generator.Main/<>c__DisplayClass7_0::lastPercent ->  
+	System.IProgress`1<System.ValueTuple`2<System.Int32,System.String>> [Generator]System.IProgress`1<System.ValueTuple`2<System.Int32,System.String>> Generator.Main/<>c__DisplayClass7_0::progress ->  
+}
+
+[Generator]Generator.Main/<>c__DisplayClass7_1 -> [Generator] .‬/ 
+{
+	[Generator]Generator.Main/<>c__DisplayClass7_1::<Btn_Open_Click>b__2[1]( [mscorlib]System.Int32 ) ->  
+
+	[Generator]Generator.Main/<>c__DisplayClass7_1::.ctor[0]( ) skipped:  special name
+
+	Generator.FileEntry.FileModel[] [Generator]Generator.FileEntry.FileModel[] Generator.Main/<>c__DisplayClass7_1::entries ->  
+	Generator.Main/<>c__DisplayClass7_0 [Generator]Generator.Main/<>c__DisplayClass7_0 Generator.Main/<>c__DisplayClass7_1::CS$<>8__locals1 ->  
+}
+
+[Generator]Generator.Main/<>c__DisplayClass8_0 -> [Generator] .‬/ 
+{
+	[Generator]Generator.Main/<>c__DisplayClass8_0::<Btn_Generate_Click>b__0[1]( [mscorlib]System.ValueTuple`2<[mscorlib]System.Int32,[mscorlib]System.String> ) ->  
+	[Generator]Generator.Main/<>c__DisplayClass8_0::<Btn_Generate_Click>b__1[0]( ) ->  
+
+	[Generator]Generator.Main/<>c__DisplayClass8_0::.ctor[0]( ) skipped:  special name
+
+	Generator.Main [Generator]Generator.Main Generator.Main/<>c__DisplayClass8_0::<>4__this ->  
+	System.String [Generator]System.String Generator.Main/<>c__DisplayClass8_0::manifestName ->  
+	System.IProgress`1<System.ValueTuple`2<System.Int32,System.String>> [Generator]System.IProgress`1<System.ValueTuple`2<System.Int32,System.String>> Generator.Main/<>c__DisplayClass8_0::progress ->  
+}
+
+[Generator]Generator.Main/<Btn_Generate_Click>d__8 -> [Generator] .‬/ 
+{
+
+	[Generator]Generator.Main/<Btn_Generate_Click>d__8::MoveNext[0]( ) skipped:  external base class or interface
+	[Generator]Generator.Main/<Btn_Generate_Click>d__8::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Generator]System.Int32 Generator.Main/<Btn_Generate_Click>d__8::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncVoidMethodBuilder [Generator]System.Runtime.CompilerServices.AsyncVoidMethodBuilder Generator.Main/<Btn_Generate_Click>d__8::<>t__builder ->  
+	Generator.Main [Generator]Generator.Main Generator.Main/<Btn_Generate_Click>d__8::<>4__this ->  
+	System.Runtime.CompilerServices.TaskAwaiter [Generator]System.Runtime.CompilerServices.TaskAwaiter Generator.Main/<Btn_Generate_Click>d__8::<>u__1 ->  
+}
+
+[Generator]Generator.Main/<Btn_Open_Click>d__7 -> [Generator] .‬/ 
+{
+
+	[Generator]Generator.Main/<Btn_Open_Click>d__7::MoveNext[0]( ) skipped:  external base class or interface
+	[Generator]Generator.Main/<Btn_Open_Click>d__7::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Generator]System.Int32 Generator.Main/<Btn_Open_Click>d__7::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncVoidMethodBuilder [Generator]System.Runtime.CompilerServices.AsyncVoidMethodBuilder Generator.Main/<Btn_Open_Click>d__7::<>t__builder ->  
+	Generator.Main [Generator]Generator.Main Generator.Main/<Btn_Open_Click>d__7::<>4__this ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<Generator.FileEntry.FileModel[]> [Generator]System.Runtime.CompilerServices.TaskAwaiter`1<Generator.FileEntry.FileModel[]> Generator.Main/<Btn_Open_Click>d__7::<>u__1 ->  
+}
+
+[Generator]Generator.Update.UpdateHelper/<>c__DisplayClass0_0 -> [Generator] .′/ 
+{
+	[Generator]Generator.Update.UpdateHelper/<>c__DisplayClass0_0::<BuildUpdatePackage>b__0[4]( [Generator]Generator.FileEntry.FileModel, [mscorlib]System.String, [mscorlib]System.String, [mscorlib]System.Boolean ) ->  
+
+	[Generator]Generator.Update.UpdateHelper/<>c__DisplayClass0_0::.ctor[0]( ) skipped:  special name
+
+	Shared.Update.UpdateFileInfo [Generator]Shared.Update.UpdateFileInfo Generator.Update.UpdateHelper/<>c__DisplayClass0_0::launcherEntry ->  
+	System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> [Generator]System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> Generator.Update.UpdateHelper/<>c__DisplayClass0_0::fileEntries ->  
+	System.Int32 [Generator]System.Int32 Generator.Update.UpdateHelper/<>c__DisplayClass0_0::processed ->  
+	System.Int32 [Generator]System.Int32 Generator.Update.UpdateHelper/<>c__DisplayClass0_0::total ->  
+	System.IProgress`1<System.ValueTuple`2<System.Int32,System.String>> [Generator]System.IProgress`1<System.ValueTuple`2<System.Int32,System.String>> Generator.Update.UpdateHelper/<>c__DisplayClass0_0::progress ->  
+	System.IO.Compression.ZipArchive [Generator]System.IO.Compression.ZipArchive Generator.Update.UpdateHelper/<>c__DisplayClass0_0::zip ->  
+}
+
+[Generator]Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d -> [Generator] . / / 
+{
+
+	[Generator]Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d::MoveNext[0]( ) skipped:  external base class or interface
+	[Generator]Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Generator]System.Int32 Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder [Generator]System.Runtime.CompilerServices.AsyncTaskMethodBuilder Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d::<>t__builder ->  
+	Shared.Update.FileDownloader/<>c__DisplayClass2_1 [Generator]Shared.Update.FileDownloader/<>c__DisplayClass2_1 Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d::<>4__this ->  
+	System.Runtime.CompilerServices.TaskAwaiter [Generator]System.Runtime.CompilerServices.TaskAwaiter Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d::<>u__1 ->  
+}
+
+[Generator]Shared.Utils.PathHelper -> [Generator] . 
+{
+	[Generator]Shared.Utils.PathHelper::GetRelativePath[2]( [mscorlib]System.String, [mscorlib]System.String ) ->  
+	[Generator]Shared.Utils.PathHelper::NormalizePath[1]( [mscorlib]System.String ) ->  
+	[Generator]Shared.Utils.PathHelper::GetLocalPath[1]( [mscorlib]System.String ) ->  
+}
+
+[Generator]Shared.Utils.SystemManager -> [Generator] . 
+{
+	[Generator]Shared.Utils.SystemManager::IsRunningAsAdmin[0]( ) ->  
+}
+
+[Generator]Shared.Update.FileScanner -> [Generator] . 
+{
+	[Generator]Shared.Update.FileScanner::ScanFiles[2]( [mscorlib]System.Collections.Generic.List`1<[Generator]Shared.Update.UpdateFileInfo>, [mscorlib]System.IProgress`1<[Generator]Shared.Update.UpdateProgress> ) ->  
+
+	[Generator]Shared.Update.FileScanner::.ctor[0]( ) skipped:  special name
+}
+
+[Generator]Shared.Update.FileVerifier -> [Generator] . 
+{
+	[Generator]Shared.Update.FileVerifier::NeedsUpdate[1]( [Generator]Shared.Update.UpdateFileInfo ) ->  
+	[Generator]Shared.Update.FileVerifier::Verify[1]( [Generator]Shared.Update.UpdateFileInfo ) ->  
+	[Generator]Shared.Update.FileVerifier::ComputeHash[1]( [mscorlib]System.String ) ->  
+}
+
+[Generator]Shared.Update.ManifestDownloader -> [Generator] . 
+{
+	[Generator]Shared.Update.ManifestDownloader::DownloadManifest[1]( [mscorlib]System.String ) ->  
+
+	[Generator]Shared.Update.ManifestDownloader::.ctor[0]( ) skipped:  special name
+}
+
+[Generator]Shared.UI.UITextureHelper -> [Generator] .​
+{
+	[Generator]Shared.UI.UITextureHelper::ApplyTextureControl[5]( [System.Windows.Forms]System.Windows.Forms.Control, [System.Drawing]System.Drawing.Image, [System.Drawing]System.Drawing.Image, [System.Drawing]System.Drawing.Image, [System.Drawing]System.Drawing.Image ) ->  
+	[Generator]Shared.UI.UITextureHelper::CheckBoxApply[3]( [System.Windows.Forms]System.Windows.Forms.CheckBox, [System.Drawing]System.Drawing.Image, [System.Drawing]System.Drawing.Image ) ->  
+}
+
+[Generator]Shared.Network.NetworkService -> [Generator] .–
+{
+	[Generator]Shared.Network.NetworkService::CheckNetwork[1]( [mscorlib]System.String ) ->  
+	[Generator]Shared.Network.NetworkService::CloseNetwork[0]( ) ->  
+
+	[Generator]Shared.Network.NetworkService::.ctor[0]( ) skipped:  special name
+}
+
+[Generator]Shared.Languages.LanguageHelper -> [Generator] .‥
+{
+	[Generator]Shared.Languages.LanguageHelper::Get[3]( [mscorlib]System.String, [mscorlib]System.String, [mscorlib]System.Object[] ) ->  
+	[Generator]Shared.Languages.LanguageHelper::ApplyTranslations[2]( [System.Windows.Forms]System.Windows.Forms.Control, [mscorlib]System.String ) ->  
+}
+
+[Generator]Generator.Program -> [Generator] .‭
+{
+	[Generator]Generator.Program::Main[0]( ) ->  
+}
+
+[Generator]Generator.Update.UpdateHelper -> [Generator] .′
+{
+	[Generator]Generator.Update.UpdateHelper::BuildUpdatePackage[5]( [mscorlib]System.String, [mscorlib]System.String, [mscorlib]System.Collections.Generic.List`1<[Generator]Generator.FileEntry.FileModel>, [Generator]Generator.FileEntry.FileModel, [mscorlib]System.IProgress`1<[mscorlib]System.ValueTuple`2<[mscorlib]System.Int32,[mscorlib]System.String>> ) ->  
+}
+
+[Generator]Generator.FileEntry.FileHelper -> [Generator] .‵
+{
+	[Generator]Generator.FileEntry.FileHelper::FormatSize[1]( [mscorlib]System.Int64 ) ->  
+}
+
+Skipped Types:
+
+Renamed Resources:
+
+Generator.Main.resources ->  .‬.resources
+Generator.Properties.Resources.resources ->  .‮.resources
+
+Skipped Resources:
+

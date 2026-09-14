@@ -1,0 +1,738 @@
+Renamed Types:
+
+[Launcher]Shared.Utils.CryptoHelper -> [Launcher] . 
+{
+	[Launcher]Shared.Utils.CryptoHelper::Encrypt[2]( [mscorlib]System.String, [mscorlib]System.String ) ->  
+	[Launcher]Shared.Utils.CryptoHelper::Decrypt[2]( [mscorlib]System.Byte[], [mscorlib]System.String ) ->  
+
+	System.Int32 [Launcher]System.Int32 Shared.Utils.CryptoHelper::SaltSize ->  
+	System.Int32 [Launcher]System.Int32 Shared.Utils.CryptoHelper::IvSize ->  
+	System.Int32 [Launcher]System.Int32 Shared.Utils.CryptoHelper::KeySize ->  
+	System.Int32 [Launcher]System.Int32 Shared.Utils.CryptoHelper::Iterations ->  
+}
+
+[Launcher]Shared.Utils.JsonHelper -> [Launcher] . 
+{
+	[Launcher]Shared.Utils.JsonHelper::GetSerializer[1]( [mscorlib]System.Type ) ->  
+	[Launcher]Shared.Utils.JsonHelper::Serialize[1]( !0 ) ->  
+	[Launcher]Shared.Utils.JsonHelper::Deserialize[1]( [mscorlib]System.String ) ->  
+
+	[Launcher]Shared.Utils.JsonHelper::.cctor[0]( ) skipped:  special name
+
+	System.Collections.Concurrent.ConcurrentDictionary`2<System.Type,System.Runtime.Serialization.Json.DataContractJsonSerializer> [Launcher]System.Collections.Concurrent.ConcurrentDictionary`2<System.Type,System.Runtime.Serialization.Json.DataContractJsonSerializer> Shared.Utils.JsonHelper::Cache ->  
+}
+
+[Launcher]Shared.Update.FileDownloader -> [Launcher] . 
+{
+	[Launcher]Shared.Update.FileDownloader::DownloadFiles[4]( [mscorlib]System.Collections.Generic.List`1<[Launcher]Shared.Update.UpdateFileInfo>, [mscorlib]System.String, [mscorlib]System.Int64, [mscorlib]System.IProgress`1<[Launcher]Shared.Update.UpdateProgress> ) ->  
+	[Launcher]Shared.Update.FileDownloader::DownloadSingleFile[4]( [Launcher]Shared.Update.UpdateFileInfo, [mscorlib]System.String, [mscorlib]System.Int64, [mscorlib]System.IProgress`1<[Launcher]Shared.Update.UpdateProgress> ) ->  
+
+	[Launcher]Shared.Update.FileDownloader::.ctor[0]( ) skipped:  special name
+
+	System.Int32 [Launcher]System.Int32 Shared.Update.FileDownloader::MAX_PARALLEL_DOWNLOADS ->  
+	System.Int64 [Launcher]System.Int64 Shared.Update.FileDownloader::_totalDownloaded ->  
+}
+
+[Launcher]Shared.Update.ManifestManager -> [Launcher] . 
+{
+	[Launcher]Shared.Update.ManifestManager::Set[1]( [Launcher]Shared.Update.UpdateManifest ) ->  
+
+	[Launcher]Shared.Update.ManifestManager::get_Current[0]( ) skipped:  skipping properties
+
+	Shared.Update.UpdateManifest [Launcher]Shared.Update.UpdateManifest Shared.Update.ManifestManager::_current ->  
+}
+
+[Launcher]Shared.Update.UpdateFileInfo -> [Launcher] . 
+{
+
+	[Launcher]Shared.Update.UpdateFileInfo::get_Path[0]( ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateFileInfo::set_Path[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateFileInfo::get_Size[0]( ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateFileInfo::set_Size[1]( [mscorlib]System.Int64 ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateFileInfo::get_Hash[0]( ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateFileInfo::set_Hash[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateFileInfo::.ctor[0]( ) skipped:  special name
+
+	System.String [Launcher]System.String Shared.Update.UpdateFileInfo::<Path>k__BackingField ->  
+	System.Int64 [Launcher]System.Int64 Shared.Update.UpdateFileInfo::<Size>k__BackingField ->  
+	System.String [Launcher]System.String Shared.Update.UpdateFileInfo::<Hash>k__BackingField ->  
+}
+
+[Launcher]Shared.Update.UpdateManifest -> [Launcher] . 
+{
+
+	[Launcher]Shared.Update.UpdateManifest::get_Launcher[0]( ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateManifest::set_Launcher[1]( [Launcher]Shared.Update.UpdateFileInfo ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateManifest::get_FileList[0]( ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateManifest::set_FileList[1]( [mscorlib]System.Collections.Generic.List`1<[Launcher]Shared.Update.UpdateFileInfo> ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateManifest::.ctor[0]( ) skipped:  special name
+
+	Shared.Update.UpdateFileInfo [Launcher]Shared.Update.UpdateFileInfo Shared.Update.UpdateManifest::<Launcher>k__BackingField ->  
+	System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> [Launcher]System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> Shared.Update.UpdateManifest::<FileList>k__BackingField ->  
+}
+
+[Launcher]Shared.Update.UpdateProgress -> [Launcher] . 
+{
+
+	[Launcher]Shared.Update.UpdateProgress::get_StatusKey[0]( ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateProgress::set_StatusKey[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateProgress::get_Args[0]( ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateProgress::set_Args[1]( [mscorlib]System.Object[] ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateProgress::get_CurrentFileDownloaded[0]( ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateProgress::set_CurrentFileDownloaded[1]( [mscorlib]System.Int64 ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateProgress::get_CurrentFileSize[0]( ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateProgress::set_CurrentFileSize[1]( [mscorlib]System.Int64 ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateProgress::get_TotalBytesDownloaded[0]( ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateProgress::set_TotalBytesDownloaded[1]( [mscorlib]System.Int64 ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateProgress::get_TotalBytes[0]( ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateProgress::set_TotalBytes[1]( [mscorlib]System.Int64 ) skipped:  skipping properties
+	[Launcher]Shared.Update.UpdateProgress::.ctor[0]( ) skipped:  special name
+
+	System.String [Launcher]System.String Shared.Update.UpdateProgress::<StatusKey>k__BackingField ->  
+	System.Object[] [Launcher]System.Object[] Shared.Update.UpdateProgress::<Args>k__BackingField ->  
+	System.Int64 [Launcher]System.Int64 Shared.Update.UpdateProgress::<CurrentFileDownloaded>k__BackingField ->  
+	System.Int64 [Launcher]System.Int64 Shared.Update.UpdateProgress::<CurrentFileSize>k__BackingField ->  
+	System.Int64 [Launcher]System.Int64 Shared.Update.UpdateProgress::<TotalBytesDownloaded>k__BackingField ->  
+	System.Int64 [Launcher]System.Int64 Shared.Update.UpdateProgress::<TotalBytes>k__BackingField ->  
+}
+
+[Launcher]Shared.UI.RoundedPanel -> [Launcher] . 
+{
+
+	[Launcher]Shared.UI.RoundedPanel::get_Radius[0]( ) skipped:  skipping properties
+	[Launcher]Shared.UI.RoundedPanel::set_Radius[1]( [mscorlib]System.Int32 ) skipped:  skipping properties
+	[Launcher]Shared.UI.RoundedPanel::get_BorderColor[0]( ) skipped:  skipping properties
+	[Launcher]Shared.UI.RoundedPanel::set_BorderColor[1]( [System.Drawing]System.Drawing.Color ) skipped:  skipping properties
+	[Launcher]Shared.UI.RoundedPanel::get_BorderThickness[0]( ) skipped:  skipping properties
+	[Launcher]Shared.UI.RoundedPanel::set_BorderThickness[1]( [mscorlib]System.Int32 ) skipped:  skipping properties
+	[Launcher]Shared.UI.RoundedPanel::OnPaint[1]( [System.Windows.Forms]System.Windows.Forms.PaintEventArgs ) skipped:  external base class or interface
+	[Launcher]Shared.UI.RoundedPanel::.ctor[0]( ) skipped:  special name
+
+	System.Int32 [Launcher]System.Int32 Shared.UI.RoundedPanel::<Radius>k__BackingField ->  
+	System.Drawing.Color [Launcher]System.Drawing.Color Shared.UI.RoundedPanel::<BorderColor>k__BackingField ->  
+	System.Int32 [Launcher]System.Int32 Shared.UI.RoundedPanel::<BorderThickness>k__BackingField ->  
+}
+
+[Launcher]Shared.UI.SegmentedProgressBar -> [Launcher] .‐
+{
+
+	[Launcher]Shared.UI.SegmentedProgressBar::OnPaint[1]( [System.Windows.Forms]System.Windows.Forms.PaintEventArgs ) skipped:  external base class or interface
+	[Launcher]Shared.UI.SegmentedProgressBar::get_Maximum[0]( ) skipped:  skipping properties
+	[Launcher]Shared.UI.SegmentedProgressBar::set_Maximum[1]( [mscorlib]System.Int32 ) skipped:  skipping properties
+	[Launcher]Shared.UI.SegmentedProgressBar::get_Value[0]( ) skipped:  skipping properties
+	[Launcher]Shared.UI.SegmentedProgressBar::set_Value[1]( [mscorlib]System.Int32 ) skipped:  skipping properties
+	[Launcher]Shared.UI.SegmentedProgressBar::get_SegmentCount[0]( ) skipped:  skipping properties
+	[Launcher]Shared.UI.SegmentedProgressBar::set_SegmentCount[1]( [mscorlib]System.Int32 ) skipped:  skipping properties
+	[Launcher]Shared.UI.SegmentedProgressBar::get_SegmentSpacing[0]( ) skipped:  skipping properties
+	[Launcher]Shared.UI.SegmentedProgressBar::set_SegmentSpacing[1]( [mscorlib]System.Int32 ) skipped:  skipping properties
+	[Launcher]Shared.UI.SegmentedProgressBar::.ctor[0]( ) skipped:  special name
+
+	System.Int32 [Launcher]System.Int32 Shared.UI.SegmentedProgressBar::value ->  
+	System.Int32 [Launcher]System.Int32 Shared.UI.SegmentedProgressBar::<Maximum>k__BackingField ->  
+	System.Int32 [Launcher]System.Int32 Shared.UI.SegmentedProgressBar::<SegmentCount>k__BackingField ->  
+	System.Int32 [Launcher]System.Int32 Shared.UI.SegmentedProgressBar::<SegmentSpacing>k__BackingField ->  
+}
+
+[Launcher]Shared.UI.FontManager -> [Launcher] .‑
+{
+	[Launcher]Shared.UI.FontManager::AddFontMemResourceEx[4]( [mscorlib]System.IntPtr, [mscorlib]System.UInt32, [mscorlib]System.IntPtr, [mscorlib]System.UInt32& ) ->  
+	[Launcher]Shared.UI.FontManager::LoadFont[2]( [mscorlib]System.String, [mscorlib]System.Byte[] ) ->  
+	[Launcher]Shared.UI.FontManager::GetFont[3]( [mscorlib]System.String, [mscorlib]System.Single, [System.Drawing]System.Drawing.FontStyle ) ->  
+
+	[Launcher]Shared.UI.FontManager::.cctor[0]( ) skipped:  special name
+
+	System.Drawing.Text.PrivateFontCollection [Launcher]System.Drawing.Text.PrivateFontCollection Shared.UI.FontManager::_fontCollection ->  
+	System.Collections.Generic.List`1<System.IntPtr> [Launcher]System.Collections.Generic.List`1<System.IntPtr> Shared.UI.FontManager::_fontBuffers ->  
+	System.Collections.Generic.Dictionary`2<System.String,System.Drawing.FontFamily> [Launcher]System.Collections.Generic.Dictionary`2<System.String,System.Drawing.FontFamily> Shared.UI.FontManager::_fonts ->  
+	System.Object [Launcher]System.Object Shared.UI.FontManager::_lock ->  
+}
+
+[Launcher]Shared.Network.HttpClientManager -> [Launcher] .‒
+{
+	[Launcher]Shared.Network.HttpClientManager::Create[0]( ) ->  
+
+	[Launcher]Shared.Network.HttpClientManager::.cctor[0]( ) skipped:  special name
+
+	System.Net.Http.HttpClient [Launcher]System.Net.Http.HttpClient Shared.Network.HttpClientManager::Client ->  
+}
+
+[Launcher]Shared.LauncherPayload.LauncherPayload -> [Launcher] .—
+{
+
+	[Launcher]Shared.LauncherPayload.LauncherPayload::get_Token[0]( ) skipped:  skipping properties
+	[Launcher]Shared.LauncherPayload.LauncherPayload::set_Token[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Launcher]Shared.LauncherPayload.LauncherPayload::get_Config[0]( ) skipped:  skipping properties
+	[Launcher]Shared.LauncherPayload.LauncherPayload::set_Config[1]( [Launcher]Shared.LauncherConfig.ConfigModel ) skipped:  skipping properties
+	[Launcher]Shared.LauncherPayload.LauncherPayload::get_Manifest[0]( ) skipped:  skipping properties
+	[Launcher]Shared.LauncherPayload.LauncherPayload::set_Manifest[1]( [Launcher]Shared.Update.UpdateManifest ) skipped:  skipping properties
+	[Launcher]Shared.LauncherPayload.LauncherPayload::.ctor[0]( ) skipped:  special name
+
+	System.String [Launcher]System.String Shared.LauncherPayload.LauncherPayload::<Token>k__BackingField ->  
+	Shared.LauncherConfig.ConfigModel [Launcher]Shared.LauncherConfig.ConfigModel Shared.LauncherPayload.LauncherPayload::<Config>k__BackingField ->  
+	Shared.Update.UpdateManifest [Launcher]Shared.Update.UpdateManifest Shared.LauncherPayload.LauncherPayload::<Manifest>k__BackingField ->  
+}
+
+[Launcher]Shared.LauncherConfig.ConfigHelper -> [Launcher] .―
+{
+	[Launcher]Shared.LauncherConfig.ConfigHelper::SaveFile[2]( [Launcher]Shared.LauncherConfig.ConfigModel, [mscorlib]System.String ) ->  
+	[Launcher]Shared.LauncherConfig.ConfigHelper::LoadFile[1]( [mscorlib]System.String ) ->  
+	[Launcher]Shared.LauncherConfig.ConfigHelper::Validate[1]( [Launcher]Shared.LauncherConfig.ConfigModel ) ->  
+
+	System.String [Launcher]System.String Shared.LauncherConfig.ConfigHelper::SecretKey ->  
+}
+
+[Launcher]Shared.LauncherConfig.ConfigManager -> [Launcher] .•
+{
+	[Launcher]Shared.LauncherConfig.ConfigManager::Set[1]( [Launcher]Shared.LauncherConfig.ConfigModel ) ->  
+
+	[Launcher]Shared.LauncherConfig.ConfigManager::get_ConfigPath[0]( ) skipped:  skipping properties
+	[Launcher]Shared.LauncherConfig.ConfigManager::get_Current[0]( ) skipped:  skipping properties
+
+	System.String [Launcher]System.String Shared.LauncherConfig.ConfigManager::ConfigFile ->  
+	Shared.LauncherConfig.ConfigModel [Launcher]Shared.LauncherConfig.ConfigModel Shared.LauncherConfig.ConfigManager::_current ->  
+}
+
+[Launcher]Shared.LauncherConfig.ConfigModel -> [Launcher] .․
+{
+
+	[Launcher]Shared.LauncherConfig.ConfigModel::get_WindowTitle[0]( ) skipped:  skipping properties
+	[Launcher]Shared.LauncherConfig.ConfigModel::set_WindowTitle[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Launcher]Shared.LauncherConfig.ConfigModel::get_GameExecutable[0]( ) skipped:  skipping properties
+	[Launcher]Shared.LauncherConfig.ConfigModel::set_GameExecutable[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Launcher]Shared.LauncherConfig.ConfigModel::get_UpdatesURL[0]( ) skipped:  skipping properties
+	[Launcher]Shared.LauncherConfig.ConfigModel::set_UpdatesURL[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Launcher]Shared.LauncherConfig.ConfigModel::get_UpdateFilename[0]( ) skipped:  skipping properties
+	[Launcher]Shared.LauncherConfig.ConfigModel::set_UpdateFilename[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Launcher]Shared.LauncherConfig.ConfigModel::get_WebsiteURL[0]( ) skipped:  skipping properties
+	[Launcher]Shared.LauncherConfig.ConfigModel::set_WebsiteURL[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Launcher]Shared.LauncherConfig.ConfigModel::get_MutexName[0]( ) skipped:  skipping properties
+	[Launcher]Shared.LauncherConfig.ConfigModel::set_MutexName[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Launcher]Shared.LauncherConfig.ConfigModel::.ctor[0]( ) skipped:  special name
+
+	System.String [Launcher]System.String Shared.LauncherConfig.ConfigModel::<WindowTitle>k__BackingField ->  
+	System.String [Launcher]System.String Shared.LauncherConfig.ConfigModel::<GameExecutable>k__BackingField ->  
+	System.String [Launcher]System.String Shared.LauncherConfig.ConfigModel::<UpdatesURL>k__BackingField ->  
+	System.String [Launcher]System.String Shared.LauncherConfig.ConfigModel::<UpdateFilename>k__BackingField ->  
+	System.String [Launcher]System.String Shared.LauncherConfig.ConfigModel::<WebsiteURL>k__BackingField ->  
+	System.String [Launcher]System.String Shared.LauncherConfig.ConfigModel::<MutexName>k__BackingField ->  
+}
+
+[Launcher]Shared.Languages.LanguageModel -> [Launcher] .‧
+{
+
+	[Launcher]Shared.Languages.LanguageModel::.cctor[0]( ) skipped:  special name
+
+	System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<System.String,System.String>> [Launcher]System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<System.String,System.String>> Shared.Languages.LanguageModel::translations ->  
+}
+
+[Launcher]Shared.GameSettings.SettingsHelper -> [Launcher] . 
+{
+	[Launcher]Shared.GameSettings.SettingsHelper::Load[0]( ) ->  
+	[Launcher]Shared.GameSettings.SettingsHelper::GetStringValue[2]( [mscorlib]System.String, [mscorlib]System.String ) ->  
+	[Launcher]Shared.GameSettings.SettingsHelper::GetIntValue[2]( [mscorlib]System.String, [mscorlib]System.Int32 ) ->  
+	[Launcher]Shared.GameSettings.SettingsHelper::Save[1]( [Launcher]Shared.GameSettings.SettingsModel ) ->  
+	[Launcher]Shared.GameSettings.SettingsHelper::SetStringValue[2]( [mscorlib]System.String, [mscorlib]System.String ) ->  
+	[Launcher]Shared.GameSettings.SettingsHelper::SetIntValue[2]( [mscorlib]System.String, [mscorlib]System.Int32 ) ->  
+
+	System.String [Launcher]System.String Shared.GameSettings.SettingsHelper::RegistryPath ->  
+}
+
+[Launcher]Shared.GameSettings.SettingsDictionary -> [Launcher] . 
+{
+
+	[Launcher]Shared.GameSettings.SettingsDictionary::.ctor[0]( ) skipped:  special name
+	[Launcher]Shared.GameSettings.SettingsDictionary::.cctor[0]( ) skipped:  special name
+
+	System.Collections.Generic.IDictionary`2<System.String,System.String> [Launcher]System.Collections.Generic.IDictionary`2<System.String,System.String> Shared.GameSettings.SettingsDictionary::Lang ->  
+	System.Collections.Generic.IDictionary`2<System.Int32,System.String> [Launcher]System.Collections.Generic.IDictionary`2<System.Int32,System.String> Shared.GameSettings.SettingsDictionary::Resolution ->  
+}
+
+[Launcher]Shared.GameSettings.SettingsModel -> [Launcher] .‪
+{
+
+	[Launcher]Shared.GameSettings.SettingsModel::get_Account[0]( ) skipped:  skipping properties
+	[Launcher]Shared.GameSettings.SettingsModel::set_Account[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Launcher]Shared.GameSettings.SettingsModel::get_Language[0]( ) skipped:  skipping properties
+	[Launcher]Shared.GameSettings.SettingsModel::set_Language[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Launcher]Shared.GameSettings.SettingsModel::get_Resolution[0]( ) skipped:  skipping properties
+	[Launcher]Shared.GameSettings.SettingsModel::set_Resolution[1]( [mscorlib]System.Nullable`1<[mscorlib]System.Int32> ) skipped:  skipping properties
+	[Launcher]Shared.GameSettings.SettingsModel::get_WindowMode[0]( ) skipped:  skipping properties
+	[Launcher]Shared.GameSettings.SettingsModel::set_WindowMode[1]( [mscorlib]System.Nullable`1<[mscorlib]System.Boolean> ) skipped:  skipping properties
+	[Launcher]Shared.GameSettings.SettingsModel::get_Music[0]( ) skipped:  skipping properties
+	[Launcher]Shared.GameSettings.SettingsModel::set_Music[1]( [mscorlib]System.Nullable`1<[mscorlib]System.Boolean> ) skipped:  skipping properties
+	[Launcher]Shared.GameSettings.SettingsModel::get_Sound[0]( ) skipped:  skipping properties
+	[Launcher]Shared.GameSettings.SettingsModel::set_Sound[1]( [mscorlib]System.Nullable`1<[mscorlib]System.Boolean> ) skipped:  skipping properties
+	[Launcher]Shared.GameSettings.SettingsModel::get_Volume[0]( ) skipped:  skipping properties
+	[Launcher]Shared.GameSettings.SettingsModel::set_Volume[1]( [mscorlib]System.Nullable`1<[mscorlib]System.Int32> ) skipped:  skipping properties
+	[Launcher]Shared.GameSettings.SettingsModel::.ctor[0]( ) skipped:  special name
+
+	System.String [Launcher]System.String Shared.GameSettings.SettingsModel::<Account>k__BackingField ->  
+	System.String [Launcher]System.String Shared.GameSettings.SettingsModel::<Language>k__BackingField ->  
+	System.Nullable`1<System.Int32> [Launcher]System.Nullable`1<System.Int32> Shared.GameSettings.SettingsModel::<Resolution>k__BackingField ->  
+	System.Nullable`1<System.Boolean> [Launcher]System.Nullable`1<System.Boolean> Shared.GameSettings.SettingsModel::<WindowMode>k__BackingField ->  
+	System.Nullable`1<System.Boolean> [Launcher]System.Nullable`1<System.Boolean> Shared.GameSettings.SettingsModel::<Music>k__BackingField ->  
+	System.Nullable`1<System.Boolean> [Launcher]System.Nullable`1<System.Boolean> Shared.GameSettings.SettingsModel::<Sound>k__BackingField ->  
+	System.Nullable`1<System.Int32> [Launcher]System.Nullable`1<System.Int32> Shared.GameSettings.SettingsModel::<Volume>k__BackingField ->  
+}
+
+[Launcher]Shared.GameSettings.SettingsService -> [Launcher] .‫
+{
+	[Launcher]Shared.GameSettings.SettingsService::add_OnLanguageChanged[1]( [mscorlib]System.Action`1<[mscorlib]System.String> ) ->  
+	[Launcher]Shared.GameSettings.SettingsService::remove_OnLanguageChanged[1]( [mscorlib]System.Action`1<[mscorlib]System.String> ) ->  
+	[Launcher]Shared.GameSettings.SettingsService::Load[0]( ) ->  
+	[Launcher]Shared.GameSettings.SettingsService::Save[0]( ) ->  
+	[Launcher]Shared.GameSettings.SettingsService::SetLanguage[1]( [mscorlib]System.String ) ->  
+
+	[Launcher]Shared.GameSettings.SettingsService::get_Instance[0]( ) skipped:  skipping properties
+	[Launcher]Shared.GameSettings.SettingsService::get_Current[0]( ) skipped:  skipping properties
+	[Launcher]Shared.GameSettings.SettingsService::.ctor[0]( ) skipped:  special name
+	[Launcher]Shared.GameSettings.SettingsService::.cctor[0]( ) skipped:  special name
+
+	System.Lazy`1<Shared.GameSettings.SettingsService> [Launcher]System.Lazy`1<Shared.GameSettings.SettingsService> Shared.GameSettings.SettingsService::_instance ->  
+	Shared.GameSettings.SettingsModel [Launcher]Shared.GameSettings.SettingsModel Shared.GameSettings.SettingsService::_settings ->  
+	System.Action`1<System.String> [Launcher]System.Action`1<System.String> Shared.GameSettings.SettingsService::OnLanguageChanged ->  
+
+	System.Action`1<System.String> [Launcher]System.Action`1<System.String> Shared.GameSettings.SettingsService::OnLanguageChanged -> dropped
+}
+
+[Launcher]Launcher.Main -> [Launcher] .‬
+{
+	[Launcher]Launcher.Main::Main_Load[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Launcher]Launcher.Main::Btn_Close_Click[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Launcher]Launcher.Main::Btn_Options_Click[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Launcher]Launcher.Main::Btn_Play_Click[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Launcher]Launcher.Main::InitializeValues[0]( ) ->  
+	[Launcher]Launcher.Main::SetTextureHandlers[0]( ) ->  
+	[Launcher]Launcher.Main::InitializeWebsite[0]( ) ->  
+	[Launcher]Launcher.Main::Web_panel_DocumentCompleted[2]( [mscorlib]System.Object, [System.Windows.Forms]System.Windows.Forms.WebBrowserDocumentCompletedEventArgs ) ->  
+	[Launcher]Launcher.Main::Web_panel_Navigating[2]( [mscorlib]System.Object, [System.Windows.Forms]System.Windows.Forms.WebBrowserNavigatingEventArgs ) ->  
+	[Launcher]Launcher.Main::Web_panel_NewWindow[2]( [mscorlib]System.Object, [System]System.ComponentModel.CancelEventArgs ) ->  
+	[Launcher]Launcher.Main::UpdateUI[1]( [Launcher]Shared.Update.UpdateProgress ) ->  
+	[Launcher]Launcher.Main::ReleaseCapture[0]( ) ->  
+	[Launcher]Launcher.Main::SendMessage[4]( [mscorlib]System.IntPtr, [mscorlib]System.Int32, [mscorlib]System.Int32, [mscorlib]System.Int32 ) ->  
+	[Launcher]Launcher.Main::Header_panel_MouseDown[2]( [mscorlib]System.Object, [System.Windows.Forms]System.Windows.Forms.MouseEventArgs ) ->  
+	[Launcher]Launcher.Main::InitializeComponent[0]( ) ->  
+	[Launcher]Launcher.Main::<Main_Load>b__3_0[1]( [mscorlib]System.String ) ->  
+
+	[Launcher]Launcher.Main::.ctor[0]( ) skipped:  special name
+	[Launcher]Launcher.Main::Dispose[1]( [mscorlib]System.Boolean ) skipped:  external base class or interface
+
+	System.Uri [Launcher]System.Uri Launcher.Main::m_WebPanelUri ->  
+	System.Boolean [Launcher]System.Boolean Launcher.Main::m_WebsiteLoaded ->  
+	System.Int32 [Launcher]System.Int32 Launcher.Main::WM_NCLBUTTONDOWN ->  
+	System.Int32 [Launcher]System.Int32 Launcher.Main::HTCAPTION ->  
+	System.ComponentModel.IContainer [Launcher]System.ComponentModel.IContainer Launcher.Main::components ->  
+	System.Windows.Forms.PictureBox [Launcher]System.Windows.Forms.PictureBox Launcher.Main::Btn_Exit ->  
+	System.Windows.Forms.WebBrowser [Launcher]System.Windows.Forms.WebBrowser Launcher.Main::Web_panel ->  
+	System.Windows.Forms.Button [Launcher]System.Windows.Forms.Button Launcher.Main::Btn_Play ->  
+	System.Windows.Forms.Button [Launcher]System.Windows.Forms.Button Launcher.Main::Btn_Options ->  
+	System.Windows.Forms.Panel [Launcher]System.Windows.Forms.Panel Launcher.Main::Update_panel ->  
+	System.Windows.Forms.Label [Launcher]System.Windows.Forms.Label Launcher.Main::Complete_txt ->  
+	System.Windows.Forms.Label [Launcher]System.Windows.Forms.Label Launcher.Main::Current_txt ->  
+	System.Windows.Forms.PictureBox [Launcher]System.Windows.Forms.PictureBox Launcher.Main::Complete_bar ->  
+	System.Windows.Forms.Label [Launcher]System.Windows.Forms.Label Launcher.Main::Status_txt ->  
+	System.Windows.Forms.PictureBox [Launcher]System.Windows.Forms.PictureBox Launcher.Main::Current_bar ->  
+	System.Windows.Forms.Button [Launcher]System.Windows.Forms.Button Launcher.Main::Btn_Close ->  
+	System.Windows.Forms.Panel [Launcher]System.Windows.Forms.Panel Launcher.Main::Header_panel ->  
+}
+
+[Launcher]Launcher.Options -> [Launcher] .‭
+{
+	[Launcher]Launcher.Options::Options_Load[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Launcher]Launcher.Options::Btn_Close_Click[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Launcher]Launcher.Options::Btn_Save_Click[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Launcher]Launcher.Options::SetTextureHandlers[0]( ) ->  
+	[Launcher]Launcher.Options::SetInitialValues[0]( ) ->  
+	[Launcher]Launcher.Options::LoadRegistryValues[0]( ) ->  
+	[Launcher]Launcher.Options::SaveRegistryValues[0]( ) ->  
+	[Launcher]Launcher.Options::Language_Eng_CheckedChanged[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Launcher]Launcher.Options::Language_Spn_CheckedChanged[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Launcher]Launcher.Options::Language_Por_CheckedChanged[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Launcher]Launcher.Options::InitializeComponent[0]( ) ->  
+	[Launcher]Launcher.Options::<Options_Load>b__1_0[1]( [mscorlib]System.String ) ->  
+
+	[Launcher]Launcher.Options::Dispose[1]( [mscorlib]System.Boolean ) skipped:  external base class or interface
+	[Launcher]Launcher.Options::.ctor[0]( ) skipped:  special name
+
+	System.ComponentModel.IContainer [Launcher]System.ComponentModel.IContainer Launcher.Options::components ->  
+	System.Windows.Forms.Button [Launcher]System.Windows.Forms.Button Launcher.Options::Btn_Save ->  
+	System.Windows.Forms.Button [Launcher]System.Windows.Forms.Button Launcher.Options::Btn_Close ->  
+	System.Windows.Forms.GroupBox [Launcher]System.Windows.Forms.GroupBox Launcher.Options::User_panel ->  
+	System.Windows.Forms.Label [Launcher]System.Windows.Forms.Label Launcher.Options::USER_TXT ->  
+	System.Windows.Forms.TextBox [Launcher]System.Windows.Forms.TextBox Launcher.Options::User_box ->  
+	System.Windows.Forms.GroupBox [Launcher]System.Windows.Forms.GroupBox Launcher.Options::Graphics_panel ->  
+	System.Windows.Forms.ComboBox [Launcher]System.Windows.Forms.ComboBox Launcher.Options::Resolution_box ->  
+	System.Windows.Forms.CheckBox [Launcher]System.Windows.Forms.CheckBox Launcher.Options::WindowMode ->  
+	System.Windows.Forms.GroupBox [Launcher]System.Windows.Forms.GroupBox Launcher.Options::Sound_panel ->  
+	System.Windows.Forms.TrackBar [Launcher]System.Windows.Forms.TrackBar Launcher.Options::VolumeLevel ->  
+	System.Windows.Forms.CheckBox [Launcher]System.Windows.Forms.CheckBox Launcher.Options::Music_check ->  
+	System.Windows.Forms.CheckBox [Launcher]System.Windows.Forms.CheckBox Launcher.Options::Sound_check ->  
+	System.Windows.Forms.GroupBox [Launcher]System.Windows.Forms.GroupBox Launcher.Options::Language_panel ->  
+	System.Windows.Forms.RadioButton [Launcher]System.Windows.Forms.RadioButton Launcher.Options::Language_Por ->  
+	System.Windows.Forms.RadioButton [Launcher]System.Windows.Forms.RadioButton Launcher.Options::Language_Spn ->  
+	System.Windows.Forms.RadioButton [Launcher]System.Windows.Forms.RadioButton Launcher.Options::Language_Eng ->  
+}
+
+[Launcher]Launcher.Program -> [Launcher] . 
+{
+	[Launcher]Launcher.Program::Main[1]( [mscorlib]System.String[] ) ->  
+
+	System.Threading.Mutex [Launcher]System.Threading.Mutex Launcher.Program::launcherMutex ->  
+}
+
+[Launcher]Launcher.RuntimeFlags -> [Launcher] .′
+{
+	[Launcher]Launcher.RuntimeFlags::Initialize[1]( [mscorlib]System.String[] ) ->  
+
+	[Launcher]Launcher.RuntimeFlags::get_BypassUpdater[0]( ) skipped:  skipping properties
+	[Launcher]Launcher.RuntimeFlags::set_BypassUpdater[1]( [mscorlib]System.Boolean ) skipped:  skipping properties
+
+	System.Boolean [Launcher]System.Boolean Launcher.RuntimeFlags::<BypassUpdater>k__BackingField ->  
+}
+
+[Launcher]Launcher.UpdateStarter -> [Launcher] .‵
+{
+	[Launcher]Launcher.UpdateStarter::Start[1]( [mscorlib]System.IProgress`1<[Launcher]Shared.Update.UpdateProgress> ) ->  
+	[Launcher]Launcher.UpdateStarter::LaunchGame[1]( [Launcher]Shared.LauncherConfig.ConfigModel ) ->  
+
+	[Launcher]Launcher.UpdateStarter::.ctor[0]( ) skipped:  special name
+
+	Shared.Network.NetworkService [Launcher]Shared.Network.NetworkService Launcher.UpdateStarter::network ->  
+	Shared.Update.ManifestDownloader [Launcher]Shared.Update.ManifestDownloader Launcher.UpdateStarter::manifest ->  
+	Shared.Update.FileScanner [Launcher]Shared.Update.FileScanner Launcher.UpdateStarter::scanner ->  
+	Shared.Update.FileDownloader [Launcher]Shared.Update.FileDownloader Launcher.UpdateStarter::downloader ->  
+}
+
+[Launcher]Launcher.Properties.Resources -> [Launcher] .″
+{
+
+	[Launcher]Launcher.Properties.Resources::.ctor[0]( ) skipped:  special name
+	[Launcher]Launcher.Properties.Resources::get_ResourceManager[0]( ) skipped:  skipping properties
+	[Launcher]Launcher.Properties.Resources::get_Culture[0]( ) skipped:  skipping properties
+	[Launcher]Launcher.Properties.Resources::set_Culture[1]( [mscorlib]System.Globalization.CultureInfo ) skipped:  skipping properties
+	[Launcher]Launcher.Properties.Resources::get_Boton_h[0]( ) skipped:  skipping properties
+	[Launcher]Launcher.Properties.Resources::get_Boton_n[0]( ) skipped:  skipping properties
+	[Launcher]Launcher.Properties.Resources::get_Cerrar_h[0]( ) skipped:  skipping properties
+	[Launcher]Launcher.Properties.Resources::get_Cerrar_n[0]( ) skipped:  skipping properties
+	[Launcher]Launcher.Properties.Resources::get_CompleteProgress[0]( ) skipped:  skipping properties
+	[Launcher]Launcher.Properties.Resources::get_CurrentProgress[0]( ) skipped:  skipping properties
+	[Launcher]Launcher.Properties.Resources::get_Jugar_d[0]( ) skipped:  skipping properties
+	[Launcher]Launcher.Properties.Resources::get_Jugar_h[0]( ) skipped:  skipping properties
+	[Launcher]Launcher.Properties.Resources::get_Jugar_n[0]( ) skipped:  skipping properties
+	[Launcher]Launcher.Properties.Resources::get_MainBackground[0]( ) skipped:  skipping properties
+	[Launcher]Launcher.Properties.Resources::get_OptionsBackground[0]( ) skipped:  skipping properties
+	[Launcher]Launcher.Properties.Resources::get_Usuzi_Font[0]( ) skipped:  skipping properties
+
+	System.Resources.ResourceManager [Launcher]System.Resources.ResourceManager Launcher.Properties.Resources::resourceMan ->  
+	System.Globalization.CultureInfo [Launcher]System.Globalization.CultureInfo Launcher.Properties.Resources::resourceCulture ->  
+}
+
+[Launcher]Launcher.Properties.Settings -> [Launcher] .‶
+{
+
+	[Launcher]Launcher.Properties.Settings::get_Default[0]( ) skipped:  skipping properties
+	[Launcher]Launcher.Properties.Settings::.ctor[0]( ) skipped:  special name
+	[Launcher]Launcher.Properties.Settings::.cctor[0]( ) skipped:  special name
+
+	Launcher.Properties.Settings [Launcher]Launcher.Properties.Settings Launcher.Properties.Settings::defaultInstance ->  
+}
+
+[Launcher]Shared.Utils.JsonHelper/<>c -> [Launcher] . / 
+{
+	[Launcher]Shared.Utils.JsonHelper/<>c::<GetSerializer>b__1_0[1]( [mscorlib]System.Type ) ->  
+
+	[Launcher]Shared.Utils.JsonHelper/<>c::.cctor[0]( ) skipped:  special name
+	[Launcher]Shared.Utils.JsonHelper/<>c::.ctor[0]( ) skipped:  special name
+
+	Shared.Utils.JsonHelper/<>c [Launcher]Shared.Utils.JsonHelper/<>c Shared.Utils.JsonHelper/<>c::<>9 ->  
+	System.Func`2<System.Type,System.Runtime.Serialization.Json.DataContractJsonSerializer> [Launcher]System.Func`2<System.Type,System.Runtime.Serialization.Json.DataContractJsonSerializer> Shared.Utils.JsonHelper/<>c::<>9__1_0 ->  
+}
+
+[Launcher]Shared.Update.FileDownloader/<>c__DisplayClass2_0 -> [Launcher] . / 
+{
+
+	[Launcher]Shared.Update.FileDownloader/<>c__DisplayClass2_0::.ctor[0]( ) skipped:  special name
+
+	Shared.Update.FileDownloader [Launcher]Shared.Update.FileDownloader Shared.Update.FileDownloader/<>c__DisplayClass2_0::<>4__this ->  
+	System.String [Launcher]System.String Shared.Update.FileDownloader/<>c__DisplayClass2_0::baseUrl ->  
+	System.Int64 [Launcher]System.Int64 Shared.Update.FileDownloader/<>c__DisplayClass2_0::totalBytes ->  
+	System.IProgress`1<Shared.Update.UpdateProgress> [Launcher]System.IProgress`1<Shared.Update.UpdateProgress> Shared.Update.FileDownloader/<>c__DisplayClass2_0::progress ->  
+	System.Threading.SemaphoreSlim [Launcher]System.Threading.SemaphoreSlim Shared.Update.FileDownloader/<>c__DisplayClass2_0::semaphore ->  
+}
+
+[Launcher]Shared.Update.FileDownloader/<>c__DisplayClass2_1 -> [Launcher] . / 
+{
+	[Launcher]Shared.Update.FileDownloader/<>c__DisplayClass2_1::<DownloadFiles>b__0[0]( ) ->  
+
+	[Launcher]Shared.Update.FileDownloader/<>c__DisplayClass2_1::.ctor[0]( ) skipped:  special name
+
+	Shared.Update.UpdateFileInfo [Launcher]Shared.Update.UpdateFileInfo Shared.Update.FileDownloader/<>c__DisplayClass2_1::file ->  
+	Shared.Update.FileDownloader/<>c__DisplayClass2_0 [Launcher]Shared.Update.FileDownloader/<>c__DisplayClass2_0 Shared.Update.FileDownloader/<>c__DisplayClass2_1::CS$<>8__locals1 ->  
+}
+
+[Launcher]Shared.Update.FileDownloader/<DownloadFiles>d__2 -> [Launcher] . / 
+{
+
+	[Launcher]Shared.Update.FileDownloader/<DownloadFiles>d__2::MoveNext[0]( ) skipped:  external base class or interface
+	[Launcher]Shared.Update.FileDownloader/<DownloadFiles>d__2::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Launcher]System.Int32 Shared.Update.FileDownloader/<DownloadFiles>d__2::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder [Launcher]System.Runtime.CompilerServices.AsyncTaskMethodBuilder Shared.Update.FileDownloader/<DownloadFiles>d__2::<>t__builder ->  
+	Shared.Update.FileDownloader [Launcher]Shared.Update.FileDownloader Shared.Update.FileDownloader/<DownloadFiles>d__2::<>4__this ->  
+	System.String [Launcher]System.String Shared.Update.FileDownloader/<DownloadFiles>d__2::baseUrl ->  
+	System.Int64 [Launcher]System.Int64 Shared.Update.FileDownloader/<DownloadFiles>d__2::totalBytes ->  
+	System.IProgress`1<Shared.Update.UpdateProgress> [Launcher]System.IProgress`1<Shared.Update.UpdateProgress> Shared.Update.FileDownloader/<DownloadFiles>d__2::progress ->  
+	System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> [Launcher]System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> Shared.Update.FileDownloader/<DownloadFiles>d__2::files ->  
+	Shared.Update.FileDownloader/<>c__DisplayClass2_0 [Launcher]Shared.Update.FileDownloader/<>c__DisplayClass2_0 Shared.Update.FileDownloader/<DownloadFiles>d__2::<>8__1 ->  
+	Shared.Update.FileDownloader/<>c__DisplayClass2_1 [Launcher]Shared.Update.FileDownloader/<>c__DisplayClass2_1 Shared.Update.FileDownloader/<DownloadFiles>d__2::<>8__2 ->  
+	System.Collections.Generic.List`1<System.Threading.Tasks.Task> [Launcher]System.Collections.Generic.List`1<System.Threading.Tasks.Task> Shared.Update.FileDownloader/<DownloadFiles>d__2::<tasks>5__2 ->  
+	System.Collections.Generic.List`1/Enumerator<Shared.Update.UpdateFileInfo> [Launcher]System.Collections.Generic.List`1/Enumerator<Shared.Update.UpdateFileInfo> Shared.Update.FileDownloader/<DownloadFiles>d__2::<>7__wrap2 ->  
+	System.Runtime.CompilerServices.TaskAwaiter [Launcher]System.Runtime.CompilerServices.TaskAwaiter Shared.Update.FileDownloader/<DownloadFiles>d__2::<>u__1 ->  
+}
+
+[Launcher]Shared.Update.FileDownloader/<DownloadSingleFile>d__3 -> [Launcher] . / 
+{
+
+	[Launcher]Shared.Update.FileDownloader/<DownloadSingleFile>d__3::MoveNext[0]( ) skipped:  external base class or interface
+	[Launcher]Shared.Update.FileDownloader/<DownloadSingleFile>d__3::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Launcher]System.Int32 Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder [Launcher]System.Runtime.CompilerServices.AsyncTaskMethodBuilder Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>t__builder ->  
+	System.String [Launcher]System.String Shared.Update.FileDownloader/<DownloadSingleFile>d__3::baseUrl ->  
+	Shared.Update.UpdateFileInfo [Launcher]Shared.Update.UpdateFileInfo Shared.Update.FileDownloader/<DownloadSingleFile>d__3::file ->  
+	Shared.Update.FileDownloader [Launcher]Shared.Update.FileDownloader Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>4__this ->  
+	System.IProgress`1<Shared.Update.UpdateProgress> [Launcher]System.IProgress`1<Shared.Update.UpdateProgress> Shared.Update.FileDownloader/<DownloadSingleFile>d__3::progress ->  
+	System.Int64 [Launcher]System.Int64 Shared.Update.FileDownloader/<DownloadSingleFile>d__3::totalBytes ->  
+	System.String [Launcher]System.String Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<url>5__2 ->  
+	System.Int32 [Launcher]System.Int32 Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<retry>5__3 ->  
+	System.Net.Http.HttpResponseMessage [Launcher]System.Net.Http.HttpResponseMessage Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<response>5__4 ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.Net.Http.HttpResponseMessage> [Launcher]System.Runtime.CompilerServices.TaskAwaiter`1<System.Net.Http.HttpResponseMessage> Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>u__1 ->  
+	System.IO.Stream [Launcher]System.IO.Stream Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<stream>5__5 ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.IO.Stream> [Launcher]System.Runtime.CompilerServices.TaskAwaiter`1<System.IO.Stream> Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>u__2 ->  
+	System.IO.FileStream [Launcher]System.IO.FileStream Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<fs>5__6 ->  
+	System.Byte[] [Launcher]System.Byte[] Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<buffer>5__7 ->  
+	System.Int32 [Launcher]System.Int32 Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<read>5__8 ->  
+	System.Int64 [Launcher]System.Int64 Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<current>5__9 ->  
+	System.Runtime.CompilerServices.TaskAwaiter [Launcher]System.Runtime.CompilerServices.TaskAwaiter Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>u__3 ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.Int32> [Launcher]System.Runtime.CompilerServices.TaskAwaiter`1<System.Int32> Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>u__4 ->  
+}
+
+[Launcher]Shared.Update.FileScanner/<>c__DisplayClass0_0 -> [Launcher] . / 
+{
+	[Launcher]Shared.Update.FileScanner/<>c__DisplayClass0_0::<ScanFiles>b__0[0]( ) ->  
+
+	[Launcher]Shared.Update.FileScanner/<>c__DisplayClass0_0::.ctor[0]( ) skipped:  special name
+
+	System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> [Launcher]System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> Shared.Update.FileScanner/<>c__DisplayClass0_0::files ->  
+	System.IProgress`1<Shared.Update.UpdateProgress> [Launcher]System.IProgress`1<Shared.Update.UpdateProgress> Shared.Update.FileScanner/<>c__DisplayClass0_0::progress ->  
+}
+
+[Launcher]Shared.Update.FileScanner/<ScanFiles>d__0 -> [Launcher] . / 
+{
+
+	[Launcher]Shared.Update.FileScanner/<ScanFiles>d__0::MoveNext[0]( ) skipped:  external base class or interface
+	[Launcher]Shared.Update.FileScanner/<ScanFiles>d__0::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Launcher]System.Int32 Shared.Update.FileScanner/<ScanFiles>d__0::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo>> [Launcher]System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo>> Shared.Update.FileScanner/<ScanFiles>d__0::<>t__builder ->  
+	System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> [Launcher]System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> Shared.Update.FileScanner/<ScanFiles>d__0::files ->  
+	System.IProgress`1<Shared.Update.UpdateProgress> [Launcher]System.IProgress`1<Shared.Update.UpdateProgress> Shared.Update.FileScanner/<ScanFiles>d__0::progress ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo>> [Launcher]System.Runtime.CompilerServices.TaskAwaiter`1<System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo>> Shared.Update.FileScanner/<ScanFiles>d__0::<>u__1 ->  
+}
+
+[Launcher]Shared.Update.ManifestDownloader/<DownloadManifest>d__0 -> [Launcher] . / 
+{
+
+	[Launcher]Shared.Update.ManifestDownloader/<DownloadManifest>d__0::MoveNext[0]( ) skipped:  external base class or interface
+	[Launcher]Shared.Update.ManifestDownloader/<DownloadManifest>d__0::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Launcher]System.Int32 Shared.Update.ManifestDownloader/<DownloadManifest>d__0::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Shared.Update.UpdateManifest> [Launcher]System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Shared.Update.UpdateManifest> Shared.Update.ManifestDownloader/<DownloadManifest>d__0::<>t__builder ->  
+	System.String [Launcher]System.String Shared.Update.ManifestDownloader/<DownloadManifest>d__0::url ->  
+	System.Net.Http.HttpClient [Launcher]System.Net.Http.HttpClient Shared.Update.ManifestDownloader/<DownloadManifest>d__0::<client>5__2 ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.String> [Launcher]System.Runtime.CompilerServices.TaskAwaiter`1<System.String> Shared.Update.ManifestDownloader/<DownloadManifest>d__0::<>u__1 ->  
+}
+
+[Launcher]Shared.UI.UITextureHelper/<>c__DisplayClass0_0 -> [Launcher] .​/ 
+{
+	[Launcher]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>g__ApplyNormal|0[0]( ) ->  
+	[Launcher]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>b__1[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Launcher]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>b__2[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Launcher]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>b__3[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Launcher]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>b__4[2]( [mscorlib]System.Object, [System.Windows.Forms]System.Windows.Forms.MouseEventArgs ) ->  
+	[Launcher]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>b__5[2]( [mscorlib]System.Object, [System.Windows.Forms]System.Windows.Forms.MouseEventArgs ) ->  
+	[Launcher]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>b__6[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+
+	[Launcher]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::.ctor[0]( ) skipped:  special name
+
+	System.Windows.Forms.Control [Launcher]System.Windows.Forms.Control Shared.UI.UITextureHelper/<>c__DisplayClass0_0::control ->  
+	System.Drawing.Image [Launcher]System.Drawing.Image Shared.UI.UITextureHelper/<>c__DisplayClass0_0::normal ->  
+	System.Drawing.Image [Launcher]System.Drawing.Image Shared.UI.UITextureHelper/<>c__DisplayClass0_0::disabled ->  
+	System.Drawing.Image [Launcher]System.Drawing.Image Shared.UI.UITextureHelper/<>c__DisplayClass0_0::hover ->  
+	System.Drawing.Image [Launcher]System.Drawing.Image Shared.UI.UITextureHelper/<>c__DisplayClass0_0::click ->  
+}
+
+[Launcher]Shared.UI.UITextureHelper/<>c__DisplayClass1_0 -> [Launcher] .​/ 
+{
+	[Launcher]Shared.UI.UITextureHelper/<>c__DisplayClass1_0::<CheckBoxApply>b__0[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+
+	[Launcher]Shared.UI.UITextureHelper/<>c__DisplayClass1_0::.ctor[0]( ) skipped:  special name
+
+	System.Windows.Forms.CheckBox [Launcher]System.Windows.Forms.CheckBox Shared.UI.UITextureHelper/<>c__DisplayClass1_0::btn ->  
+	System.Drawing.Image [Launcher]System.Drawing.Image Shared.UI.UITextureHelper/<>c__DisplayClass1_0::checkedImg ->  
+	System.Drawing.Image [Launcher]System.Drawing.Image Shared.UI.UITextureHelper/<>c__DisplayClass1_0::uncheckedImg ->  
+}
+
+[Launcher]Shared.Network.NetworkService/<CheckNetwork>d__0 -> [Launcher] .–/ 
+{
+
+	[Launcher]Shared.Network.NetworkService/<CheckNetwork>d__0::MoveNext[0]( ) skipped:  external base class or interface
+	[Launcher]Shared.Network.NetworkService/<CheckNetwork>d__0::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Launcher]System.Int32 Shared.Network.NetworkService/<CheckNetwork>d__0::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder [Launcher]System.Runtime.CompilerServices.AsyncTaskMethodBuilder Shared.Network.NetworkService/<CheckNetwork>d__0::<>t__builder ->  
+	System.String [Launcher]System.String Shared.Network.NetworkService/<CheckNetwork>d__0::url ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.Net.Http.HttpResponseMessage> [Launcher]System.Runtime.CompilerServices.TaskAwaiter`1<System.Net.Http.HttpResponseMessage> Shared.Network.NetworkService/<CheckNetwork>d__0::<>u__1 ->  
+}
+
+[Launcher]Shared.GameSettings.SettingsService/<>c -> [Launcher] .‫/ 
+{
+	[Launcher]Shared.GameSettings.SettingsService/<>c::<.cctor>b__13_0[0]( ) ->  
+
+	[Launcher]Shared.GameSettings.SettingsService/<>c::.cctor[0]( ) skipped:  special name
+	[Launcher]Shared.GameSettings.SettingsService/<>c::.ctor[0]( ) skipped:  special name
+
+	Shared.GameSettings.SettingsService/<>c [Launcher]Shared.GameSettings.SettingsService/<>c Shared.GameSettings.SettingsService/<>c::<>9 ->  
+}
+
+[Launcher]Launcher.Main/<Btn_Play_Click>d__6 -> [Launcher] .‬/ 
+{
+
+	[Launcher]Launcher.Main/<Btn_Play_Click>d__6::MoveNext[0]( ) skipped:  external base class or interface
+	[Launcher]Launcher.Main/<Btn_Play_Click>d__6::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Launcher]System.Int32 Launcher.Main/<Btn_Play_Click>d__6::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncVoidMethodBuilder [Launcher]System.Runtime.CompilerServices.AsyncVoidMethodBuilder Launcher.Main/<Btn_Play_Click>d__6::<>t__builder ->  
+	Launcher.Main [Launcher]Launcher.Main Launcher.Main/<Btn_Play_Click>d__6::<>4__this ->  
+	System.Runtime.CompilerServices.TaskAwaiter [Launcher]System.Runtime.CompilerServices.TaskAwaiter Launcher.Main/<Btn_Play_Click>d__6::<>u__1 ->  
+}
+
+[Launcher]Launcher.UpdateStarter/<>c -> [Launcher] .‵/ 
+{
+	[Launcher]Launcher.UpdateStarter/<>c::<Start>b__4_0[1]( [Launcher]Shared.Update.UpdateFileInfo ) ->  
+
+	[Launcher]Launcher.UpdateStarter/<>c::.cctor[0]( ) skipped:  special name
+	[Launcher]Launcher.UpdateStarter/<>c::.ctor[0]( ) skipped:  special name
+
+	Launcher.UpdateStarter/<>c [Launcher]Launcher.UpdateStarter/<>c Launcher.UpdateStarter/<>c::<>9 ->  
+	System.Func`2<Shared.Update.UpdateFileInfo,System.Int64> [Launcher]System.Func`2<Shared.Update.UpdateFileInfo,System.Int64> Launcher.UpdateStarter/<>c::<>9__4_0 ->  
+}
+
+[Launcher]Launcher.UpdateStarter/<LaunchGame>d__5 -> [Launcher] .‵/ 
+{
+
+	[Launcher]Launcher.UpdateStarter/<LaunchGame>d__5::MoveNext[0]( ) skipped:  external base class or interface
+	[Launcher]Launcher.UpdateStarter/<LaunchGame>d__5::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Launcher]System.Int32 Launcher.UpdateStarter/<LaunchGame>d__5::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder [Launcher]System.Runtime.CompilerServices.AsyncTaskMethodBuilder Launcher.UpdateStarter/<LaunchGame>d__5::<>t__builder ->  
+	Shared.LauncherConfig.ConfigModel [Launcher]Shared.LauncherConfig.ConfigModel Launcher.UpdateStarter/<LaunchGame>d__5::config ->  
+	System.Runtime.CompilerServices.TaskAwaiter [Launcher]System.Runtime.CompilerServices.TaskAwaiter Launcher.UpdateStarter/<LaunchGame>d__5::<>u__1 ->  
+}
+
+[Launcher]Launcher.UpdateStarter/<Start>d__4 -> [Launcher] .‵/ 
+{
+
+	[Launcher]Launcher.UpdateStarter/<Start>d__4::MoveNext[0]( ) skipped:  external base class or interface
+	[Launcher]Launcher.UpdateStarter/<Start>d__4::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Launcher]System.Int32 Launcher.UpdateStarter/<Start>d__4::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder [Launcher]System.Runtime.CompilerServices.AsyncTaskMethodBuilder Launcher.UpdateStarter/<Start>d__4::<>t__builder ->  
+	System.IProgress`1<Shared.Update.UpdateProgress> [Launcher]System.IProgress`1<Shared.Update.UpdateProgress> Launcher.UpdateStarter/<Start>d__4::progress ->  
+	Launcher.UpdateStarter [Launcher]Launcher.UpdateStarter Launcher.UpdateStarter/<Start>d__4::<>4__this ->  
+	Shared.LauncherConfig.ConfigModel [Launcher]Shared.LauncherConfig.ConfigModel Launcher.UpdateStarter/<Start>d__4::<config>5__2 ->  
+	System.Runtime.CompilerServices.TaskAwaiter [Launcher]System.Runtime.CompilerServices.TaskAwaiter Launcher.UpdateStarter/<Start>d__4::<>u__1 ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<Shared.Update.UpdateManifest> [Launcher]System.Runtime.CompilerServices.TaskAwaiter`1<Shared.Update.UpdateManifest> Launcher.UpdateStarter/<Start>d__4::<>u__2 ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo>> [Launcher]System.Runtime.CompilerServices.TaskAwaiter`1<System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo>> Launcher.UpdateStarter/<Start>d__4::<>u__3 ->  
+}
+
+[Launcher]Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d -> [Launcher] . / / 
+{
+
+	[Launcher]Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d::MoveNext[0]( ) skipped:  external base class or interface
+	[Launcher]Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Launcher]System.Int32 Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder [Launcher]System.Runtime.CompilerServices.AsyncTaskMethodBuilder Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d::<>t__builder ->  
+	Shared.Update.FileDownloader/<>c__DisplayClass2_1 [Launcher]Shared.Update.FileDownloader/<>c__DisplayClass2_1 Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d::<>4__this ->  
+	System.Runtime.CompilerServices.TaskAwaiter [Launcher]System.Runtime.CompilerServices.TaskAwaiter Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d::<>u__1 ->  
+}
+
+[Launcher]Shared.Utils.PathHelper -> [Launcher] . 
+{
+	[Launcher]Shared.Utils.PathHelper::GetRelativePath[2]( [mscorlib]System.String, [mscorlib]System.String ) ->  
+	[Launcher]Shared.Utils.PathHelper::NormalizePath[1]( [mscorlib]System.String ) ->  
+	[Launcher]Shared.Utils.PathHelper::GetLocalPath[1]( [mscorlib]System.String ) ->  
+}
+
+[Launcher]Shared.Utils.SystemManager -> [Launcher] . 
+{
+	[Launcher]Shared.Utils.SystemManager::IsRunningAsAdmin[0]( ) ->  
+}
+
+[Launcher]Shared.Update.FileScanner -> [Launcher] . 
+{
+	[Launcher]Shared.Update.FileScanner::ScanFiles[2]( [mscorlib]System.Collections.Generic.List`1<[Launcher]Shared.Update.UpdateFileInfo>, [mscorlib]System.IProgress`1<[Launcher]Shared.Update.UpdateProgress> ) ->  
+
+	[Launcher]Shared.Update.FileScanner::.ctor[0]( ) skipped:  special name
+}
+
+[Launcher]Shared.Update.FileVerifier -> [Launcher] . 
+{
+	[Launcher]Shared.Update.FileVerifier::NeedsUpdate[1]( [Launcher]Shared.Update.UpdateFileInfo ) ->  
+	[Launcher]Shared.Update.FileVerifier::Verify[1]( [Launcher]Shared.Update.UpdateFileInfo ) ->  
+	[Launcher]Shared.Update.FileVerifier::ComputeHash[1]( [mscorlib]System.String ) ->  
+}
+
+[Launcher]Shared.Update.ManifestDownloader -> [Launcher] . 
+{
+	[Launcher]Shared.Update.ManifestDownloader::DownloadManifest[1]( [mscorlib]System.String ) ->  
+
+	[Launcher]Shared.Update.ManifestDownloader::.ctor[0]( ) skipped:  special name
+}
+
+[Launcher]Shared.UI.UITextureHelper -> [Launcher] .​
+{
+	[Launcher]Shared.UI.UITextureHelper::ApplyTextureControl[5]( [System.Windows.Forms]System.Windows.Forms.Control, [System.Drawing]System.Drawing.Image, [System.Drawing]System.Drawing.Image, [System.Drawing]System.Drawing.Image, [System.Drawing]System.Drawing.Image ) ->  
+	[Launcher]Shared.UI.UITextureHelper::CheckBoxApply[3]( [System.Windows.Forms]System.Windows.Forms.CheckBox, [System.Drawing]System.Drawing.Image, [System.Drawing]System.Drawing.Image ) ->  
+}
+
+[Launcher]Shared.Network.NetworkService -> [Launcher] .–
+{
+	[Launcher]Shared.Network.NetworkService::CheckNetwork[1]( [mscorlib]System.String ) ->  
+	[Launcher]Shared.Network.NetworkService::CloseNetwork[0]( ) ->  
+
+	[Launcher]Shared.Network.NetworkService::.ctor[0]( ) skipped:  special name
+}
+
+[Launcher]Shared.Languages.LanguageHelper -> [Launcher] .‥
+{
+	[Launcher]Shared.Languages.LanguageHelper::Get[3]( [mscorlib]System.String, [mscorlib]System.String, [mscorlib]System.Object[] ) ->  
+	[Launcher]Shared.Languages.LanguageHelper::ApplyTranslations[2]( [System.Windows.Forms]System.Windows.Forms.Control, [mscorlib]System.String ) ->  
+}
+
+[Launcher]Launcher.PayloadHelper -> [Launcher] .‮
+{
+	[Launcher]Launcher.PayloadHelper::ReadFromStdIn[0]( ) ->  
+}
+
+Skipped Types:
+
+Renamed Resources:
+
+Launcher.Main.resources ->  .‬.resources
+Launcher.Options.resources ->  .‭.resources
+Launcher.Properties.Resources.resources ->  .″.resources
+
+Skipped Resources:
+

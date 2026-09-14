@@ -1,0 +1,10 @@
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\Executables\1.WebzenOriginal\Launcher.exe.config
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\Executables\1.WebzenOriginal\Launcher.exe
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\Executables\1.WebzenOriginal\Launcher.pdb
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\1.WebzenOriginal\obj\Release\1.WebzenOriginal.csproj.AssemblyReference.cache
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\1.WebzenOriginal\obj\Release\Launcher.Main.resources
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\1.WebzenOriginal\obj\Release\Launcher.Properties.Resources.resources
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\1.WebzenOriginal\obj\Release\1.WebzenOriginal.csproj.GenerateResource.cache
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\1.WebzenOriginal\obj\Release\1.WebzenOriginal.csproj.CoreCompileInputs.cache
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\1.WebzenOriginal\obj\Release\Launcher.exe
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\1.WebzenOriginal\obj\Release\Launcher.pdb

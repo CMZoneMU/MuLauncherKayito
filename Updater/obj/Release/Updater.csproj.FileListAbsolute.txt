@@ -1,0 +1,10 @@
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\Executables\Updater\Updater.exe.config
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\Executables\Updater\Updater.exe
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\Executables\Updater\Updater.pdb
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\Updater\obj\Release\Updater.csproj.AssemblyReference.cache
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\Updater\obj\Release\Updater.Main.resources
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\Updater\obj\Release\Updater.Properties.Resources.resources
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\Updater\obj\Release\Updater.csproj.GenerateResource.cache
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\Updater\obj\Release\Updater.csproj.CoreCompileInputs.cache
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\Updater\obj\Release\Updater.exe
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\Updater\obj\Release\Updater.pdb

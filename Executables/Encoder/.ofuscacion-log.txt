@@ -1,0 +1,629 @@
+Renamed Types:
+
+[Encoder]Shared.Utils.CryptoHelper -> [Encoder] . 
+{
+	[Encoder]Shared.Utils.CryptoHelper::Encrypt[2]( [mscorlib]System.String, [mscorlib]System.String ) ->  
+	[Encoder]Shared.Utils.CryptoHelper::Decrypt[2]( [mscorlib]System.Byte[], [mscorlib]System.String ) ->  
+
+	System.Int32 [Encoder]System.Int32 Shared.Utils.CryptoHelper::SaltSize ->  
+	System.Int32 [Encoder]System.Int32 Shared.Utils.CryptoHelper::IvSize ->  
+	System.Int32 [Encoder]System.Int32 Shared.Utils.CryptoHelper::KeySize ->  
+	System.Int32 [Encoder]System.Int32 Shared.Utils.CryptoHelper::Iterations ->  
+}
+
+[Encoder]Shared.Utils.JsonHelper -> [Encoder] . 
+{
+	[Encoder]Shared.Utils.JsonHelper::GetSerializer[1]( [mscorlib]System.Type ) ->  
+	[Encoder]Shared.Utils.JsonHelper::Serialize[1]( !0 ) ->  
+	[Encoder]Shared.Utils.JsonHelper::Deserialize[1]( [mscorlib]System.String ) ->  
+
+	[Encoder]Shared.Utils.JsonHelper::.cctor[0]( ) skipped:  special name
+
+	System.Collections.Concurrent.ConcurrentDictionary`2<System.Type,System.Runtime.Serialization.Json.DataContractJsonSerializer> [Encoder]System.Collections.Concurrent.ConcurrentDictionary`2<System.Type,System.Runtime.Serialization.Json.DataContractJsonSerializer> Shared.Utils.JsonHelper::Cache ->  
+}
+
+[Encoder]Shared.Update.FileDownloader -> [Encoder] . 
+{
+	[Encoder]Shared.Update.FileDownloader::DownloadFiles[4]( [mscorlib]System.Collections.Generic.List`1<[Encoder]Shared.Update.UpdateFileInfo>, [mscorlib]System.String, [mscorlib]System.Int64, [mscorlib]System.IProgress`1<[Encoder]Shared.Update.UpdateProgress> ) ->  
+	[Encoder]Shared.Update.FileDownloader::DownloadSingleFile[4]( [Encoder]Shared.Update.UpdateFileInfo, [mscorlib]System.String, [mscorlib]System.Int64, [mscorlib]System.IProgress`1<[Encoder]Shared.Update.UpdateProgress> ) ->  
+
+	[Encoder]Shared.Update.FileDownloader::.ctor[0]( ) skipped:  special name
+
+	System.Int32 [Encoder]System.Int32 Shared.Update.FileDownloader::MAX_PARALLEL_DOWNLOADS ->  
+	System.Int64 [Encoder]System.Int64 Shared.Update.FileDownloader::_totalDownloaded ->  
+}
+
+[Encoder]Shared.Update.ManifestManager -> [Encoder] . 
+{
+	[Encoder]Shared.Update.ManifestManager::Set[1]( [Encoder]Shared.Update.UpdateManifest ) ->  
+
+	[Encoder]Shared.Update.ManifestManager::get_Current[0]( ) skipped:  skipping properties
+
+	Shared.Update.UpdateManifest [Encoder]Shared.Update.UpdateManifest Shared.Update.ManifestManager::_current ->  
+}
+
+[Encoder]Shared.Update.UpdateFileInfo -> [Encoder] . 
+{
+
+	[Encoder]Shared.Update.UpdateFileInfo::get_Path[0]( ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateFileInfo::set_Path[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateFileInfo::get_Size[0]( ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateFileInfo::set_Size[1]( [mscorlib]System.Int64 ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateFileInfo::get_Hash[0]( ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateFileInfo::set_Hash[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateFileInfo::.ctor[0]( ) skipped:  special name
+
+	System.String [Encoder]System.String Shared.Update.UpdateFileInfo::<Path>k__BackingField ->  
+	System.Int64 [Encoder]System.Int64 Shared.Update.UpdateFileInfo::<Size>k__BackingField ->  
+	System.String [Encoder]System.String Shared.Update.UpdateFileInfo::<Hash>k__BackingField ->  
+}
+
+[Encoder]Shared.Update.UpdateManifest -> [Encoder] . 
+{
+
+	[Encoder]Shared.Update.UpdateManifest::get_Launcher[0]( ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateManifest::set_Launcher[1]( [Encoder]Shared.Update.UpdateFileInfo ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateManifest::get_FileList[0]( ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateManifest::set_FileList[1]( [mscorlib]System.Collections.Generic.List`1<[Encoder]Shared.Update.UpdateFileInfo> ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateManifest::.ctor[0]( ) skipped:  special name
+
+	Shared.Update.UpdateFileInfo [Encoder]Shared.Update.UpdateFileInfo Shared.Update.UpdateManifest::<Launcher>k__BackingField ->  
+	System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> [Encoder]System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> Shared.Update.UpdateManifest::<FileList>k__BackingField ->  
+}
+
+[Encoder]Shared.Update.UpdateProgress -> [Encoder] . 
+{
+
+	[Encoder]Shared.Update.UpdateProgress::get_StatusKey[0]( ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateProgress::set_StatusKey[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateProgress::get_Args[0]( ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateProgress::set_Args[1]( [mscorlib]System.Object[] ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateProgress::get_CurrentFileDownloaded[0]( ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateProgress::set_CurrentFileDownloaded[1]( [mscorlib]System.Int64 ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateProgress::get_CurrentFileSize[0]( ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateProgress::set_CurrentFileSize[1]( [mscorlib]System.Int64 ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateProgress::get_TotalBytesDownloaded[0]( ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateProgress::set_TotalBytesDownloaded[1]( [mscorlib]System.Int64 ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateProgress::get_TotalBytes[0]( ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateProgress::set_TotalBytes[1]( [mscorlib]System.Int64 ) skipped:  skipping properties
+	[Encoder]Shared.Update.UpdateProgress::.ctor[0]( ) skipped:  special name
+
+	System.String [Encoder]System.String Shared.Update.UpdateProgress::<StatusKey>k__BackingField ->  
+	System.Object[] [Encoder]System.Object[] Shared.Update.UpdateProgress::<Args>k__BackingField ->  
+	System.Int64 [Encoder]System.Int64 Shared.Update.UpdateProgress::<CurrentFileDownloaded>k__BackingField ->  
+	System.Int64 [Encoder]System.Int64 Shared.Update.UpdateProgress::<CurrentFileSize>k__BackingField ->  
+	System.Int64 [Encoder]System.Int64 Shared.Update.UpdateProgress::<TotalBytesDownloaded>k__BackingField ->  
+	System.Int64 [Encoder]System.Int64 Shared.Update.UpdateProgress::<TotalBytes>k__BackingField ->  
+}
+
+[Encoder]Shared.UI.RoundedPanel -> [Encoder] . 
+{
+
+	[Encoder]Shared.UI.RoundedPanel::get_Radius[0]( ) skipped:  skipping properties
+	[Encoder]Shared.UI.RoundedPanel::set_Radius[1]( [mscorlib]System.Int32 ) skipped:  skipping properties
+	[Encoder]Shared.UI.RoundedPanel::get_BorderColor[0]( ) skipped:  skipping properties
+	[Encoder]Shared.UI.RoundedPanel::set_BorderColor[1]( [System.Drawing]System.Drawing.Color ) skipped:  skipping properties
+	[Encoder]Shared.UI.RoundedPanel::get_BorderThickness[0]( ) skipped:  skipping properties
+	[Encoder]Shared.UI.RoundedPanel::set_BorderThickness[1]( [mscorlib]System.Int32 ) skipped:  skipping properties
+	[Encoder]Shared.UI.RoundedPanel::OnPaint[1]( [System.Windows.Forms]System.Windows.Forms.PaintEventArgs ) skipped:  external base class or interface
+	[Encoder]Shared.UI.RoundedPanel::.ctor[0]( ) skipped:  special name
+
+	System.Int32 [Encoder]System.Int32 Shared.UI.RoundedPanel::<Radius>k__BackingField ->  
+	System.Drawing.Color [Encoder]System.Drawing.Color Shared.UI.RoundedPanel::<BorderColor>k__BackingField ->  
+	System.Int32 [Encoder]System.Int32 Shared.UI.RoundedPanel::<BorderThickness>k__BackingField ->  
+}
+
+[Encoder]Shared.UI.SegmentedProgressBar -> [Encoder] .‐
+{
+
+	[Encoder]Shared.UI.SegmentedProgressBar::OnPaint[1]( [System.Windows.Forms]System.Windows.Forms.PaintEventArgs ) skipped:  external base class or interface
+	[Encoder]Shared.UI.SegmentedProgressBar::get_Maximum[0]( ) skipped:  skipping properties
+	[Encoder]Shared.UI.SegmentedProgressBar::set_Maximum[1]( [mscorlib]System.Int32 ) skipped:  skipping properties
+	[Encoder]Shared.UI.SegmentedProgressBar::get_Value[0]( ) skipped:  skipping properties
+	[Encoder]Shared.UI.SegmentedProgressBar::set_Value[1]( [mscorlib]System.Int32 ) skipped:  skipping properties
+	[Encoder]Shared.UI.SegmentedProgressBar::get_SegmentCount[0]( ) skipped:  skipping properties
+	[Encoder]Shared.UI.SegmentedProgressBar::set_SegmentCount[1]( [mscorlib]System.Int32 ) skipped:  skipping properties
+	[Encoder]Shared.UI.SegmentedProgressBar::get_SegmentSpacing[0]( ) skipped:  skipping properties
+	[Encoder]Shared.UI.SegmentedProgressBar::set_SegmentSpacing[1]( [mscorlib]System.Int32 ) skipped:  skipping properties
+	[Encoder]Shared.UI.SegmentedProgressBar::.ctor[0]( ) skipped:  special name
+
+	System.Int32 [Encoder]System.Int32 Shared.UI.SegmentedProgressBar::value ->  
+	System.Int32 [Encoder]System.Int32 Shared.UI.SegmentedProgressBar::<Maximum>k__BackingField ->  
+	System.Int32 [Encoder]System.Int32 Shared.UI.SegmentedProgressBar::<SegmentCount>k__BackingField ->  
+	System.Int32 [Encoder]System.Int32 Shared.UI.SegmentedProgressBar::<SegmentSpacing>k__BackingField ->  
+}
+
+[Encoder]Shared.UI.FontManager -> [Encoder] .‑
+{
+	[Encoder]Shared.UI.FontManager::AddFontMemResourceEx[4]( [mscorlib]System.IntPtr, [mscorlib]System.UInt32, [mscorlib]System.IntPtr, [mscorlib]System.UInt32& ) ->  
+	[Encoder]Shared.UI.FontManager::LoadFont[2]( [mscorlib]System.String, [mscorlib]System.Byte[] ) ->  
+	[Encoder]Shared.UI.FontManager::GetFont[3]( [mscorlib]System.String, [mscorlib]System.Single, [System.Drawing]System.Drawing.FontStyle ) ->  
+
+	[Encoder]Shared.UI.FontManager::.cctor[0]( ) skipped:  special name
+
+	System.Drawing.Text.PrivateFontCollection [Encoder]System.Drawing.Text.PrivateFontCollection Shared.UI.FontManager::_fontCollection ->  
+	System.Collections.Generic.List`1<System.IntPtr> [Encoder]System.Collections.Generic.List`1<System.IntPtr> Shared.UI.FontManager::_fontBuffers ->  
+	System.Collections.Generic.Dictionary`2<System.String,System.Drawing.FontFamily> [Encoder]System.Collections.Generic.Dictionary`2<System.String,System.Drawing.FontFamily> Shared.UI.FontManager::_fonts ->  
+	System.Object [Encoder]System.Object Shared.UI.FontManager::_lock ->  
+}
+
+[Encoder]Shared.Network.HttpClientManager -> [Encoder] .‒
+{
+	[Encoder]Shared.Network.HttpClientManager::Create[0]( ) ->  
+
+	[Encoder]Shared.Network.HttpClientManager::.cctor[0]( ) skipped:  special name
+
+	System.Net.Http.HttpClient [Encoder]System.Net.Http.HttpClient Shared.Network.HttpClientManager::Client ->  
+}
+
+[Encoder]Shared.LauncherPayload.LauncherPayload -> [Encoder] .—
+{
+
+	[Encoder]Shared.LauncherPayload.LauncherPayload::get_Token[0]( ) skipped:  skipping properties
+	[Encoder]Shared.LauncherPayload.LauncherPayload::set_Token[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Encoder]Shared.LauncherPayload.LauncherPayload::get_Config[0]( ) skipped:  skipping properties
+	[Encoder]Shared.LauncherPayload.LauncherPayload::set_Config[1]( [Encoder]Shared.LauncherConfig.ConfigModel ) skipped:  skipping properties
+	[Encoder]Shared.LauncherPayload.LauncherPayload::get_Manifest[0]( ) skipped:  skipping properties
+	[Encoder]Shared.LauncherPayload.LauncherPayload::set_Manifest[1]( [Encoder]Shared.Update.UpdateManifest ) skipped:  skipping properties
+	[Encoder]Shared.LauncherPayload.LauncherPayload::.ctor[0]( ) skipped:  special name
+
+	System.String [Encoder]System.String Shared.LauncherPayload.LauncherPayload::<Token>k__BackingField ->  
+	Shared.LauncherConfig.ConfigModel [Encoder]Shared.LauncherConfig.ConfigModel Shared.LauncherPayload.LauncherPayload::<Config>k__BackingField ->  
+	Shared.Update.UpdateManifest [Encoder]Shared.Update.UpdateManifest Shared.LauncherPayload.LauncherPayload::<Manifest>k__BackingField ->  
+}
+
+[Encoder]Shared.LauncherConfig.ConfigHelper -> [Encoder] .―
+{
+	[Encoder]Shared.LauncherConfig.ConfigHelper::SaveFile[2]( [Encoder]Shared.LauncherConfig.ConfigModel, [mscorlib]System.String ) ->  
+	[Encoder]Shared.LauncherConfig.ConfigHelper::LoadFile[1]( [mscorlib]System.String ) ->  
+	[Encoder]Shared.LauncherConfig.ConfigHelper::Validate[1]( [Encoder]Shared.LauncherConfig.ConfigModel ) ->  
+
+	System.String [Encoder]System.String Shared.LauncherConfig.ConfigHelper::SecretKey ->  
+}
+
+[Encoder]Shared.LauncherConfig.ConfigManager -> [Encoder] .•
+{
+	[Encoder]Shared.LauncherConfig.ConfigManager::Set[1]( [Encoder]Shared.LauncherConfig.ConfigModel ) ->  
+
+	[Encoder]Shared.LauncherConfig.ConfigManager::get_ConfigPath[0]( ) skipped:  skipping properties
+	[Encoder]Shared.LauncherConfig.ConfigManager::get_Current[0]( ) skipped:  skipping properties
+
+	System.String [Encoder]System.String Shared.LauncherConfig.ConfigManager::ConfigFile ->  
+	Shared.LauncherConfig.ConfigModel [Encoder]Shared.LauncherConfig.ConfigModel Shared.LauncherConfig.ConfigManager::_current ->  
+}
+
+[Encoder]Shared.LauncherConfig.ConfigModel -> [Encoder] .․
+{
+
+	[Encoder]Shared.LauncherConfig.ConfigModel::get_WindowTitle[0]( ) skipped:  skipping properties
+	[Encoder]Shared.LauncherConfig.ConfigModel::set_WindowTitle[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Encoder]Shared.LauncherConfig.ConfigModel::get_GameExecutable[0]( ) skipped:  skipping properties
+	[Encoder]Shared.LauncherConfig.ConfigModel::set_GameExecutable[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Encoder]Shared.LauncherConfig.ConfigModel::get_UpdatesURL[0]( ) skipped:  skipping properties
+	[Encoder]Shared.LauncherConfig.ConfigModel::set_UpdatesURL[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Encoder]Shared.LauncherConfig.ConfigModel::get_UpdateFilename[0]( ) skipped:  skipping properties
+	[Encoder]Shared.LauncherConfig.ConfigModel::set_UpdateFilename[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Encoder]Shared.LauncherConfig.ConfigModel::get_WebsiteURL[0]( ) skipped:  skipping properties
+	[Encoder]Shared.LauncherConfig.ConfigModel::set_WebsiteURL[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Encoder]Shared.LauncherConfig.ConfigModel::get_MutexName[0]( ) skipped:  skipping properties
+	[Encoder]Shared.LauncherConfig.ConfigModel::set_MutexName[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Encoder]Shared.LauncherConfig.ConfigModel::.ctor[0]( ) skipped:  special name
+
+	System.String [Encoder]System.String Shared.LauncherConfig.ConfigModel::<WindowTitle>k__BackingField ->  
+	System.String [Encoder]System.String Shared.LauncherConfig.ConfigModel::<GameExecutable>k__BackingField ->  
+	System.String [Encoder]System.String Shared.LauncherConfig.ConfigModel::<UpdatesURL>k__BackingField ->  
+	System.String [Encoder]System.String Shared.LauncherConfig.ConfigModel::<UpdateFilename>k__BackingField ->  
+	System.String [Encoder]System.String Shared.LauncherConfig.ConfigModel::<WebsiteURL>k__BackingField ->  
+	System.String [Encoder]System.String Shared.LauncherConfig.ConfigModel::<MutexName>k__BackingField ->  
+}
+
+[Encoder]Shared.Languages.LanguageModel -> [Encoder] .‧
+{
+
+	[Encoder]Shared.Languages.LanguageModel::.cctor[0]( ) skipped:  special name
+
+	System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<System.String,System.String>> [Encoder]System.Collections.Generic.Dictionary`2<System.String,System.Collections.Generic.Dictionary`2<System.String,System.String>> Shared.Languages.LanguageModel::translations ->  
+}
+
+[Encoder]Shared.GameSettings.SettingsHelper -> [Encoder] . 
+{
+	[Encoder]Shared.GameSettings.SettingsHelper::Load[0]( ) ->  
+	[Encoder]Shared.GameSettings.SettingsHelper::GetStringValue[2]( [mscorlib]System.String, [mscorlib]System.String ) ->  
+	[Encoder]Shared.GameSettings.SettingsHelper::GetIntValue[2]( [mscorlib]System.String, [mscorlib]System.Int32 ) ->  
+	[Encoder]Shared.GameSettings.SettingsHelper::Save[1]( [Encoder]Shared.GameSettings.SettingsModel ) ->  
+	[Encoder]Shared.GameSettings.SettingsHelper::SetStringValue[2]( [mscorlib]System.String, [mscorlib]System.String ) ->  
+	[Encoder]Shared.GameSettings.SettingsHelper::SetIntValue[2]( [mscorlib]System.String, [mscorlib]System.Int32 ) ->  
+
+	System.String [Encoder]System.String Shared.GameSettings.SettingsHelper::RegistryPath ->  
+}
+
+[Encoder]Shared.GameSettings.SettingsDictionary -> [Encoder] . 
+{
+
+	[Encoder]Shared.GameSettings.SettingsDictionary::.ctor[0]( ) skipped:  special name
+	[Encoder]Shared.GameSettings.SettingsDictionary::.cctor[0]( ) skipped:  special name
+
+	System.Collections.Generic.IDictionary`2<System.String,System.String> [Encoder]System.Collections.Generic.IDictionary`2<System.String,System.String> Shared.GameSettings.SettingsDictionary::Lang ->  
+	System.Collections.Generic.IDictionary`2<System.Int32,System.String> [Encoder]System.Collections.Generic.IDictionary`2<System.Int32,System.String> Shared.GameSettings.SettingsDictionary::Resolution ->  
+}
+
+[Encoder]Shared.GameSettings.SettingsModel -> [Encoder] .‪
+{
+
+	[Encoder]Shared.GameSettings.SettingsModel::get_Account[0]( ) skipped:  skipping properties
+	[Encoder]Shared.GameSettings.SettingsModel::set_Account[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Encoder]Shared.GameSettings.SettingsModel::get_Language[0]( ) skipped:  skipping properties
+	[Encoder]Shared.GameSettings.SettingsModel::set_Language[1]( [mscorlib]System.String ) skipped:  skipping properties
+	[Encoder]Shared.GameSettings.SettingsModel::get_Resolution[0]( ) skipped:  skipping properties
+	[Encoder]Shared.GameSettings.SettingsModel::set_Resolution[1]( [mscorlib]System.Nullable`1<[mscorlib]System.Int32> ) skipped:  skipping properties
+	[Encoder]Shared.GameSettings.SettingsModel::get_WindowMode[0]( ) skipped:  skipping properties
+	[Encoder]Shared.GameSettings.SettingsModel::set_WindowMode[1]( [mscorlib]System.Nullable`1<[mscorlib]System.Boolean> ) skipped:  skipping properties
+	[Encoder]Shared.GameSettings.SettingsModel::get_Music[0]( ) skipped:  skipping properties
+	[Encoder]Shared.GameSettings.SettingsModel::set_Music[1]( [mscorlib]System.Nullable`1<[mscorlib]System.Boolean> ) skipped:  skipping properties
+	[Encoder]Shared.GameSettings.SettingsModel::get_Sound[0]( ) skipped:  skipping properties
+	[Encoder]Shared.GameSettings.SettingsModel::set_Sound[1]( [mscorlib]System.Nullable`1<[mscorlib]System.Boolean> ) skipped:  skipping properties
+	[Encoder]Shared.GameSettings.SettingsModel::get_Volume[0]( ) skipped:  skipping properties
+	[Encoder]Shared.GameSettings.SettingsModel::set_Volume[1]( [mscorlib]System.Nullable`1<[mscorlib]System.Int32> ) skipped:  skipping properties
+	[Encoder]Shared.GameSettings.SettingsModel::.ctor[0]( ) skipped:  special name
+
+	System.String [Encoder]System.String Shared.GameSettings.SettingsModel::<Account>k__BackingField ->  
+	System.String [Encoder]System.String Shared.GameSettings.SettingsModel::<Language>k__BackingField ->  
+	System.Nullable`1<System.Int32> [Encoder]System.Nullable`1<System.Int32> Shared.GameSettings.SettingsModel::<Resolution>k__BackingField ->  
+	System.Nullable`1<System.Boolean> [Encoder]System.Nullable`1<System.Boolean> Shared.GameSettings.SettingsModel::<WindowMode>k__BackingField ->  
+	System.Nullable`1<System.Boolean> [Encoder]System.Nullable`1<System.Boolean> Shared.GameSettings.SettingsModel::<Music>k__BackingField ->  
+	System.Nullable`1<System.Boolean> [Encoder]System.Nullable`1<System.Boolean> Shared.GameSettings.SettingsModel::<Sound>k__BackingField ->  
+	System.Nullable`1<System.Int32> [Encoder]System.Nullable`1<System.Int32> Shared.GameSettings.SettingsModel::<Volume>k__BackingField ->  
+}
+
+[Encoder]Shared.GameSettings.SettingsService -> [Encoder] .‫
+{
+	[Encoder]Shared.GameSettings.SettingsService::add_OnLanguageChanged[1]( [mscorlib]System.Action`1<[mscorlib]System.String> ) ->  
+	[Encoder]Shared.GameSettings.SettingsService::remove_OnLanguageChanged[1]( [mscorlib]System.Action`1<[mscorlib]System.String> ) ->  
+	[Encoder]Shared.GameSettings.SettingsService::Load[0]( ) ->  
+	[Encoder]Shared.GameSettings.SettingsService::Save[0]( ) ->  
+	[Encoder]Shared.GameSettings.SettingsService::SetLanguage[1]( [mscorlib]System.String ) ->  
+
+	[Encoder]Shared.GameSettings.SettingsService::get_Instance[0]( ) skipped:  skipping properties
+	[Encoder]Shared.GameSettings.SettingsService::get_Current[0]( ) skipped:  skipping properties
+	[Encoder]Shared.GameSettings.SettingsService::.ctor[0]( ) skipped:  special name
+	[Encoder]Shared.GameSettings.SettingsService::.cctor[0]( ) skipped:  special name
+
+	System.Lazy`1<Shared.GameSettings.SettingsService> [Encoder]System.Lazy`1<Shared.GameSettings.SettingsService> Shared.GameSettings.SettingsService::_instance ->  
+	Shared.GameSettings.SettingsModel [Encoder]Shared.GameSettings.SettingsModel Shared.GameSettings.SettingsService::_settings ->  
+	System.Action`1<System.String> [Encoder]System.Action`1<System.String> Shared.GameSettings.SettingsService::OnLanguageChanged ->  
+
+	System.Action`1<System.String> [Encoder]System.Action`1<System.String> Shared.GameSettings.SettingsService::OnLanguageChanged -> dropped
+}
+
+[Encoder]Encoder.Main -> [Encoder] .‬
+{
+	[Encoder]Encoder.Main::Main_Load[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Encoder]Encoder.Main::Btn_Load_Click[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Encoder]Encoder.Main::Btn_Save_Click[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Encoder]Encoder.Main::Btn_Close_Click[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Encoder]Encoder.Main::SetTextureHandlers[0]( ) ->  
+	[Encoder]Encoder.Main::SetLabelTooltips[0]( ) ->  
+	[Encoder]Encoder.Main::SaveFile[0]( ) ->  
+	[Encoder]Encoder.Main::ValidateInputs[0]( ) ->  
+	[Encoder]Encoder.Main::SetConfigValues[1]( [Encoder]Shared.LauncherConfig.ConfigModel ) ->  
+	[Encoder]Encoder.Main::GetConfigValues[0]( ) ->  
+	[Encoder]Encoder.Main::InitializeComponent[0]( ) ->  
+	[Encoder]Encoder.Main::<ValidateInputs>g__SetError|8_0[3]( [System.Windows.Forms]System.Windows.Forms.Control, [mscorlib]System.String, [Encoder]Encoder.Main/<>c__DisplayClass8_0& ) ->  
+
+	[Encoder]Encoder.Main::.ctor[0]( ) skipped:  special name
+	[Encoder]Encoder.Main::Dispose[1]( [mscorlib]System.Boolean ) skipped:  external base class or interface
+
+	System.ComponentModel.IContainer [Encoder]System.ComponentModel.IContainer Encoder.Main::components ->  
+	System.Windows.Forms.GroupBox [Encoder]System.Windows.Forms.GroupBox Encoder.Main::Launcher_Info_Box ->  
+	System.Windows.Forms.TextBox [Encoder]System.Windows.Forms.TextBox Encoder.Main::WindowTitle_Box ->  
+	System.Windows.Forms.Label [Encoder]System.Windows.Forms.Label Encoder.Main::WindowTitle_txt ->  
+	System.Windows.Forms.Panel [Encoder]System.Windows.Forms.Panel Encoder.Main::WindowTitle_Panel ->  
+	System.Windows.Forms.Panel [Encoder]System.Windows.Forms.Panel Encoder.Main::Executable_Panel ->  
+	System.Windows.Forms.TextBox [Encoder]System.Windows.Forms.TextBox Encoder.Main::Executable_Box ->  
+	System.Windows.Forms.Label [Encoder]System.Windows.Forms.Label Encoder.Main::Executable_txt ->  
+	System.Windows.Forms.Panel [Encoder]System.Windows.Forms.Panel Encoder.Main::UpdatesUrl_Panel ->  
+	System.Windows.Forms.TextBox [Encoder]System.Windows.Forms.TextBox Encoder.Main::UpdatesUrl_Box ->  
+	System.Windows.Forms.Label [Encoder]System.Windows.Forms.Label Encoder.Main::UpdatesUrl_txt ->  
+	System.Windows.Forms.Panel [Encoder]System.Windows.Forms.Panel Encoder.Main::UpdateFile_Panel ->  
+	System.Windows.Forms.TextBox [Encoder]System.Windows.Forms.TextBox Encoder.Main::UpdateFile_Box ->  
+	System.Windows.Forms.Label [Encoder]System.Windows.Forms.Label Encoder.Main::UpdateFile_txt ->  
+	System.Windows.Forms.Panel [Encoder]System.Windows.Forms.Panel Encoder.Main::MutexName_Panel ->  
+	System.Windows.Forms.TextBox [Encoder]System.Windows.Forms.TextBox Encoder.Main::MutexName_Box ->  
+	System.Windows.Forms.Label [Encoder]System.Windows.Forms.Label Encoder.Main::MutexName_txt ->  
+	System.Windows.Forms.Button [Encoder]System.Windows.Forms.Button Encoder.Main::Btn_Save ->  
+	System.Windows.Forms.PictureBox [Encoder]System.Windows.Forms.PictureBox Encoder.Main::Btn_Close ->  
+	System.Windows.Forms.Button [Encoder]System.Windows.Forms.Button Encoder.Main::Btn_Load ->  
+	System.Windows.Forms.ErrorProvider [Encoder]System.Windows.Forms.ErrorProvider Encoder.Main::Error_handler ->  
+	System.Windows.Forms.ToolTip [Encoder]System.Windows.Forms.ToolTip Encoder.Main::Tooltip_handler ->  
+	System.Windows.Forms.FolderBrowserDialog [Encoder]System.Windows.Forms.FolderBrowserDialog Encoder.Main::FolderBrowser_handler ->  
+	System.Windows.Forms.Panel [Encoder]System.Windows.Forms.Panel Encoder.Main::Website_panel ->  
+	System.Windows.Forms.TextBox [Encoder]System.Windows.Forms.TextBox Encoder.Main::Website_Box ->  
+	System.Windows.Forms.Label [Encoder]System.Windows.Forms.Label Encoder.Main::Website_txt ->  
+}
+
+[Encoder]Encoder.Properties.Resources -> [Encoder] .‮
+{
+
+	[Encoder]Encoder.Properties.Resources::.ctor[0]( ) skipped:  special name
+	[Encoder]Encoder.Properties.Resources::get_ResourceManager[0]( ) skipped:  skipping properties
+	[Encoder]Encoder.Properties.Resources::get_Culture[0]( ) skipped:  skipping properties
+	[Encoder]Encoder.Properties.Resources::set_Culture[1]( [mscorlib]System.Globalization.CultureInfo ) skipped:  skipping properties
+	[Encoder]Encoder.Properties.Resources::get_Background[0]( ) skipped:  skipping properties
+	[Encoder]Encoder.Properties.Resources::get_Close_c[0]( ) skipped:  skipping properties
+	[Encoder]Encoder.Properties.Resources::get_Close_h[0]( ) skipped:  skipping properties
+	[Encoder]Encoder.Properties.Resources::get_Close_n[0]( ) skipped:  skipping properties
+	[Encoder]Encoder.Properties.Resources::get_Load_c[0]( ) skipped:  skipping properties
+	[Encoder]Encoder.Properties.Resources::get_Load_h[0]( ) skipped:  skipping properties
+	[Encoder]Encoder.Properties.Resources::get_Load_n[0]( ) skipped:  skipping properties
+	[Encoder]Encoder.Properties.Resources::get_Save_c[0]( ) skipped:  skipping properties
+	[Encoder]Encoder.Properties.Resources::get_Save_h[0]( ) skipped:  skipping properties
+	[Encoder]Encoder.Properties.Resources::get_Save_n[0]( ) skipped:  skipping properties
+
+	System.Resources.ResourceManager [Encoder]System.Resources.ResourceManager Encoder.Properties.Resources::resourceMan ->  
+	System.Globalization.CultureInfo [Encoder]System.Globalization.CultureInfo Encoder.Properties.Resources::resourceCulture ->  
+}
+
+[Encoder]Encoder.Properties.Settings -> [Encoder] . 
+{
+
+	[Encoder]Encoder.Properties.Settings::get_Default[0]( ) skipped:  skipping properties
+	[Encoder]Encoder.Properties.Settings::.ctor[0]( ) skipped:  special name
+	[Encoder]Encoder.Properties.Settings::.cctor[0]( ) skipped:  special name
+
+	Encoder.Properties.Settings [Encoder]Encoder.Properties.Settings Encoder.Properties.Settings::defaultInstance ->  
+}
+
+[Encoder]Shared.Utils.JsonHelper/<>c -> [Encoder] . / 
+{
+	[Encoder]Shared.Utils.JsonHelper/<>c::<GetSerializer>b__1_0[1]( [mscorlib]System.Type ) ->  
+
+	[Encoder]Shared.Utils.JsonHelper/<>c::.cctor[0]( ) skipped:  special name
+	[Encoder]Shared.Utils.JsonHelper/<>c::.ctor[0]( ) skipped:  special name
+
+	Shared.Utils.JsonHelper/<>c [Encoder]Shared.Utils.JsonHelper/<>c Shared.Utils.JsonHelper/<>c::<>9 ->  
+	System.Func`2<System.Type,System.Runtime.Serialization.Json.DataContractJsonSerializer> [Encoder]System.Func`2<System.Type,System.Runtime.Serialization.Json.DataContractJsonSerializer> Shared.Utils.JsonHelper/<>c::<>9__1_0 ->  
+}
+
+[Encoder]Shared.Update.FileDownloader/<>c__DisplayClass2_0 -> [Encoder] . / 
+{
+
+	[Encoder]Shared.Update.FileDownloader/<>c__DisplayClass2_0::.ctor[0]( ) skipped:  special name
+
+	Shared.Update.FileDownloader [Encoder]Shared.Update.FileDownloader Shared.Update.FileDownloader/<>c__DisplayClass2_0::<>4__this ->  
+	System.String [Encoder]System.String Shared.Update.FileDownloader/<>c__DisplayClass2_0::baseUrl ->  
+	System.Int64 [Encoder]System.Int64 Shared.Update.FileDownloader/<>c__DisplayClass2_0::totalBytes ->  
+	System.IProgress`1<Shared.Update.UpdateProgress> [Encoder]System.IProgress`1<Shared.Update.UpdateProgress> Shared.Update.FileDownloader/<>c__DisplayClass2_0::progress ->  
+	System.Threading.SemaphoreSlim [Encoder]System.Threading.SemaphoreSlim Shared.Update.FileDownloader/<>c__DisplayClass2_0::semaphore ->  
+}
+
+[Encoder]Shared.Update.FileDownloader/<>c__DisplayClass2_1 -> [Encoder] . / 
+{
+	[Encoder]Shared.Update.FileDownloader/<>c__DisplayClass2_1::<DownloadFiles>b__0[0]( ) ->  
+
+	[Encoder]Shared.Update.FileDownloader/<>c__DisplayClass2_1::.ctor[0]( ) skipped:  special name
+
+	Shared.Update.UpdateFileInfo [Encoder]Shared.Update.UpdateFileInfo Shared.Update.FileDownloader/<>c__DisplayClass2_1::file ->  
+	Shared.Update.FileDownloader/<>c__DisplayClass2_0 [Encoder]Shared.Update.FileDownloader/<>c__DisplayClass2_0 Shared.Update.FileDownloader/<>c__DisplayClass2_1::CS$<>8__locals1 ->  
+}
+
+[Encoder]Shared.Update.FileDownloader/<DownloadFiles>d__2 -> [Encoder] . / 
+{
+
+	[Encoder]Shared.Update.FileDownloader/<DownloadFiles>d__2::MoveNext[0]( ) skipped:  external base class or interface
+	[Encoder]Shared.Update.FileDownloader/<DownloadFiles>d__2::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Encoder]System.Int32 Shared.Update.FileDownloader/<DownloadFiles>d__2::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder [Encoder]System.Runtime.CompilerServices.AsyncTaskMethodBuilder Shared.Update.FileDownloader/<DownloadFiles>d__2::<>t__builder ->  
+	Shared.Update.FileDownloader [Encoder]Shared.Update.FileDownloader Shared.Update.FileDownloader/<DownloadFiles>d__2::<>4__this ->  
+	System.String [Encoder]System.String Shared.Update.FileDownloader/<DownloadFiles>d__2::baseUrl ->  
+	System.Int64 [Encoder]System.Int64 Shared.Update.FileDownloader/<DownloadFiles>d__2::totalBytes ->  
+	System.IProgress`1<Shared.Update.UpdateProgress> [Encoder]System.IProgress`1<Shared.Update.UpdateProgress> Shared.Update.FileDownloader/<DownloadFiles>d__2::progress ->  
+	System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> [Encoder]System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> Shared.Update.FileDownloader/<DownloadFiles>d__2::files ->  
+	Shared.Update.FileDownloader/<>c__DisplayClass2_0 [Encoder]Shared.Update.FileDownloader/<>c__DisplayClass2_0 Shared.Update.FileDownloader/<DownloadFiles>d__2::<>8__1 ->  
+	Shared.Update.FileDownloader/<>c__DisplayClass2_1 [Encoder]Shared.Update.FileDownloader/<>c__DisplayClass2_1 Shared.Update.FileDownloader/<DownloadFiles>d__2::<>8__2 ->  
+	System.Collections.Generic.List`1<System.Threading.Tasks.Task> [Encoder]System.Collections.Generic.List`1<System.Threading.Tasks.Task> Shared.Update.FileDownloader/<DownloadFiles>d__2::<tasks>5__2 ->  
+	System.Collections.Generic.List`1/Enumerator<Shared.Update.UpdateFileInfo> [Encoder]System.Collections.Generic.List`1/Enumerator<Shared.Update.UpdateFileInfo> Shared.Update.FileDownloader/<DownloadFiles>d__2::<>7__wrap2 ->  
+	System.Runtime.CompilerServices.TaskAwaiter [Encoder]System.Runtime.CompilerServices.TaskAwaiter Shared.Update.FileDownloader/<DownloadFiles>d__2::<>u__1 ->  
+}
+
+[Encoder]Shared.Update.FileDownloader/<DownloadSingleFile>d__3 -> [Encoder] . / 
+{
+
+	[Encoder]Shared.Update.FileDownloader/<DownloadSingleFile>d__3::MoveNext[0]( ) skipped:  external base class or interface
+	[Encoder]Shared.Update.FileDownloader/<DownloadSingleFile>d__3::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Encoder]System.Int32 Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder [Encoder]System.Runtime.CompilerServices.AsyncTaskMethodBuilder Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>t__builder ->  
+	System.String [Encoder]System.String Shared.Update.FileDownloader/<DownloadSingleFile>d__3::baseUrl ->  
+	Shared.Update.UpdateFileInfo [Encoder]Shared.Update.UpdateFileInfo Shared.Update.FileDownloader/<DownloadSingleFile>d__3::file ->  
+	Shared.Update.FileDownloader [Encoder]Shared.Update.FileDownloader Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>4__this ->  
+	System.IProgress`1<Shared.Update.UpdateProgress> [Encoder]System.IProgress`1<Shared.Update.UpdateProgress> Shared.Update.FileDownloader/<DownloadSingleFile>d__3::progress ->  
+	System.Int64 [Encoder]System.Int64 Shared.Update.FileDownloader/<DownloadSingleFile>d__3::totalBytes ->  
+	System.String [Encoder]System.String Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<url>5__2 ->  
+	System.Int32 [Encoder]System.Int32 Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<retry>5__3 ->  
+	System.Net.Http.HttpResponseMessage [Encoder]System.Net.Http.HttpResponseMessage Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<response>5__4 ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.Net.Http.HttpResponseMessage> [Encoder]System.Runtime.CompilerServices.TaskAwaiter`1<System.Net.Http.HttpResponseMessage> Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>u__1 ->  
+	System.IO.Stream [Encoder]System.IO.Stream Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<stream>5__5 ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.IO.Stream> [Encoder]System.Runtime.CompilerServices.TaskAwaiter`1<System.IO.Stream> Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>u__2 ->  
+	System.IO.FileStream [Encoder]System.IO.FileStream Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<fs>5__6 ->  
+	System.Byte[] [Encoder]System.Byte[] Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<buffer>5__7 ->  
+	System.Int32 [Encoder]System.Int32 Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<read>5__8 ->  
+	System.Int64 [Encoder]System.Int64 Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<current>5__9 ->  
+	System.Runtime.CompilerServices.TaskAwaiter [Encoder]System.Runtime.CompilerServices.TaskAwaiter Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>u__3 ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.Int32> [Encoder]System.Runtime.CompilerServices.TaskAwaiter`1<System.Int32> Shared.Update.FileDownloader/<DownloadSingleFile>d__3::<>u__4 ->  
+}
+
+[Encoder]Shared.Update.FileScanner/<>c__DisplayClass0_0 -> [Encoder] . / 
+{
+	[Encoder]Shared.Update.FileScanner/<>c__DisplayClass0_0::<ScanFiles>b__0[0]( ) ->  
+
+	[Encoder]Shared.Update.FileScanner/<>c__DisplayClass0_0::.ctor[0]( ) skipped:  special name
+
+	System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> [Encoder]System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> Shared.Update.FileScanner/<>c__DisplayClass0_0::files ->  
+	System.IProgress`1<Shared.Update.UpdateProgress> [Encoder]System.IProgress`1<Shared.Update.UpdateProgress> Shared.Update.FileScanner/<>c__DisplayClass0_0::progress ->  
+}
+
+[Encoder]Shared.Update.FileScanner/<ScanFiles>d__0 -> [Encoder] . / 
+{
+
+	[Encoder]Shared.Update.FileScanner/<ScanFiles>d__0::MoveNext[0]( ) skipped:  external base class or interface
+	[Encoder]Shared.Update.FileScanner/<ScanFiles>d__0::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Encoder]System.Int32 Shared.Update.FileScanner/<ScanFiles>d__0::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo>> [Encoder]System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo>> Shared.Update.FileScanner/<ScanFiles>d__0::<>t__builder ->  
+	System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> [Encoder]System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo> Shared.Update.FileScanner/<ScanFiles>d__0::files ->  
+	System.IProgress`1<Shared.Update.UpdateProgress> [Encoder]System.IProgress`1<Shared.Update.UpdateProgress> Shared.Update.FileScanner/<ScanFiles>d__0::progress ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo>> [Encoder]System.Runtime.CompilerServices.TaskAwaiter`1<System.Collections.Generic.List`1<Shared.Update.UpdateFileInfo>> Shared.Update.FileScanner/<ScanFiles>d__0::<>u__1 ->  
+}
+
+[Encoder]Shared.Update.ManifestDownloader/<DownloadManifest>d__0 -> [Encoder] . / 
+{
+
+	[Encoder]Shared.Update.ManifestDownloader/<DownloadManifest>d__0::MoveNext[0]( ) skipped:  external base class or interface
+	[Encoder]Shared.Update.ManifestDownloader/<DownloadManifest>d__0::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Encoder]System.Int32 Shared.Update.ManifestDownloader/<DownloadManifest>d__0::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Shared.Update.UpdateManifest> [Encoder]System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<Shared.Update.UpdateManifest> Shared.Update.ManifestDownloader/<DownloadManifest>d__0::<>t__builder ->  
+	System.String [Encoder]System.String Shared.Update.ManifestDownloader/<DownloadManifest>d__0::url ->  
+	System.Net.Http.HttpClient [Encoder]System.Net.Http.HttpClient Shared.Update.ManifestDownloader/<DownloadManifest>d__0::<client>5__2 ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.String> [Encoder]System.Runtime.CompilerServices.TaskAwaiter`1<System.String> Shared.Update.ManifestDownloader/<DownloadManifest>d__0::<>u__1 ->  
+}
+
+[Encoder]Shared.UI.UITextureHelper/<>c__DisplayClass0_0 -> [Encoder] .​/ 
+{
+	[Encoder]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>g__ApplyNormal|0[0]( ) ->  
+	[Encoder]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>b__1[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Encoder]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>b__2[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Encoder]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>b__3[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+	[Encoder]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>b__4[2]( [mscorlib]System.Object, [System.Windows.Forms]System.Windows.Forms.MouseEventArgs ) ->  
+	[Encoder]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>b__5[2]( [mscorlib]System.Object, [System.Windows.Forms]System.Windows.Forms.MouseEventArgs ) ->  
+	[Encoder]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::<ApplyTextureControl>b__6[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+
+	[Encoder]Shared.UI.UITextureHelper/<>c__DisplayClass0_0::.ctor[0]( ) skipped:  special name
+
+	System.Windows.Forms.Control [Encoder]System.Windows.Forms.Control Shared.UI.UITextureHelper/<>c__DisplayClass0_0::control ->  
+	System.Drawing.Image [Encoder]System.Drawing.Image Shared.UI.UITextureHelper/<>c__DisplayClass0_0::normal ->  
+	System.Drawing.Image [Encoder]System.Drawing.Image Shared.UI.UITextureHelper/<>c__DisplayClass0_0::disabled ->  
+	System.Drawing.Image [Encoder]System.Drawing.Image Shared.UI.UITextureHelper/<>c__DisplayClass0_0::hover ->  
+	System.Drawing.Image [Encoder]System.Drawing.Image Shared.UI.UITextureHelper/<>c__DisplayClass0_0::click ->  
+}
+
+[Encoder]Shared.UI.UITextureHelper/<>c__DisplayClass1_0 -> [Encoder] .​/ 
+{
+	[Encoder]Shared.UI.UITextureHelper/<>c__DisplayClass1_0::<CheckBoxApply>b__0[2]( [mscorlib]System.Object, [mscorlib]System.EventArgs ) ->  
+
+	[Encoder]Shared.UI.UITextureHelper/<>c__DisplayClass1_0::.ctor[0]( ) skipped:  special name
+
+	System.Windows.Forms.CheckBox [Encoder]System.Windows.Forms.CheckBox Shared.UI.UITextureHelper/<>c__DisplayClass1_0::btn ->  
+	System.Drawing.Image [Encoder]System.Drawing.Image Shared.UI.UITextureHelper/<>c__DisplayClass1_0::checkedImg ->  
+	System.Drawing.Image [Encoder]System.Drawing.Image Shared.UI.UITextureHelper/<>c__DisplayClass1_0::uncheckedImg ->  
+}
+
+[Encoder]Shared.Network.NetworkService/<CheckNetwork>d__0 -> [Encoder] .–/ 
+{
+
+	[Encoder]Shared.Network.NetworkService/<CheckNetwork>d__0::MoveNext[0]( ) skipped:  external base class or interface
+	[Encoder]Shared.Network.NetworkService/<CheckNetwork>d__0::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Encoder]System.Int32 Shared.Network.NetworkService/<CheckNetwork>d__0::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder [Encoder]System.Runtime.CompilerServices.AsyncTaskMethodBuilder Shared.Network.NetworkService/<CheckNetwork>d__0::<>t__builder ->  
+	System.String [Encoder]System.String Shared.Network.NetworkService/<CheckNetwork>d__0::url ->  
+	System.Runtime.CompilerServices.TaskAwaiter`1<System.Net.Http.HttpResponseMessage> [Encoder]System.Runtime.CompilerServices.TaskAwaiter`1<System.Net.Http.HttpResponseMessage> Shared.Network.NetworkService/<CheckNetwork>d__0::<>u__1 ->  
+}
+
+[Encoder]Shared.GameSettings.SettingsService/<>c -> [Encoder] .‫/ 
+{
+	[Encoder]Shared.GameSettings.SettingsService/<>c::<.cctor>b__13_0[0]( ) ->  
+
+	[Encoder]Shared.GameSettings.SettingsService/<>c::.cctor[0]( ) skipped:  special name
+	[Encoder]Shared.GameSettings.SettingsService/<>c::.ctor[0]( ) skipped:  special name
+
+	Shared.GameSettings.SettingsService/<>c [Encoder]Shared.GameSettings.SettingsService/<>c Shared.GameSettings.SettingsService/<>c::<>9 ->  
+}
+
+[Encoder]Encoder.Main/<>c__DisplayClass8_0 -> [Encoder] .‬/ 
+{
+	Encoder.Main [Encoder]Encoder.Main Encoder.Main/<>c__DisplayClass8_0::<>4__this ->  
+	System.Windows.Forms.Control [Encoder]System.Windows.Forms.Control Encoder.Main/<>c__DisplayClass8_0::firstError ->  
+	System.Boolean [Encoder]System.Boolean Encoder.Main/<>c__DisplayClass8_0::valid ->  
+}
+
+[Encoder]Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d -> [Encoder] . / / 
+{
+
+	[Encoder]Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d::MoveNext[0]( ) skipped:  external base class or interface
+	[Encoder]Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d::SetStateMachine[1]( [mscorlib]System.Runtime.CompilerServices.IAsyncStateMachine ) skipped:  external base class or interface
+
+	System.Int32 [Encoder]System.Int32 Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d::<>1__state ->  
+	System.Runtime.CompilerServices.AsyncTaskMethodBuilder [Encoder]System.Runtime.CompilerServices.AsyncTaskMethodBuilder Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d::<>t__builder ->  
+	Shared.Update.FileDownloader/<>c__DisplayClass2_1 [Encoder]Shared.Update.FileDownloader/<>c__DisplayClass2_1 Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d::<>4__this ->  
+	System.Runtime.CompilerServices.TaskAwaiter [Encoder]System.Runtime.CompilerServices.TaskAwaiter Shared.Update.FileDownloader/<>c__DisplayClass2_1/<<DownloadFiles>b__0>d::<>u__1 ->  
+}
+
+[Encoder]Shared.Utils.PathHelper -> [Encoder] . 
+{
+	[Encoder]Shared.Utils.PathHelper::GetRelativePath[2]( [mscorlib]System.String, [mscorlib]System.String ) ->  
+	[Encoder]Shared.Utils.PathHelper::NormalizePath[1]( [mscorlib]System.String ) ->  
+	[Encoder]Shared.Utils.PathHelper::GetLocalPath[1]( [mscorlib]System.String ) ->  
+}
+
+[Encoder]Shared.Utils.SystemManager -> [Encoder] . 
+{
+	[Encoder]Shared.Utils.SystemManager::IsRunningAsAdmin[0]( ) ->  
+}
+
+[Encoder]Shared.Update.FileScanner -> [Encoder] . 
+{
+	[Encoder]Shared.Update.FileScanner::ScanFiles[2]( [mscorlib]System.Collections.Generic.List`1<[Encoder]Shared.Update.UpdateFileInfo>, [mscorlib]System.IProgress`1<[Encoder]Shared.Update.UpdateProgress> ) ->  
+
+	[Encoder]Shared.Update.FileScanner::.ctor[0]( ) skipped:  special name
+}
+
+[Encoder]Shared.Update.FileVerifier -> [Encoder] . 
+{
+	[Encoder]Shared.Update.FileVerifier::NeedsUpdate[1]( [Encoder]Shared.Update.UpdateFileInfo ) ->  
+	[Encoder]Shared.Update.FileVerifier::Verify[1]( [Encoder]Shared.Update.UpdateFileInfo ) ->  
+	[Encoder]Shared.Update.FileVerifier::ComputeHash[1]( [mscorlib]System.String ) ->  
+}
+
+[Encoder]Shared.Update.ManifestDownloader -> [Encoder] . 
+{
+	[Encoder]Shared.Update.ManifestDownloader::DownloadManifest[1]( [mscorlib]System.String ) ->  
+
+	[Encoder]Shared.Update.ManifestDownloader::.ctor[0]( ) skipped:  special name
+}
+
+[Encoder]Shared.UI.UITextureHelper -> [Encoder] .​
+{
+	[Encoder]Shared.UI.UITextureHelper::ApplyTextureControl[5]( [System.Windows.Forms]System.Windows.Forms.Control, [System.Drawing]System.Drawing.Image, [System.Drawing]System.Drawing.Image, [System.Drawing]System.Drawing.Image, [System.Drawing]System.Drawing.Image ) ->  
+	[Encoder]Shared.UI.UITextureHelper::CheckBoxApply[3]( [System.Windows.Forms]System.Windows.Forms.CheckBox, [System.Drawing]System.Drawing.Image, [System.Drawing]System.Drawing.Image ) ->  
+}
+
+[Encoder]Shared.Network.NetworkService -> [Encoder] .–
+{
+	[Encoder]Shared.Network.NetworkService::CheckNetwork[1]( [mscorlib]System.String ) ->  
+	[Encoder]Shared.Network.NetworkService::CloseNetwork[0]( ) ->  
+
+	[Encoder]Shared.Network.NetworkService::.ctor[0]( ) skipped:  special name
+}
+
+[Encoder]Shared.Languages.LanguageHelper -> [Encoder] .‥
+{
+	[Encoder]Shared.Languages.LanguageHelper::Get[3]( [mscorlib]System.String, [mscorlib]System.String, [mscorlib]System.Object[] ) ->  
+	[Encoder]Shared.Languages.LanguageHelper::ApplyTranslations[2]( [System.Windows.Forms]System.Windows.Forms.Control, [mscorlib]System.String ) ->  
+}
+
+[Encoder]Encoder.Program -> [Encoder] .‭
+{
+	[Encoder]Encoder.Program::Main[0]( ) ->  
+}
+
+Skipped Types:
+
+Renamed Resources:
+
+Encoder.Main.resources ->  .‬.resources
+Encoder.Properties.Resources.resources ->  .‮.resources
+
+Skipped Resources:
+

@@ -1,0 +1,11 @@
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\Executables\2.WebzenOldSchoolV1\Launcher.exe.config
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\Executables\2.WebzenOldSchoolV1\Launcher.exe
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\Executables\2.WebzenOldSchoolV1\Launcher.pdb
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\2.WebzenOldSchoolV1\obj\Release\2.WebzenOldSchoolV1.csproj.AssemblyReference.cache
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\2.WebzenOldSchoolV1\obj\Release\Launcher.Main.resources
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\2.WebzenOldSchoolV1\obj\Release\Launcher.Options.resources
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\2.WebzenOldSchoolV1\obj\Release\Launcher.Properties.Resources.resources
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\2.WebzenOldSchoolV1\obj\Release\2.WebzenOldSchoolV1.csproj.GenerateResource.cache
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\2.WebzenOldSchoolV1\obj\Release\2.WebzenOldSchoolV1.csproj.CoreCompileInputs.cache
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\2.WebzenOldSchoolV1\obj\Release\Launcher.exe
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\2.WebzenOldSchoolV1\obj\Release\Launcher.pdb
