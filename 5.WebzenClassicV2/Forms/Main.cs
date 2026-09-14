@@ -1,13 +1,14 @@
-﻿using System;
+﻿using MuLauncher;
+using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 // External
 using Shared.GameSettings;
 using Shared.Languages;
-using Shared.LauncherConfig;
+
 using Shared.UI;
-using Shared.Update;
+
 
 namespace Launcher
 {
@@ -58,13 +59,19 @@ namespace Launcher
 		{
 			this.Btn_Play.Enabled = false;
 
-			var updater = new UpdateStarter();
-
-			var progress = new Progress<UpdateProgress>(UpdateUI);
+						var progress = new Progress<UpdateProgressReport>(UpdateUI);
 
 			try
 			{
-				await updater.Start(progress);
+				var config = LauncherConfig.Load();
+				var updater = new LaunchUpdater(config, AppDomain.CurrentDomain.BaseDirectory);
+				bool success = await updater.StartCheckAndUpdateAsync(progress);
+
+				if (success)
+				{
+					await System.Threading.Tasks.Task.Delay(300);
+					await GameLauncher.Launch(config);
+				}
 			}
 			catch (Exception ex)
 			{
@@ -85,11 +92,9 @@ namespace Launcher
 		{
 			FontManager.LoadFont("Usuzi_Font", Properties.Resources.Usuzi_Font);
 
-			var config = ConfigManager.Current;
+			var config = LauncherConfig.Load();
 
-			if (!string.IsNullOrWhiteSpace(config.WindowTitle))
 			{
-				this.Text = config.WindowTitle;
 			}
 
 			this.Web_panel.Visible = false;
@@ -134,14 +139,14 @@ namespace Launcher
 
 		private void InitializeWebsite()
 		{
-			var config = ConfigManager.Current;
+			var config = LauncherConfig.Load();
 
-			if (string.IsNullOrWhiteSpace(config.WebsiteURL))
+			if (string.IsNullOrWhiteSpace(config.WebsiteUrl))
 			{
 				return;
 			}
 
-			if (!Uri.TryCreate(config.WebsiteURL, UriKind.Absolute, out Uri uri))
+			if (!Uri.TryCreate(config.WebsiteUrl, UriKind.Absolute, out Uri uri))
 			{
 				return;
 			}
@@ -212,20 +217,16 @@ namespace Launcher
 			}
 		}
 
-		private void UpdateUI(UpdateProgress p)
+		private void UpdateUI(UpdateProgressReport p)
 		{
-			if (!string.IsNullOrEmpty(p.StatusKey))
+			if (!string.IsNullOrEmpty(p.StatusMessage))
 			{
-				this.Status_txt.Text = LanguageHelper.Get(
-					p.StatusKey,
-					SettingsService.Instance.Current.Language,
-					p.Args
-				);
+				this.Status_txt.Text = p.StatusMessage;
 			}
 
-			if (p.CurrentFileSize > 0)
+			if (true)
 			{
-				double percent = ((double)p.CurrentFileDownloaded / p.CurrentFileSize);
+				double percent = (p.CurrentFilePercent / 100.0);
 
 				percent = Math.Max(0.0, Math.Min(1.0, percent));
 
@@ -238,9 +239,9 @@ namespace Launcher
 				this.Current_txt.Text = $"{text}%";
 			}
 
-			if (p.TotalBytes > 0)
+			if (true)
 			{
-				double percent = ((double)p.TotalBytesDownloaded / p.TotalBytes);
+				double percent = (p.TotalPercent / 100.0);
 
 				percent = Math.Max(0.0, Math.Min(1.0, percent));
 
@@ -274,3 +275,8 @@ namespace Launcher
 		}
 	}
 }
+
+
+
+
+

@@ -1,4 +1,5 @@
-﻿namespace Launcher
+﻿using MuLauncher;
+namespace Launcher
 {
 	partial class Options
 	{
@@ -337,3 +338,4 @@
 		public System.Windows.Forms.Button Btn_Close;
 	}
 }
+

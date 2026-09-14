@@ -1,0 +1,7 @@
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\1.WebzenOriginal\obj\Debug\Launcher.Main.resources
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\1.WebzenOriginal\obj\Debug\1.WebzenOriginal.Properties.Resources.resources
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\1.WebzenOriginal\obj\Debug\1.WebzenOriginal.csproj.GenerateResource.cache
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\1.WebzenOriginal\obj\Debug\1.WebzenOriginal.GeneratedMSBuildEditorConfig.editorconfig
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\1.WebzenOriginal\obj\Debug\1.WebzenOriginal.csproj.CoreCompileInputs.cache
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\1.WebzenOriginal\obj\Debug\1.WebzenOriginal.sourcelink.json
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\1.WebzenOriginal\obj\Debug\1.WebzenOriginal.Forms.Main.resources

@@ -1,12 +1,13 @@
-﻿using System;
+﻿using MuLauncher;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Windows.Forms;
 // External
 using Shared.GameSettings;
 using Shared.Languages;
-using Shared.LauncherConfig;
-using Shared.Update;
+
+
 
 namespace Launcher
 {
@@ -71,14 +72,14 @@ namespace Launcher
 
 		private void Btn_Web_Click(object sender, EventArgs e)
 		{
-			var config = ConfigManager.Current;
+			var config = LauncherConfig.Load();
 
-			if (string.IsNullOrWhiteSpace(config.WebsiteURL))
+			if (string.IsNullOrWhiteSpace(config.WebsiteUrl))
 			{
 				return;
 			}
 
-			if (!Uri.TryCreate(config.WebsiteURL, UriKind.Absolute, out Uri uri) ||
+			if (!Uri.TryCreate(config.WebsiteUrl, UriKind.Absolute, out Uri uri) ||
 			    (uri.Scheme != Uri.UriSchemeHttp && uri.Scheme != Uri.UriSchemeHttps))
 			{
 				return;
@@ -95,11 +96,9 @@ namespace Launcher
 	
 		private void InitializeValues()
 		{
-			var config = ConfigManager.Current;
+			var config = LauncherConfig.Load();
 
-			if (!string.IsNullOrWhiteSpace(config.WindowTitle))
 			{
-				this.Text = config.WindowTitle;
 			}
 		}
 
@@ -233,20 +232,16 @@ namespace Launcher
 			LanguageHelper.ApplyTranslations(this, lang);
 		}
 
-		private void UpdateUI(UpdateProgress p)
+		private void UpdateUI(UpdateProgressReport p)
 		{
-			if (!string.IsNullOrEmpty(p.StatusKey))
+			if (!string.IsNullOrEmpty(p.StatusMessage))
 			{
-				this.Status_txt.Text = LanguageHelper.Get(
-					p.StatusKey,
-					SettingsService.Instance.Current.Language,
-					p.Args
-				);
+				this.Status_txt.Text = p.StatusMessage;
 			}
 
-			if (p.TotalBytes > 0)
+			if (true)
 			{
-				int value = (int)((p.TotalBytesDownloaded / (double)p.TotalBytes) * 100);
+				int value = (int)p.TotalPercent;
 
 				value = Math.Min(100, Math.Max(0, value));
 
@@ -255,3 +250,8 @@ namespace Launcher
 		}
 	}
 }
+
+
+
+
+

@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using MuLauncher;
+using System.Drawing;
 
 namespace Launcher
 {
@@ -412,4 +413,6 @@ namespace Launcher
 		private System.Windows.Forms.Panel Function_panel;
 	}
 }
+
+
 

@@ -1,4 +1,5 @@
-﻿namespace Launcher
+﻿using MuLauncher;
+namespace Launcher
 {
 	partial class Options
 	{
@@ -340,3 +341,4 @@
 		private System.Windows.Forms.RadioButton Language_Eng;
 	}
 }
+

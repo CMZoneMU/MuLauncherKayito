@@ -1,4 +1,5 @@
-﻿namespace Launcher
+﻿using MuLauncher;
+namespace Launcher
 {
 	partial class Options
 	{
@@ -416,3 +417,4 @@
 		private System.Windows.Forms.Panel panel2;
 	}
 }
+

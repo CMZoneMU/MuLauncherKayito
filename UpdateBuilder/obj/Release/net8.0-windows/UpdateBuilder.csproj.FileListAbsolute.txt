@@ -1,0 +1,28 @@
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\bin\Release\net8.0-windows\UpdateBuilder.exe
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\bin\Release\net8.0-windows\UpdateBuilder.deps.json
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\bin\Release\net8.0-windows\UpdateBuilder.runtimeconfig.json
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\bin\Release\net8.0-windows\UpdateBuilder.dll
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\bin\Release\net8.0-windows\UpdateBuilder.pdb
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\obj\Release\net8.0-windows\UpdateBuilder.GeneratedMSBuildEditorConfig.editorconfig
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\obj\Release\net8.0-windows\UpdateBuilder.AssemblyInfoInputs.cache
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\obj\Release\net8.0-windows\UpdateBuilder.AssemblyInfo.cs
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\obj\Release\net8.0-windows\UpdateBuilder.csproj.CoreCompileInputs.cache
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\obj\Release\net8.0-windows\UpdateBuilder.dll
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\obj\Release\net8.0-windows\refint\UpdateBuilder.dll
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\obj\Release\net8.0-windows\UpdateBuilder.pdb
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\obj\Release\net8.0-windows\UpdateBuilder.genruntimeconfig.cache
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\obj\Release\net8.0-windows\ref\UpdateBuilder.dll
+D:\MuOnline\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\bin\Release\net8.0-windows\UpdateBuilder.exe
+D:\MuOnline\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\bin\Release\net8.0-windows\UpdateBuilder.deps.json
+D:\MuOnline\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\bin\Release\net8.0-windows\UpdateBuilder.runtimeconfig.json
+D:\MuOnline\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\bin\Release\net8.0-windows\UpdateBuilder.dll
+D:\MuOnline\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\bin\Release\net8.0-windows\UpdateBuilder.pdb
+D:\MuOnline\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\obj\Release\net8.0-windows\UpdateBuilder.GeneratedMSBuildEditorConfig.editorconfig
+D:\MuOnline\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\obj\Release\net8.0-windows\UpdateBuilder.AssemblyInfoInputs.cache
+D:\MuOnline\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\obj\Release\net8.0-windows\UpdateBuilder.AssemblyInfo.cs
+D:\MuOnline\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\obj\Release\net8.0-windows\UpdateBuilder.csproj.CoreCompileInputs.cache
+D:\MuOnline\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\obj\Release\net8.0-windows\UpdateBuilder.dll
+D:\MuOnline\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\obj\Release\net8.0-windows\refint\UpdateBuilder.dll
+D:\MuOnline\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\obj\Release\net8.0-windows\UpdateBuilder.pdb
+D:\MuOnline\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\obj\Release\net8.0-windows\UpdateBuilder.genruntimeconfig.cache
+D:\MuOnline\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Launcher\SourceLauncher\UpdateBuilder\obj\Release\net8.0-windows\ref\UpdateBuilder.dll

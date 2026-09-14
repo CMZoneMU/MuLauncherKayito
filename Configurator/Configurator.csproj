@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>LauncherConfigurator.Program</StartupObject>
+    <PublishDir>..\..\Executables\Configurator\</PublishDir>
+    <ApplicationIcon>Configurator.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <Target Name="CopyToDist" AfterTargets="Build">
+    <ItemGroup>
+      <OutputFiles Include="$(TargetDir)*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(OutputFiles)" DestinationFolder="$(MSBuildThisFileDirectory)..\..\Executables\Configurator\" SkipUnchangedFiles="true" ContinueOnError="true" />
+  </Target>
+
+</Project>

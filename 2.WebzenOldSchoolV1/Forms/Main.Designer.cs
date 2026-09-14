@@ -1,4 +1,5 @@
-﻿namespace Launcher
+﻿using MuLauncher;
+namespace Launcher
 {
 	partial class Main
 	{
@@ -249,4 +250,6 @@
 		public System.Windows.Forms.Button Btn_Close;
 	}
 }
+
+
 

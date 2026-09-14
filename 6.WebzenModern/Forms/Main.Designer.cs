@@ -1,4 +1,5 @@
-﻿namespace Launcher
+﻿using MuLauncher;
+namespace Launcher
 {
 	partial class Main
 	{
@@ -306,4 +307,6 @@
 		private System.Windows.Forms.Panel Header_panel;
 	}
 }
+
+
 

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>UpdateBuilder.Program</StartupObject>
+    <PublishDir>..\..\Executables\UpdateBuilder\</PublishDir>
+    <ApplicationIcon>UpdateBuilder.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <Target Name="CopyToDist" AfterTargets="Build">
+    <ItemGroup>
+      <OutputFiles Include="$(TargetDir)*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(OutputFiles)" DestinationFolder="$(MSBuildThisFileDirectory)..\..\Executables\UpdateBuilder\" SkipUnchangedFiles="true" ContinueOnError="true" />
+  </Target>
+
+</Project>
