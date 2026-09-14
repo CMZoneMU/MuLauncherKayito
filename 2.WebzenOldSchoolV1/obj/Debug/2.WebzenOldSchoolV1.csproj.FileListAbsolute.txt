@@ -1,0 +1,11 @@
+D:\MuOnline\Versões SSeMU\kayito-MuLauncher-master\kayito-MuLauncher-master\2.WebzenOldSchoolV1\bin\Debug\Launcher.exe.config
+D:\MuOnline\Versões SSeMU\kayito-MuLauncher-master\kayito-MuLauncher-master\2.WebzenOldSchoolV1\bin\Debug\Launcher.exe
+D:\MuOnline\Versões SSeMU\kayito-MuLauncher-master\kayito-MuLauncher-master\2.WebzenOldSchoolV1\bin\Debug\Launcher.pdb
+D:\MuOnline\Versões SSeMU\kayito-MuLauncher-master\kayito-MuLauncher-master\2.WebzenOldSchoolV1\obj\Debug\2.WebzenOldSchoolV1.csproj.AssemblyReference.cache
+D:\MuOnline\Versões SSeMU\kayito-MuLauncher-master\kayito-MuLauncher-master\2.WebzenOldSchoolV1\obj\Debug\Launcher.Main.resources
+D:\MuOnline\Versões SSeMU\kayito-MuLauncher-master\kayito-MuLauncher-master\2.WebzenOldSchoolV1\obj\Debug\Launcher.Options.resources
+D:\MuOnline\Versões SSeMU\kayito-MuLauncher-master\kayito-MuLauncher-master\2.WebzenOldSchoolV1\obj\Debug\Launcher.Properties.Resources.resources
+D:\MuOnline\Versões SSeMU\kayito-MuLauncher-master\kayito-MuLauncher-master\2.WebzenOldSchoolV1\obj\Debug\2.WebzenOldSchoolV1.csproj.GenerateResource.cache
+D:\MuOnline\Versões SSeMU\kayito-MuLauncher-master\kayito-MuLauncher-master\2.WebzenOldSchoolV1\obj\Debug\2.WebzenOldSchoolV1.csproj.CoreCompileInputs.cache
+D:\MuOnline\Versões SSeMU\kayito-MuLauncher-master\kayito-MuLauncher-master\2.WebzenOldSchoolV1\obj\Debug\Launcher.exe
+D:\MuOnline\Versões SSeMU\kayito-MuLauncher-master\kayito-MuLauncher-master\2.WebzenOldSchoolV1\obj\Debug\Launcher.pdb

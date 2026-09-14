@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>8cd3bbbe-a701-4477-92b3-4c3e2032c759</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Source\GameSettings\Helper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\GameSettings\Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)source\gamesettings\Service.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Languages\Helper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Languages\Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\LauncherConfigs\Helper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\LauncherConfigs\Manager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\LauncherConfigs\Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\LauncherPayload\Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Network\Manager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Network\Service.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)source\ui\components\RoundedPanel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\UI\Helper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\UI\Components\SegmentedProgressBar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\UI\Font\Service.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Update\FileManagement\Downloader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Update\FileManagement\Scanner.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Update\FileManagement\Verifier.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Update\Manifest\Downloader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Update\Manifest\Manager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Update\Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Update\Progress\Model.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Utils\Crypto\Helper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Utils\JSON\Helper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Utils\Pathing\Helper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\Utils\System\Manager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Source\UI\Components\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Source\UI\Font\" />
+  </ItemGroup>
+</Project>

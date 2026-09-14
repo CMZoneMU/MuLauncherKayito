@@ -1,0 +1,27 @@
+﻿<Obfuscator>
+	<Var name="InPath" value="." />
+	<Var name="OutPath" value=".\Ofuscados" />
+	<Var name="LogFile" value=".ofuscacion-log.txt" />
+
+	<SkipType name="Shared.LauncherConfig.ConfigModel" />
+	<SkipType name="Shared.LauncherPayload.LauncherPayload" />
+	<SkipType name="Shared.Update.UpdateProgress" />
+	<SkipType name="Shared.Update.UpdateFileInfo" />
+	<SkipType name="Shared.Update.UpdateManifest" />
+	<SkipType name="Updater.Languages.LanguageModel" />
+
+	<Var name="RenameProperties" value="false" />
+	<Var name="RenameFields" value="true" />
+	<Var name="RenameEvents" value="true" />
+
+	<Var name="KeepPublicApi" value="false" />
+	<Var name="HidePrivateApi" value="true" />
+
+	<Var name="UseUnicodeNames" value="true" />
+	<Var name="HideStrings" value="true" />
+
+	<Var name="OptimizeMethods" value="true" />
+	<Var name="SuppressIldasm" value="true" />
+
+	<Module file="$(InPath)\Updater.exe" />
+</Obfuscator>
