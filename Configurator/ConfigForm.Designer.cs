@@ -67,6 +67,8 @@ namespace LauncherConfigurator
             this.txtRankingUrl = new System.Windows.Forms.TextBox();
             this.lblNewsUrl = new System.Windows.Forms.Label();
             this.txtNewsUrl = new System.Windows.Forms.TextBox();
+            this.lblUpdateUrl = new System.Windows.Forms.Label();
+            this.txtUpdateUrl = new System.Windows.Forms.TextBox();
 
             // Tab 4: Segurança & Criptografia
             this.tabSecurity = new System.Windows.Forms.TabPage();
@@ -491,6 +493,8 @@ namespace LauncherConfigurator
             // 
             this.grpLinks.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpLinks.Controls.Add(this.txtUpdateUrl);
+            this.grpLinks.Controls.Add(this.lblUpdateUrl);
             this.grpLinks.Controls.Add(this.txtNewsUrl);
             this.grpLinks.Controls.Add(this.lblNewsUrl);
             this.grpLinks.Controls.Add(this.txtRankingUrl);
@@ -504,7 +508,7 @@ namespace LauncherConfigurator
             this.grpLinks.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.grpLinks.Location = new System.Drawing.Point(12, 12);
             this.grpLinks.Name = "grpLinks";
-            this.grpLinks.Size = new System.Drawing.Size(702, 240);
+            this.grpLinks.Size = new System.Drawing.Size(702, 280);
             this.grpLinks.TabIndex = 0;
             this.grpLinks.TabStop = false;
             this.grpLinks.Text = "ENDEREÇOS WEB E INTEGRAÇÕES";
@@ -618,6 +622,26 @@ namespace LauncherConfigurator
             this.txtNewsUrl.Name = "txtNewsUrl";
             this.txtNewsUrl.Size = new System.Drawing.Size(500, 23);
             this.txtNewsUrl.TabIndex = 9;
+            // 
+            // lblUpdateUrl
+            // 
+            this.lblUpdateUrl.AutoSize = true;
+            this.lblUpdateUrl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblUpdateUrl.Location = new System.Drawing.Point(20, 232);
+            this.lblUpdateUrl.Name = "lblUpdateUrl";
+            this.lblUpdateUrl.Size = new System.Drawing.Size(124, 15);
+            this.lblUpdateUrl.TabIndex = 10;
+            this.lblUpdateUrl.Text = "URL Base do Update:";
+            // 
+            // txtUpdateUrl
+            // 
+            this.txtUpdateUrl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtUpdateUrl.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtUpdateUrl.Location = new System.Drawing.Point(180, 229);
+            this.txtUpdateUrl.Name = "txtUpdateUrl";
+            this.txtUpdateUrl.Size = new System.Drawing.Size(500, 23);
+            this.txtUpdateUrl.TabIndex = 11;
 
             // 
             // tabSecurity
@@ -951,6 +975,8 @@ namespace LauncherConfigurator
         private System.Windows.Forms.TextBox txtRankingUrl;
         private System.Windows.Forms.Label lblNewsUrl;
         private System.Windows.Forms.TextBox txtNewsUrl;
+        private System.Windows.Forms.Label lblUpdateUrl;
+        private System.Windows.Forms.TextBox txtUpdateUrl;
 
         private System.Windows.Forms.TabPage tabSecurity;
         private System.Windows.Forms.GroupBox grpClientSecurity;

@@ -1,4 +1,4 @@
-﻿using MuLauncher;
+using MuLauncher;
 using System;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
@@ -56,6 +56,10 @@ namespace Launcher
 				{
 					await System.Threading.Tasks.Task.Delay(300);
 					await GameLauncher.Launch(config);
+				}
+				else
+				{
+					this.Btn_Play.Enabled = true;
 				}
 			}
 			catch (Exception ex)

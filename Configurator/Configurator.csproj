@@ -7,15 +7,25 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <StartupObject>LauncherConfigurator.Program</StartupObject>
-    <PublishDir>..\..\Executables\Configurator\</PublishDir>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\Executables\Configurator\</OutputPath>
+    <ApplicationIcon>Configurator.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\Executables\Configurator\</OutputPath>
     <ApplicationIcon>Configurator.ico</ApplicationIcon>
   </PropertyGroup>
 
-  <Target Name="CopyToDist" AfterTargets="Build">
-    <ItemGroup>
-      <OutputFiles Include="$(TargetDir)*.*" />
-    </ItemGroup>
-    <Copy SourceFiles="@(OutputFiles)" DestinationFolder="$(MSBuildThisFileDirectory)..\..\Executables\Configurator\" SkipUnchangedFiles="true" ContinueOnError="true" />
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(TargetDir)*.*&quot; &quot;$(ProjectDir)..\Executables\1.WebzenOriginal\&quot; /Y /I" />
+    <Exec Command="xcopy &quot;$(TargetDir)*.*&quot; &quot;$(ProjectDir)..\Executables\2.WebzenOldSchoolV1\&quot; /Y /I" />
+    <Exec Command="xcopy &quot;$(TargetDir)*.*&quot; &quot;$(ProjectDir)..\Executables\3.WebzenOldSchoolV2\&quot; /Y /I" />
+    <Exec Command="xcopy &quot;$(TargetDir)*.*&quot; &quot;$(ProjectDir)..\Executables\4.WebzenOldSchoolV3\&quot; /Y /I" />
+    <Exec Command="xcopy &quot;$(TargetDir)*.*&quot; &quot;$(ProjectDir)..\Executables\5.WebzenStandard\&quot; /Y /I" />
+    <Exec Command="xcopy &quot;$(TargetDir)*.*&quot; &quot;$(ProjectDir)..\Executables\6.WebzenModern\&quot; /Y /I" />
   </Target>
 
 </Project>

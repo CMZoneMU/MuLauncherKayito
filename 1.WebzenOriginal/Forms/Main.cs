@@ -1,4 +1,4 @@
-﻿using MuLauncher;
+using MuLauncher;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -40,13 +40,23 @@ namespace Launcher
 
 			this.SaveRegistryValues();
 
-			var updater = new UpdateStarter();
-
-			var progress = new Progress<UpdateProgress>(this.UpdateUI);
+			var progress = new Progress<UpdateProgressReport>(this.UpdateUI);
 
 			try
 			{
-				await updater.Start(progress);
+				var config = LauncherConfig.Load();
+				var updater = new LaunchUpdater(config, AppDomain.CurrentDomain.BaseDirectory);
+				bool success = await updater.StartCheckAndUpdateAsync(progress);
+
+				if (success)
+				{
+					await System.Threading.Tasks.Task.Delay(300);
+					await GameLauncher.Launch(config);
+				}
+				else
+				{
+					this.Btn_Play.Enabled = true;
+				}
 			}
 			catch (Exception ex)
 			{

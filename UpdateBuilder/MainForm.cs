@@ -120,16 +120,28 @@ namespace UpdateBuilder
             try
             {
                 using var client = new HttpClient { Timeout = TimeSpan.FromSeconds(8) };
-                var response = await client.GetAsync(url, HttpCompletionOption.ResponseHeadersRead);
+                // Tenta acessar um arquivo que deverá existir lá (update.json) para evitar o Erro 403 Forbidden de listagem de diretório
+                string testUrl = url.EndsWith("/") ? url + "update.json" : url + "/update.json";
+                var response = await client.GetAsync(testUrl, HttpCompletionOption.ResponseHeadersRead);
 
                 if (response.IsSuccessStatusCode)
                 {
-                    MessageBox.Show($"Conexão HTTP realizada com sucesso!\nStatus retornado: {(int)response.StatusCode} ({response.ReasonPhrase})", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Conexão HTTP realizada com sucesso!\nO servidor respondeu corretamente (update.json foi encontrado).", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     lblStatus.Text = "Teste de URL HTTP concluído com êxito.";
+                }
+                else if (response.StatusCode == System.Net.HttpStatusCode.NotFound) // 404
+                {
+                    MessageBox.Show($"A conexão com o servidor foi bem-sucedida!\n\nNo entanto, o arquivo 'update.json' ainda não existe lá. Isso é normal se você ainda não gerou e enviou os arquivos do patch para a hospedagem.", "Conexão Bem-sucedida", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    lblStatus.Text = "Servidor HTTP online (update.json pendente).";
+                }
+                else if (response.StatusCode == System.Net.HttpStatusCode.Forbidden) // 403
+                {
+                    MessageBox.Show($"A conexão com o servidor foi bem-sucedida, mas o servidor bloqueou o acesso (Erro 403 Forbidden).\nVerifique as permissões de arquivo na sua hospedagem.", "Aviso de Permissão", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    lblStatus.Text = "Servidor respondeu 403 Forbidden.";
                 }
                 else
                 {
-                    MessageBox.Show($"O servidor respondeu com o código {(int)response.StatusCode} ({response.ReasonPhrase}).\nVerifique se o caminho do patch existe.", "Resposta HTTP", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show($"O servidor respondeu com o código {(int)response.StatusCode} ({response.ReasonPhrase}).\nVerifique se o caminho do patch está correto.", "Resposta HTTP", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     lblStatus.Text = $"Servidor HTTP respondeu: {(int)response.StatusCode}";
                 }
             }

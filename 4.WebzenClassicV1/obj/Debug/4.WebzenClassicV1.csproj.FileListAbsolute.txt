@@ -1,6 +1,5 @@
 D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\4.WebzenClassicV1\obj\Debug\Launcher.Main.resources
 D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\4.WebzenClassicV1\obj\Debug\Launcher.Options.resources
-D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\4.WebzenClassicV1\obj\Debug\4.WebzenClassicV1.Properties.Resources.resources
 D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\4.WebzenClassicV1\obj\Debug\4.WebzenClassicV1.csproj.GenerateResource.cache
 D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\4.WebzenClassicV1\obj\Debug\4.WebzenClassicV1.GeneratedMSBuildEditorConfig.editorconfig
 D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\4.WebzenClassicV1\obj\Debug\4.WebzenClassicV1.csproj.CoreCompileInputs.cache
@@ -16,3 +15,4 @@ D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenM
 D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\4.WebzenClassicV1\obj\Debug\4.WebzenClassicV1.pdb
 D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\4.WebzenClassicV1\obj\Debug\4.WebzenClassicV1.genruntimeconfig.cache
 D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\4.WebzenClassicV1\obj\Debug\ref\4.WebzenClassicV1.dll
+D:\MuOnline 2026\Versões SSeMU\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\Source 97k SSEmu\GithubMuLauncher\MuLauncherKayito\4.WebzenClassicV1\obj\Debug\Launcher.Properties.Resources.resources

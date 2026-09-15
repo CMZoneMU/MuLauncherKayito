@@ -1,10 +1,19 @@
 # kayito - Mu Launcher
 
+## Update CMZ 14-09-2026
+* **.NET 8 Migration**: O framework do projeto foi migrado de .NET Framework 4.8 para .NET 8, trazendo maior performance e recursos mais modernos.
+* **Refatoração do Updater**: A lógica do antigo executável `Updater` foi totalmente integrada dentro do próprio `Launcher.exe`. Agora você não precisa mais rodar um executável separado para buscar atualizações do próprio launcher.
+* **Remoção do Encoder**: O `Encoder` foi substituído por um arquivo de configuração JSON (`launcher_config.json`) em texto claro para facilitar edições.
+* **Novo Configurator**: Foi criada uma nova ferramenta com interface gráfica (`Configurator.exe`) para editar o arquivo `launcher_config.json` de forma fácil e interativa.
+* **Novo UpdateBuilder**: O antigo `Generator` foi substituído pelo `UpdateBuilder.exe`, uma ferramenta dedicada para ler a pasta do cliente, gerar as hashs MD5 e o arquivo `update.json`, sem depender do formato antigo.
+* **Correções na UI**: O botão de "Jogar" agora é destravado corretamente caso a atualização falhe (evitando soft-lock na interface), além de melhorias no processamento assíncrono.
+* **Deploy Automático**: Eventos de PostBuild configurados para copiar automaticamente o `Configurator.exe` e `UpdateBuilder.exe` para a respectiva pasta `Executables` de cada launcher ao compilar.
+
 ## - Language: C#
 
-## - Framework: .NET Framework 4.8 using WinForms
+## - Framework: .NET 8 using WinForms (Atualizado)
 
-## - Content:
+## - Content (Antigo):
 - Encoder
 
 Used to save launcher information (window name, mutex, updates URL, panel URL, etc.) in an encrypted file.

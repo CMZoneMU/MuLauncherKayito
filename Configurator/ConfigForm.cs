@@ -36,6 +36,7 @@ namespace LauncherConfigurator
             txtRegisterApiUrl.PlaceholderText = "ex: http://seusite.com/Launcher/api/launcher_register.php";
             txtRankingUrl.PlaceholderText = "ex: http://seusite.com/ranking";
             txtNewsUrl.PlaceholderText = "ex: http://seusite.com/Launcher/news.json";
+            txtUpdateUrl.PlaceholderText = "ex: http://seusite.com/Launcher/patch/";
             txtMutexName.PlaceholderText = @"Global\MuOnline_Launcher_Active_Lock";
             txtMainHash.PlaceholderText = "ex: 4a2f8c... (ou deixe vazio para checar do servidor)";
 
@@ -58,6 +59,7 @@ namespace LauncherConfigurator
             txtRegisterApiUrl.Text = IsSampleOrEmpty(_config.RegisterApiUrl, "http://127.0.0.1/api/register.php") ? "" : _config.RegisterApiUrl;
             txtRankingUrl.Text = IsSampleOrEmpty(_config.RankingUrl, "https://meumu.com/ranking", "http://127.0.0.1/", "http://127.0.0.1") ? "" : _config.RankingUrl;
             txtNewsUrl.Text = IsSampleOrEmpty(_config.NewsUrl, "http://127.0.0.1/patch/news.json") ? "" : _config.NewsUrl;
+            txtUpdateUrl.Text = IsSampleOrEmpty(_config.UpdateServerUrl, "http://127.0.0.1/patch/") ? "" : _config.UpdateServerUrl;
 
             chkVerifyIntegrity.Checked = _config.VerifyMainIntegrity;
             chkAntiCheat.Checked = _config.EnableAntiCheatScan;
@@ -142,6 +144,7 @@ namespace LauncherConfigurator
             _config.RegisterApiUrl = txtRegisterApiUrl.Text.Trim();
             _config.RankingUrl = txtRankingUrl.Text.Trim();
             _config.NewsUrl = txtNewsUrl.Text.Trim();
+            _config.UpdateServerUrl = txtUpdateUrl.Text.Trim();
 
             _config.VerifyMainIntegrity = chkVerifyIntegrity.Checked;
             _config.EnableAntiCheatScan = chkAntiCheat.Checked;
