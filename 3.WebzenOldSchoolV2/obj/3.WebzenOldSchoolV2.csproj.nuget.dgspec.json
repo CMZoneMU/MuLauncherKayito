@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\3.WebzenOldSchoolV2\\3.WebzenOldSchoolV2.csproj": {}
+    "d:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\3.WebzenOldSchoolV2\\3.WebzenOldSchoolV2.csproj": {}
   },
   "projects": {
-    "D:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\3.WebzenOldSchoolV2\\3.WebzenOldSchoolV2.csproj": {
+    "d:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\3.WebzenOldSchoolV2\\3.WebzenOldSchoolV2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\3.WebzenOldSchoolV2\\3.WebzenOldSchoolV2.csproj",
-        "projectName": "3.WebzenOldSchoolV2",
-        "projectPath": "D:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\3.WebzenOldSchoolV2\\3.WebzenOldSchoolV2.csproj",
+        "projectUniqueName": "d:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\3.WebzenOldSchoolV2\\3.WebzenOldSchoolV2.csproj",
+        "projectName": "Launcher",
+        "projectPath": "d:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\3.WebzenOldSchoolV2\\3.WebzenOldSchoolV2.csproj",
         "packagesPath": "C:\\Users\\MASTER\\.nuget\\packages\\",
-        "outputPath": "D:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\3.WebzenOldSchoolV2\\obj\\",
+        "outputPath": "d:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\3.WebzenOldSchoolV2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MASTER\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\Configurator\\Configurator.csproj": {}
+    "d:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\Configurator\\Configurator.csproj": {}
   },
   "projects": {
-    "D:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\Configurator\\Configurator.csproj": {
+    "d:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\Configurator\\Configurator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\Configurator\\Configurator.csproj",
+        "projectUniqueName": "d:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\Configurator\\Configurator.csproj",
         "projectName": "Configurator",
-        "projectPath": "D:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\Configurator\\Configurator.csproj",
+        "projectPath": "d:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\Configurator\\Configurator.csproj",
         "packagesPath": "C:\\Users\\MASTER\\.nuget\\packages\\",
-        "outputPath": "D:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\Configurator\\obj\\",
+        "outputPath": "d:\\MuOnline 2026\\Versões SSeMU\\CMZ - Source Main 5.2 +Emulador Season 4 -  ZenMU Downgrade for S2.5\\Source 97k SSEmu\\GithubMuLauncher\\MuLauncherKayito\\Configurator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MASTER\\AppData\\Roaming\\NuGet\\NuGet.Config",

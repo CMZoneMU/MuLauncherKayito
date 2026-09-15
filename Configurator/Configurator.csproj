@@ -19,13 +19,6 @@
     <ApplicationIcon>Configurator.ico</ApplicationIcon>
   </PropertyGroup>
 
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy &quot;$(TargetDir)*.*&quot; &quot;$(ProjectDir)..\Executables\1.WebzenOriginal\&quot; /Y /I" />
-    <Exec Command="xcopy &quot;$(TargetDir)*.*&quot; &quot;$(ProjectDir)..\Executables\2.WebzenOldSchoolV1\&quot; /Y /I" />
-    <Exec Command="xcopy &quot;$(TargetDir)*.*&quot; &quot;$(ProjectDir)..\Executables\3.WebzenOldSchoolV2\&quot; /Y /I" />
-    <Exec Command="xcopy &quot;$(TargetDir)*.*&quot; &quot;$(ProjectDir)..\Executables\4.WebzenOldSchoolV3\&quot; /Y /I" />
-    <Exec Command="xcopy &quot;$(TargetDir)*.*&quot; &quot;$(ProjectDir)..\Executables\5.WebzenStandard\&quot; /Y /I" />
-    <Exec Command="xcopy &quot;$(TargetDir)*.*&quot; &quot;$(ProjectDir)..\Executables\6.WebzenModern\&quot; /Y /I" />
-  </Target>
+
 
 </Project>
