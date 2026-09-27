@@ -6,8 +6,8 @@ using System.Windows.Forms;
 // External
 using Shared.GameSettings;
 using Shared.Languages;
-
 using Shared.UI;
+using Shared.Utils;
 
 
 namespace Launcher
@@ -136,23 +136,19 @@ namespace Launcher
 
 		private void InitializeWebsite()
 		{
+			// Update Kayito 92 2.4.9 -> 97K SSeMU Update (Issue 3) - Safe web navigation and protocol handler validation
 			var config = LauncherConfig.Load();
 
-			if (string.IsNullOrWhiteSpace(config.WebsiteUrl))
+			if (!WebHelper.TryParseSafeWebUri(config.WebsiteUrl, out Uri? uri))
 			{
 				return;
 			}
 
-			if (!Uri.TryCreate(config.WebsiteUrl, UriKind.Absolute, out Uri uri))
-			{
-				return;
-			}
-
-			this.m_WebPanelUri = uri;
+			this.m_WebPanelUri = uri!;
 
 			this.Web_panel.Visible = false;
 
-			this.Web_panel.Navigate(uri);
+			this.Web_panel.Navigate(uri!);
 		}
 
 		private void Web_panel_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
@@ -179,38 +175,36 @@ namespace Launcher
 
 		private void Web_panel_Navigating(object sender, WebBrowserNavigatingEventArgs e)
 		{
-			if (this.m_WebPanelUri == null)
+			// Update Kayito 92 2.4.9 -> 97K SSeMU Update (Issue 3) - Safe web navigation and protocol handler validation
+			if (this.m_WebPanelUri == null || e.Url == null)
 			{
 				return;
 			}
 
-			if (e.Url.Host == this.m_WebPanelUri.Host)
+			if (WebHelper.IsSafeWebUri(e.Url) &&
+			    string.Equals(e.Url.Host, this.m_WebPanelUri.Host, StringComparison.OrdinalIgnoreCase))
 			{
 				return;
 			}
 
 			e.Cancel = true;
 
-			Process.Start(new ProcessStartInfo
+			if (WebHelper.IsSafeWebUri(e.Url))
 			{
-				FileName = e.Url.ToString(),
-				UseShellExecute = true
-			});
+				WebHelper.TryOpenExternalUrl(e.Url);
+			}
 		}
 
 		private void Web_panel_NewWindow(object sender, System.ComponentModel.CancelEventArgs e)
 		{
+			// Update Kayito 92 2.4.9 -> 97K SSeMU Update (Issue 3) - Safe web navigation and protocol handler validation
 			e.Cancel = true;
 
 			string url = this.Web_panel.StatusText;
 
-			if (Uri.TryCreate(url, UriKind.Absolute, out Uri uri))
+			if (WebHelper.TryParseSafeWebUri(url, out Uri? uri))
 			{
-				Process.Start(new ProcessStartInfo
-				{
-					FileName = uri.ToString(),
-					UseShellExecute = true
-				});
+				WebHelper.TryOpenExternalUrl(uri);
 			}
 		}
 
