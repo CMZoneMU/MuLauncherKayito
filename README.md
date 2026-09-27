@@ -1,15 +1,6 @@
 # kayito - Mu Launcher
 
-## Update CMZ 14-09-2026
-* **.NET 8 Migration**: O framework do projeto foi migrado de .NET Framework 4.8 para .NET 8, trazendo maior performance e recursos mais modernos.
-* **Refatoração do Updater**: A lógica do antigo executável `Updater` foi totalmente integrada dentro do próprio `Launcher.exe`. Agora você não precisa mais rodar um executável separado para buscar atualizações do próprio launcher.
-* **Remoção do Encoder**: O `Encoder` foi substituído por um arquivo de configuração JSON (`launcher_config.json`) em texto claro para facilitar edições.
-* **Novo Configurator**: Foi criada uma nova ferramenta com interface gráfica (`Configurator.exe`) para editar o arquivo `launcher_config.json` de forma fácil e interativa.
-* **Novo UpdateBuilder**: O antigo `Generator` foi substituído pelo `UpdateBuilder.exe`, uma ferramenta dedicada para ler a pasta do cliente, gerar as hashs MD5 e o arquivo `update.json`, sem depender do formato antigo.
-* **Correções na UI**: O botão de "Jogar" agora é destravado corretamente caso a atualização falhe (evitando soft-lock na interface), além de melhorias no processamento assíncrono.
-* **Deploy Automático**: Eventos de PostBuild configurados para copiar automaticamente o `Configurator.exe` e `UpdateBuilder.exe` para a respectiva pasta `Executables` de cada launcher ao compilar.
-
-## Atualizações de Segurança & Hardening (27-09-2026)
+## Update CMZ (27-09-2026) 
 * **Proteção contra Path Traversal e Sobrescrita Arbitrária (Issue #1)**:
   - Implementada sanitização canônica rigorosa em `LaunchUpdater.cs` (`GetSafeLocalPath`).
   - Bloqueio de sequências de subida de diretório (`..`), caminhos absolutos arbitrários e caracteres inválidos em nomes de arquivos baixados pelo updater.
@@ -22,6 +13,16 @@
   - Criado o componente utilitário `WebHelper.cs` em `Shared.Utils`.
   - Bloqueio estrito de esquemas perigosos do Windows (`file:`, `ms-msdt:`, `powershell:`, `cmd:`, `javascript:`, `vbscript:`, etc.) que poderiam ser explorados para execução arbitrária de código (RCE) via `Process.Start`.
   - Segregação de navegação: URLs do mesmo host são exibidas no controle embutido, enquanto links externos são abertos no navegador padrão do sistema somente se forem estritamente `http://` ou `https://`.
+
+## Update CMZ (14-09-2026)
+* **.NET 8 Migration**: O framework do projeto foi migrado de .NET Framework 4.8 para .NET 8, trazendo maior performance e recursos mais modernos.
+* **Refatoração do Updater**: A lógica do antigo executável `Updater` foi totalmente integrada dentro do próprio `Launcher.exe`. Agora você não precisa mais rodar um executável separado para buscar atualizações do próprio launcher.
+* **Remoção do Encoder**: O `Encoder` foi substituído por um arquivo de configuração JSON (`launcher_config.json`) em texto claro para facilitar edições.
+* **Novo Configurator**: Foi criada uma nova ferramenta com interface gráfica (`Configurator.exe`) para editar o arquivo `launcher_config.json` de forma fácil e interativa.
+* **Novo UpdateBuilder**: O antigo `Generator` foi substituído pelo `UpdateBuilder.exe`, uma ferramenta dedicada para ler a pasta do cliente, gerar as hashs MD5 e o arquivo `update.json`, sem depender do formato antigo.
+* **Correções na UI**: O botão de "Jogar" agora é destravado corretamente caso a atualização falhe (evitando soft-lock na interface), além de melhorias no processamento assíncrono.
+* **Deploy Automático**: Eventos de PostBuild configurados para copiar automaticamente o `Configurator.exe` e `UpdateBuilder.exe` para a respectiva pasta `Executables` de cada launcher ao compilar.
+
 
 ## - Language: C#
 
