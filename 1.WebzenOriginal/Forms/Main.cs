@@ -6,6 +6,7 @@ using System.Windows.Forms;
 // External
 using Shared.GameSettings;
 using Shared.Languages;
+using Shared.Utils;
 
 
 
@@ -82,26 +83,17 @@ namespace Launcher
 
 		private void Btn_Web_Click(object sender, EventArgs e)
 		{
+			// Update Kayito 92 2.4.9 -> 97K SSeMU Update (Issue 3) - Safe web navigation and protocol handler validation
 			var config = LauncherConfig.Load();
 
-			if (string.IsNullOrWhiteSpace(config.WebsiteUrl))
+			if (!WebHelper.TryParseSafeWebUri(config.WebsiteUrl, out Uri? uri))
 			{
 				return;
 			}
 
-			if (!Uri.TryCreate(config.WebsiteUrl, UriKind.Absolute, out Uri uri) ||
-			    (uri.Scheme != Uri.UriSchemeHttp && uri.Scheme != Uri.UriSchemeHttps))
-			{
-				return;
-			}
+			var baseUri = new Uri(uri!.GetLeftPart(UriPartial.Authority));
 
-			var baseUri = new Uri(uri.GetLeftPart(UriPartial.Authority));
-
-			Process.Start(new ProcessStartInfo
-			{
-				FileName = baseUri.ToString(),
-				UseShellExecute = true
-			});
+			WebHelper.TryOpenExternalUrl(baseUri);
 		}
 	
 		private void InitializeValues()
