@@ -9,6 +9,20 @@
 * **Correções na UI**: O botão de "Jogar" agora é destravado corretamente caso a atualização falhe (evitando soft-lock na interface), além de melhorias no processamento assíncrono.
 * **Deploy Automático**: Eventos de PostBuild configurados para copiar automaticamente o `Configurator.exe` e `UpdateBuilder.exe` para a respectiva pasta `Executables` de cada launcher ao compilar.
 
+## Atualizações de Segurança & Hardening (27-09-2026)
+* **Proteção contra Path Traversal e Sobrescrita Arbitrária (Issue #1)**:
+  - Implementada sanitização canônica rigorosa em `LaunchUpdater.cs` (`GetSafeLocalPath`).
+  - Bloqueio de sequências de subida de diretório (`..`), caminhos absolutos arbitrários e caracteres inválidos em nomes de arquivos baixados pelo updater.
+  - Garante que nenhum arquivo remoto consiga ser descompactado ou salvo fora do diretório raiz da aplicação.
+* **Isolamento de Credenciais e Proteção de Token PAT (Issue #2)**:
+  - Adicionado o atributo `[JsonIgnore]` nas propriedades `GitHubToken` e `DownloaderToken` da classe `LauncherConfig`.
+  - Garante que tokens pessoais (PAT) de administradores nunca sejam serializados ou exportados para o arquivo `launcher_config.json` distribuído aos jogadores.
+  - Armazenamento administrativo segregado no arquivo local seguro `UpdateBuilder.admin.json`, protegido por padrão pelo `.gitignore`.
+* **Bloqueio de Protocol Handlers Inseguros no WebBrowser (Issue #3)**:
+  - Criado o componente utilitário `WebHelper.cs` em `Shared.Utils`.
+  - Bloqueio estrito de esquemas perigosos do Windows (`file:`, `ms-msdt:`, `powershell:`, `cmd:`, `javascript:`, `vbscript:`, etc.) que poderiam ser explorados para execução arbitrária de código (RCE) via `Process.Start`.
+  - Segregação de navegação: URLs do mesmo host são exibidas no controle embutido, enquanto links externos são abertos no navegador padrão do sistema somente se forem estritamente `http://` ou `https://`.
+
 ## - Language: C#
 
 ## - Framework: .NET 8 using WinForms (Atualizado)
