@@ -61,6 +61,48 @@ namespace UpdateBuilder
             }
         }
 
+        private static string GetAdminTokenFilePath()
+        {
+            return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "UpdateBuilder.admin.json");
+        }
+
+        private static string LoadAdminToken()
+        {
+            try
+            {
+                string path = GetAdminTokenFilePath();
+                if (File.Exists(path))
+                {
+                    string json = File.ReadAllText(path);
+                    using var doc = JsonDocument.Parse(json);
+                    if (doc.RootElement.TryGetProperty("admin_github_token", out var tok))
+                    {
+                        return tok.GetString() ?? "";
+                    }
+                }
+            }
+            catch { }
+            return "";
+        }
+
+        private static void SaveAdminToken(string token)
+        {
+            try
+            {
+                string path = GetAdminTokenFilePath();
+                if (!string.IsNullOrWhiteSpace(token))
+                {
+                    string json = JsonSerializer.Serialize(new { admin_github_token = token.Trim() }, new JsonSerializerOptions { WriteIndented = true });
+                    File.WriteAllText(path, json);
+                }
+                else if (File.Exists(path))
+                {
+                    File.Delete(path);
+                }
+            }
+            catch { }
+        }
+
         private void LoadLauncherConfig(string? rootDir)
         {
             try
@@ -75,7 +117,8 @@ namespace UpdateBuilder
                 txtGitHubOwner.Text = _config.GitHubOwner ?? "";
                 txtGitHubRepo.Text = _config.GitHubRepo ?? "";
                 txtGitHubBranch.Text = string.IsNullOrWhiteSpace(_config.GitHubBranch) ? "main" : _config.GitHubBranch;
-                txtGitHubToken.Text = _config.GitHubToken ?? "";
+                // Carrega token administrativo local (nunca do launcher_config.json distribuido)
+                txtGitHubToken.Text = LoadAdminToken();
                 chkUseGitHubReleases.Checked = _config.UseGitHubReleases;
 
                 chkEnableDownloader.Checked = _config.EnableDownloader;
@@ -338,12 +381,16 @@ namespace UpdateBuilder
                 current.GitHubOwner = txtGitHubOwner.Text.Trim();
                 current.GitHubRepo = txtGitHubRepo.Text.Trim();
                 current.GitHubBranch = string.IsNullOrWhiteSpace(txtGitHubBranch.Text) ? "main" : txtGitHubBranch.Text.Trim();
-                current.GitHubToken = txtGitHubToken.Text.Trim();
+
+                // Salva token administrativo apenas localmente no UpdateBuilder e NUNCA no launcher_config.json
+                SaveAdminToken(txtGitHubToken.Text);
+                current.GitHubToken = "";
+
                 current.UseGitHubReleases = chkUseGitHubReleases.Checked;
 
                 current.DownloaderOwner = txtGitHubOwner.Text.Trim();
                 current.DownloaderRepo = txtGitHubRepo.Text.Trim();
-                current.DownloaderToken = txtGitHubToken.Text.Trim();
+                current.DownloaderToken = ""; // Nunca expor token no launcher_config.json
                 current.EnableDownloader = chkEnableDownloader.Checked;
                 current.DownloaderCompleted = chkDownloaderCompleted.Checked;
                 current.DownloaderFile1 = string.IsNullOrWhiteSpace(txtDownloaderFile1.Text) ? "client_com_som.zip" : txtDownloaderFile1.Text.Trim();
