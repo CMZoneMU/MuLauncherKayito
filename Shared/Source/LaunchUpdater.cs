@@ -80,12 +80,12 @@ namespace MuLauncher
             _useGitHubReleases = config.UseGitHubReleases;
             ExecutableName = string.IsNullOrWhiteSpace(config.ExecutableName) ? "main.exe" : config.ExecutableName.Trim();
 
-            _localBaseDir = localBaseDir ?? AppDomain.CurrentDomain.BaseDirectory;
+            _localBaseDir = Path.GetFullPath(localBaseDir ?? AppDomain.CurrentDomain.BaseDirectory);
             _httpClient = CreateHttpClient(_gitHubToken);
         }
 
         /// <summary>
-        /// Construtor legado para inicialização direta via URL base HTTP.
+        /// Construtor legado para inicializacao direta via URL base HTTP.
         /// </summary>
         public LaunchUpdater(string baseUrl, string? localBaseDir = null)
         {
@@ -97,8 +97,58 @@ namespace MuLauncher
             _gitHubToken = "";
             _useGitHubReleases = true;
 
-            _localBaseDir = localBaseDir ?? AppDomain.CurrentDomain.BaseDirectory;
+            _localBaseDir = Path.GetFullPath(localBaseDir ?? AppDomain.CurrentDomain.BaseDirectory);
             _httpClient = CreateHttpClient(null);
+        }
+
+        /// <summary>
+        /// Validates and resolves a relative file path against the local base directory,
+        /// preventing path traversal attacks, invalid characters, or rooted/absolute path escapes.
+        /// </summary>
+        public string GetSafeLocalPath(string relativePath)
+        {
+            if (string.IsNullOrWhiteSpace(relativePath))
+            {
+                System.Diagnostics.Debug.WriteLine("[SECURITY] Empty or whitespace path blocked.");
+                throw new InvalidOperationException("Tentativa de Path Traversal detectada: caminho vazio.");
+            }
+
+            // Reject paths containing invalid path characters
+            if (relativePath.IndexOfAny(Path.GetInvalidPathChars()) >= 0)
+            {
+                System.Diagnostics.Debug.WriteLine($"[SECURITY] Caminho com caracteres invalidos bloqueado: {relativePath}");
+                throw new InvalidOperationException($"Tentativa de Path Traversal detectada: {relativePath}");
+            }
+
+            // Reject rooted paths (drive letters or leading slashes) and UNC paths
+            if (Path.IsPathRooted(relativePath) || relativePath.StartsWith("/") || relativePath.StartsWith("\\"))
+            {
+                System.Diagnostics.Debug.WriteLine($"[SECURITY] Caminho enraizado ou absoluto bloqueado: {relativePath}");
+                throw new InvalidOperationException($"Tentativa de Path Traversal detectada: {relativePath}");
+            }
+
+            // Reject paths attempting alternate data streams or device volume access
+            if (relativePath.Contains(':'))
+            {
+                System.Diagnostics.Debug.WriteLine($"[SECURITY] Caminho com caractere de stream ou volume bloqueado: {relativePath}");
+                throw new InvalidOperationException($"Tentativa de Path Traversal detectada: {relativePath}");
+            }
+
+            string canonicalBase = Path.GetFullPath(_localBaseDir);
+            if (!canonicalBase.EndsWith(Path.DirectorySeparatorChar.ToString()))
+            {
+                canonicalBase += Path.DirectorySeparatorChar;
+            }
+
+            string fullPath = Path.GetFullPath(Path.Combine(_localBaseDir, relativePath));
+
+            if (!fullPath.StartsWith(canonicalBase, StringComparison.OrdinalIgnoreCase))
+            {
+                System.Diagnostics.Debug.WriteLine($"[SECURITY] Tentativa de Path Traversal detectada: {relativePath}");
+                throw new InvalidOperationException($"Tentativa de Path Traversal detectada: {relativePath}");
+            }
+
+            return fullPath;
         }
 
         private static HttpClient CreateHttpClient(string? gitHubToken)
@@ -159,6 +209,12 @@ namespace MuLauncher
                     return true;
                 }
 
+                // Security pre-validation of all manifest items
+                foreach (var file in serverFiles)
+                {
+                    GetSafeLocalPath(file.Path);
+                }
+
                 ReportProgress(progress, "Verificando integridade dos arquivos locais...", 0, 0);
 
                 List<UpdateFileItem> downloadQueue = new List<UpdateFileItem>();
@@ -170,7 +226,7 @@ namespace MuLauncher
                     cancellationToken.ThrowIfCancellationRequested();
 
                     var item = serverFiles[i];
-                    string localPath = System.IO.Path.Combine(_localBaseDir, item.Path);
+                    string localPath = GetSafeLocalPath(item.Path);
 
                     double checkPercent = ((double)(i + 1) / serverFiles.Count) * 100.0;
                     ReportProgress(progress, $"Verificando: {item.Path}", 100, checkPercent, item.Path);
@@ -223,7 +279,7 @@ namespace MuLauncher
                     cancellationToken.ThrowIfCancellationRequested();
 
                     var itemToDownload = downloadQueue[i];
-                    string destinationPath = System.IO.Path.Combine(_localBaseDir, itemToDownload.Path);
+                    string destinationPath = GetSafeLocalPath(itemToDownload.Path);
 
                     // Cria os diretórios necessários
                     string? dir = System.IO.Path.GetDirectoryName(destinationPath);
@@ -254,6 +310,12 @@ namespace MuLauncher
             {
                 ReportProgress(progress, "Atualização cancelada.", 0, 0);
                 return false;
+            }
+            catch (InvalidOperationException ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"[SECURITY] Abortando atualizacao por violacao de seguranca: {ex.Message}");
+                ReportProgress(progress, $"Falha de seguranca na atualizacao: {ex.Message}", 0, 0);
+                throw;
             }
             catch (Exception ex)
             {
@@ -319,6 +381,8 @@ namespace MuLauncher
         {
             try
             {
+                string destinationPath = GetSafeLocalPath(relativePath);
+
                 ReportProgress(progress, $"Conectando para restaurar {relativePath}...", 0, 0);
 
                 var serverFiles = await FetchManifestAsync(cancellationToken);
@@ -326,7 +390,6 @@ namespace MuLauncher
                     string.Equals(f.Path, relativePath, StringComparison.OrdinalIgnoreCase) ||
                     string.Equals(Path.GetFileName(f.Path), relativePath, StringComparison.OrdinalIgnoreCase));
 
-                string destinationPath = Path.Combine(_localBaseDir, relativePath);
                 string fileUrl = ResolveFileUrl(relativePath);
                 long size = targetItem?.Size ?? 0;
 
@@ -348,6 +411,12 @@ namespace MuLauncher
 
                 ReportProgress(progress, $"{relativePath} restaurado com sucesso!", 100, 100);
                 return true;
+            }
+            catch (InvalidOperationException ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"[SECURITY] Abortando restauracao por violacao de seguranca: {ex.Message}");
+                ReportProgress(progress, $"Falha de seguranca na restauracao: {ex.Message}", 0, 0);
+                throw;
             }
             catch (Exception ex)
             {
@@ -378,7 +447,7 @@ namespace MuLauncher
 
             foreach (var item in ServerFiles)
             {
-                string localPath = Path.Combine(_localBaseDir, item.Path);
+                string localPath = GetSafeLocalPath(item.Path);
 
                 // 1. Arquivo deletado ou renomeado
                 if (!File.Exists(localPath))
@@ -426,6 +495,12 @@ namespace MuLauncher
 
             try
             {
+                // Security pre-validation of all files to download
+                foreach (var file in filesToDownload)
+                {
+                    GetSafeLocalPath(file.Path);
+                }
+
                 long totalBytes = filesToDownload.Sum(f => f.Size > 0 ? f.Size : 1024);
                 long accumulatedBytes = 0;
 
@@ -434,7 +509,7 @@ namespace MuLauncher
                     cancellationToken.ThrowIfCancellationRequested();
 
                     var item = filesToDownload[i];
-                    string destinationPath = Path.Combine(_localBaseDir, item.Path);
+                    string destinationPath = GetSafeLocalPath(item.Path);
                     string? dir = Path.GetDirectoryName(destinationPath);
                     if (!string.IsNullOrEmpty(dir) && !Directory.Exists(dir))
                     {
@@ -458,6 +533,12 @@ namespace MuLauncher
 
                 ReportProgress(progress, "Todos os arquivos foram restaurados com sucesso!", 100, 100);
                 return true;
+            }
+            catch (InvalidOperationException ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"[SECURITY] Abortando download por violacao de seguranca: {ex.Message}");
+                ReportProgress(progress, $"Falha de seguranca no download: {ex.Message}", 0, 0);
+                throw;
             }
             catch (Exception ex)
             {
