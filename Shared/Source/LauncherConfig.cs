@@ -51,7 +51,8 @@ namespace MuLauncher
         [JsonPropertyName("github_branch")]
         public string GitHubBranch { get; set; } = "main";
 
-        [JsonPropertyName("github_token")]
+        // Ignorado na serializacao para impedir exposicao em arquivos distribuidos aos jogadores
+        [JsonIgnore]
         public string GitHubToken { get; set; } = "";
 
         [JsonPropertyName("use_github_releases")]
@@ -66,7 +67,8 @@ namespace MuLauncher
         [JsonPropertyName("downloader_repo")]
         public string DownloaderRepo { get; set; } = "";
 
-        [JsonPropertyName("downloader_token")]
+        // Ignorado na serializacao para impedir exposicao em arquivos distribuidos aos jogadores
+        [JsonIgnore]
         public string DownloaderToken { get; set; } = "";
 
         [JsonPropertyName("downloader_file1")]

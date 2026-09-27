@@ -583,7 +583,7 @@ namespace UpdateBuilder
             this.lblGitHubToken.Name = "lblGitHubToken";
             this.lblGitHubToken.Size = new System.Drawing.Size(127, 15);
             this.lblGitHubToken.TabIndex = 6;
-            this.lblGitHubToken.Text = "Token PAT (se privado):";
+            this.lblGitHubToken.Text = "Token PAT (Admin / Apenas no UpdateBuilder):";
 
             // 
             // txtGitHubToken
