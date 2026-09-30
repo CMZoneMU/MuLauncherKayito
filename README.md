@@ -1,5 +1,12 @@
 # kayito - Mu Launcher
 
+## Update CMZ (29-09-2026)
+* **Reorganização Estrutural do Repositório**:
+  - Centralização de todo o código-fonte C#/.NET 8 dentro do diretório `SourceLauncherKayito/`.
+  - Isolamento dos binários e publicações compiladas na pasta `Executables/`.
+  - Remoção e saneamento de arquivos temporários/intermediários de compilação (`obj/`, `bin/`) do versionamento Git.
+  - Correção e padronização do arquivo `.gitignore` com encoding UTF-8 para descarte automático de caches e artefatos de build.
+
 ## Update CMZ (27-09-2026) 
 * **Proteção contra Path Traversal e Sobrescrita Arbitrária (Issue #1)**:
   - Implementada sanitização canônica rigorosa em `LaunchUpdater.cs` (`GetSafeLocalPath`).
